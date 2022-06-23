@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Grow Gardenia
 description: 천천히 성장중 🌱
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/https://gardenia0917.github.io" # the subpath of your site, e.g. /blog
 url: "https://gardenia0917.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
