@@ -22,7 +22,7 @@ subtitle: "천천히 성장하는 중 🌱" # site tagline that appears below si
 name: "Gardenia"
 description: "Error is the discipline through which we advance."
 url: "https://gardenia0917.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/gardenia0917" # the subpath of your site, e.g. "/blog"
+# baseurl: /gardenia0917 # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
