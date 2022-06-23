@@ -10,42 +10,42 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : 'minimal-mistakes-jekyll'
+# remote_theme           : 'mmistakes/minimal-mistakes'
+minimal_mistakes_skin: 'sunrise' # 'air', 'aqua', 'contrast', 'dark', 'dirt', 'neon', 'mint', 'plum', 'sunrise'
 
 # Site Settings
-locale: "ko-KR"
-title: "Grow Gardenia"
-title_separator: "-"
-subtitle: "천천히 성장하는 중 🌱" # site tagline that appears below site title in masthead
-name: "Gardenia"
-description: "Error is the discipline through which we advance."
-url:  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: /gardenia0917 # the subpath of your site, e.g. "/blog"
-repository: "gardenia0917/gardenia0917.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+locale: 'ko-KR'
+title: 'Grow Gardenia'
+title_separator: '-'
+subtitle: '천천히 성장하는 중 🌱' # site tagline that appears below site title in masthead
+name: 'Gardenia'
+description: 'Error is the discipline through which we advance.'
+url:  # the base hostname & protocol for your site e.g. 'https://mmistakes.github.io'
+baseurl: /gardenia0917 # the subpath of your site, e.g. '/blog'
+repository: 'gardenia0917/gardenia0917.github.io' # GitHub username/repo-name e.g. 'mmistakes/minimal-mistakes'
+teaser: # path of fallback teaser image, e.g. '/assets/images/500x300.png'
+logo: # path of logo image to display in the masthead, e.g. '/assets/images/88x88.png'
+masthead_title: # overrides the website title displayed in the masthead, use ' ' for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : 'utterances' # false (default), 'disqus', 'discourse', 'facebook', 'staticman', 'staticman_v2', 'utterances', 'custom'
   disqus:
-    shortname            : #"ansohxxn-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : #'ansohxxn-github-io' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : # 'light' (default), 'dark'
   utterances:
-    theme                : "photon-dark" # "github-light" (default), "github-dark"
-    issue_term           : "pathname" # "pathname" (default)
+    theme                : 'photon-dark' # 'github-light' (default), 'github-dark'
+    issue_term           : 'pathname' # 'pathname' (default)
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : # 'master'
+    endpoint             : # 'https://{your Staticman v3 API}/v3/entry/github/'
 reCaptcha:
   siteKey:
   secret:
@@ -89,7 +89,7 @@ social:
 
 # Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: false # false (default), 'google', 'google-universal', 'google-gtag', 'custom'
   google:
     tracking_id:
     anonymize_ip: # true, false (default)
@@ -97,49 +97,49 @@ analytics:
 # Site Author
 author:
   name: 'Gardenia'
-  avatar: "https://user-images.githubusercontent.com/89240523/175431032-c3ec1f24-1876-480c-a440-7f0ec3797fb4.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "성장중 🌱"
-  location: "Korea🇰🇷"
+  avatar: 'https://user-images.githubusercontent.com/89240523/175431032-c3ec1f24-1876-480c-a440-7f0ec3797fb4.png' # path of avatar image, e.g. '/assets/images/bio-photo.jpg'
+  bio: '성장중 🌱'
+  location: 'Korea🇰🇷'
    links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "gardenia1109@naver.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gardenia0917"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   # url: "https://your-website.com"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   # url: "https://twitter.com/"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   # url: "https://facebook.com/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope-square'
+      url: 'gardenia1109@naver.com'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/gardenia0917'
+    # - label: 'Website'
+    #   icon: 'fas fa-fw fa-link'
+    #   # url: 'https://your-website.com'
+    # - label: 'Twitter'
+    #   icon: 'fab fa-fw fa-twitter-square'
+    #   # url: 'https://twitter.com/'
+    # - label: 'Facebook'
+    #   icon: 'fab fa-fw fa-facebook-square'
+    #   # url: 'https://facebook.com/'
+    # - label: 'Instagram'
+    #   icon: 'fab fa-fw fa-instagram'
+    #   # url: 'https://instagram.com/'
 
 # Site Footer
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
+    # - label: 'Twitter'
+    #   icon: 'fab fa-fw fa-twitter-square'
     #   # url:
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
+    # - label: 'Facebook'
+    #   icon: 'fab fa-fw fa-facebook-square'
     #   # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gardenia0917"
-    # - label: "GitLab"
-    #   icon: "fab fa-fw fa-gitlab"
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/gardenia0917'
+    # - label: 'GitLab'
+    #   icon: 'fab fa-fw fa-gitlab'
     #   # url:
-    # - label: "Bitbucket"
-    #   icon: "fab fa-fw fa-bitbucket"
+    # - label: 'Bitbucket'
+    #   icon: 'fab fa-fw fa-bitbucket'
     #   # url:
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
+    # - label: 'Instagram'
+    #   icon: 'fab fa-fw fa-instagram'
     #   # url:
 
 # Reading Files
@@ -147,8 +147,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -176,15 +176,15 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: '\n\n'
 incremental: false
 
 
@@ -271,7 +271,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: '
       type: posts
     values:
       layout: single
