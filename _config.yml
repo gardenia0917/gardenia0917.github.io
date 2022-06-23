@@ -99,7 +99,7 @@ author:
   name: "Gardenia"
   avatar: "https://user-images.githubusercontent.com/89240523/175431032-c3ec1f24-1876-480c-a440-7f0ec3797fb4.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "성장중 🌱"
-  location: "Korea🇰🇷"
+  # location: "Korea🇰🇷"
    links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
