@@ -1,14 +1,96 @@
-{% if page.previous or page.next %}
-  <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-    {% endif %}
-  </nav>
+[Github 블로그] 같은 카테고리 내에서의 이전글, 다음글 이동 Date: 2021.03.16
+Updated: 2021.03.16 카테고리: Blog 태그: HTML jekyll Liquid minimal-mistake Blog
+목차 🚀 ‘전체 글’내에서의 이전글, 다음글 이동하는 디폴트 모습 🚀 ‘같은 카테고리’
+내에서의 이전글, 다음글 이동 📜post_pagination.html 내 응용 코드
+📜_navigation.scss 🚀 ‘전체 글’내에서의 이전글, 다음글 이동하는 디폴트
+모습Permalink image minimal-mistake 은 이렇게 포스트 아랫 부분에 “전체 글
+내에서”의 시간 순서를 기준으로 이전 글, 다음 글로 이동하는 버튼 pagination 을
+제공한다. 이를 📜post_pagination.html 에서 담당하고 있다. 블로그 방문자
+재영님께서 전체글이 아닌 “같은 카테고리 내에서”의 시간 순서를 기준으로 이전 글,
+다음 글로 이동하게끔 구현하고 싶다고 말씀해주셔서 나도 이렇게 변경을 한번 진행
+해보기로 했다. 🚀 ‘같은 카테고리’ 내에서의 이전글, 다음글 이동Permalink How to
+Link to Next and Previous Posts for Same Blog Category 코드는 이 글을
+참고하였다. 📜post_pagination.htmlPermalink
+
+<!--첫 번째 문단-->
+{% assign cat = page.categories[0] %} {% assign cat_list = site.categories[cat]
+%} {% for post in cat_list %} {% if post.url == page.url %} {% assign prevIndex
+= forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus: 1 %}
+{% if forloop.first == false %} {% assign next_post = cat_list[prevIndex] %} {%
+endif %} {% if forloop.last == false %} {% assign prev_post =
+cat_list[nextIndex] %} {% endif %} {% break %} {% endif %} {% endfor %}
+
+<!--두 번째 문단-->
+{% if prev_post or next_post %}
+<nav class="pagination">
+  {% if prev_post %}
+  <a href="{{ prev_post.url }}" class="pagination--pager"
+    >{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous"
+    }}</a
+  >
+  {% else %}
+  <a href="#" class="pagination--pager disabled"
+    >{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous"
+    }}</a
+  >
+  {% endif %} {% if next_post %}
+  <a href="{{ next_post.url }}" class="pagination--pager"
+    >{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a
+  >
+  {% else %}
+  <a href="#" class="pagination--pager disabled"
+    >{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a
+  >
+  {% endif %}
+</nav>
+{% endif %} 기존 코드를 모두 지우고 위 코드를 📜post_pagination.html 에
+붙여넣어주면 된다! [Github 블로그] Minimal-Mistakes 테마의 디렉터리 구조 포스트
+혹은 jekyll 문서를 참고하면 이해에 더 도움이 될 것 같다. 첫 번째 문단 코드 같은
+카테고리내의 이전 포스트와 다음 포스트를 변수에 저장하는 작업이다. assign cat =
+page.categories[0] cat 변수에 이 페이지의 카테고리 문자열을 저장한다. page는 딱
+하나인 “현재의 포스트”를 의미한다. 지금 이 페이지의 카테고리를 cat에 할당하는
+과정이다. page.categories 는 현재 이 포스트가 속한 카테고리들 리스트이다. 보통
+카테고리는 포스트 당 딱 한 개를 설정하니 page.categories[0] 로 현재 포스트의
+카테고리 이름에 접근할 수 있다. assign cat_list = site.categories[cat] cat_list
+변수에 내 블로그 사이트 전체 내에서 cat 카테고리 (즉, 현재의 포스트의
+카테고리)에 속하는 모든 포스트들이 담긴 리스트를 담는다. site는 사이트 전체를
+의미한다. site.categories.카테고리이름 혹은 site.categories[카테고리이름] 은
+해당 카테고리에 속해있는 모든 포스트들을 담은 리스트이다. 같은 카테고리를 가진
+포스트 목록이니 여기서 이전 포스트와 다음 포스트를 찾을 것이다. cat_list에서
+for문을 돌려 같은 카테고리 내의 포스트들을 순회했을 떄 현재 페이지(page)와
+동일한 포스트를 발견한다면 그 포스트의 이전 포스트(이전 인덱스에 위치), 다음
+포스트(다음 인덱스에 위치)를 알 수 있게 된다. forloop.index0 은 0,1,2,3, 이렇게
+0 을 시작점으로 삼았을 때의 현재 인덱스를 알려주는 liquid 문법이다. 그러니 현재
+페이지와 동일한 포스트를 같은 카테고리 내에서 찾는다면 그 이전 인덱스의 포스트와
+그 다음 인덱스의 포스트가 바로 같은 카테고리내의 이전 포스트와 다른 포스트가
+된다. forloop.first 는 for문을 순회하면서 현재 첫번째 인덱스에 있다면 true,
+아니라면 false. forloop.last는 이와는 반대로 현재 마지막 인덱스에 있다면 true,
+아니라면 false. https://documentation.platformos.com/api-reference/liquid/loops
+최종적으로 같은 카테고리 내의 이전 포스트는 prev_post 변수에, 다음 포스트는
+next_post 변수에 할당되게 된다. 기존의 디폴트 📜post_pagination.html 에 없던
+코드이다. 두 번째 문단 코드 같은 카테고리 내의 이전 포스트와 다음 포스트의 존재
+여부에 따른 html 영역과 텍스트 표시 시각적 모양은 css 에서 pagination 클래스에서
+담당하게 된다. 기존 코드를 조금 수정한 것. 내 응용 코드Permalink {% assign cat =
+page.categories[0] %} {% assign cat_list = site.categories[cat] %} {% for post
+in cat_list %} {% if post.url == page.url %} {% assign prevIndex =
+forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus: 1 %}
+{% if forloop.first == false %} {% assign next_post = cat_list[prevIndex] %} {%
+endif %} {% if forloop.last == false %} {% assign prev_post =
+cat_list[nextIndex] %} {% endif %} {% break %} {% endif %} {% endfor %} {% if
+prev_post or next_post %}
+<nav class="pagination_prev_next">
+  {% if prev_post %}
+  <a href="{{ prev_post.url }}" class="pagination_prev_next--pager"
+    ><span class="prev_next">이전 글 &nbsp</span>{{ prev_post.title }}</a
+  >
+  {% else %}
+  <a href="#" class="pagination_prev_next--pager disabled">첫 번째 글</a>
+  {% endif %} {% if next_post %}
+  <a href="{{ next_post.url }}" class="pagination_prev_next--pager"
+    ><span class="prev_next">다음 글 &nbsp </span>{{ next_post.title }}</a
+  >
+  {% else %}
+  <a href="#" class="pagination_prev_next--pager disabled">최근 글</a>
+  {% endif %}
+</nav>
 {% endif %}
