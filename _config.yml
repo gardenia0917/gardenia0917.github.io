@@ -96,10 +96,10 @@ analytics:
 
 # Site Author
 author:
-  name: "Gardenia"
+  name: "가드니아 🌱"
   avatar: "https://user-images.githubusercontent.com/89240523/175431032-c3ec1f24-1876-480c-a440-7f0ec3797fb4.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "성장중 🌱"
-  # location: "Korea🇰🇷"
+  location: "Korea🇰🇷"
    links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -179,12 +179,14 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
 
 # Markdown Processing
 kramdown:
@@ -197,16 +199,19 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
 
 # Plugins (previously gems:)
 plugins:
@@ -223,6 +228,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
 
 # Archives
 #  Type
@@ -252,12 +258,14 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
+
 
 # Defaults
 defaults:
@@ -268,8 +276,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       comments: true
       share: true
       related: true
+      mathjax: true
       sidebar_main: true
