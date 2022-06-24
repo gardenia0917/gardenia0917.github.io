@@ -28,7 +28,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Grow Gardenia">
 <meta property="og:title" content="코드스테이츠 필기">
-<meta property="og:url" content="http://localhost:4000/categories/codestatessec1">
+<meta property="og:url" content="http://localhost:4000/categories/sec1">
 
 
   <meta property="og:description" content="성장중🌱">
@@ -48,7 +48,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/categories/codestatessec1">
+<link rel="canonical" href="http://localhost:4000/categories/sec1">
 
 
 
@@ -268,9 +268,11 @@
         <span class="nav__sub-title">CodeStates</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
-                <!--CodeStates 카테고리 글들을 모아둔 페이지인 /categories/codestatessec1 주소의 글로 링크 연결-->
+                <!--CodeStates 카테고리 글들을 모아둔 페이지인 /categories/sec1 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 
+                    
+                        <li><a href="/sec1" class="nav__sub__category">Sec 1(1)</a></li>
                     
                 
             </ul>
@@ -297,7 +299,45 @@
 ***
 
 
+ 
 
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/sec1/%EB%B3%80%EC%88%98/">[CodeStates] 변수</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2021.10.06
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴--> 
+<span class="page__taxonomy">
+  <span itemprop="keywords"><a
+      href="/categories/#sec1"
+      class="page__taxonomy-item-category"
+      rel="tag"
+      >Sec1</a
+    >  
+    <a
+      href="/tags/#js"
+      class="page__taxonomy-item-tag"
+      rel="tag"
+      >js</a
+    ><span class="sep"> </span>   
+    <a
+      href="/tags/#sec1"
+      class="page__taxonomy-item-tag"
+      rel="tag"
+      >Sec1</a
+    > 
+  </span>
+</span>
+            </small>
+        </div>
+      </article>
+</div> 
   </div>
 </div>
     </div>
