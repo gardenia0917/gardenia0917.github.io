@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
@@ -8,340 +8,268 @@
 <html lang="ko" class="no-js">
   <head>
     <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap"
+    />
 
     <!--폰트 : "Iropke Batang"-->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
-    <meta charset="utf-8">
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css"
+    />
+    <meta charset="utf-8" />
 
-<!-- begin _includes/seo.html --><title>Posts by Tag - Grow Gardenia</title>
-<meta name="description" content="성장중🌱">
+    <!-- begin _includes/seo.html -->
+    <title>Posts by Tag - Grow Gardenia</title>
+    <meta name="description" content="성장중🌱" />
 
+    <meta name="author" content="Gardenia" />
 
-  <meta name="author" content="Gardenia">
-  
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="Grow Gardenia" />
+    <meta property="og:title" content="Posts by Tag" />
+    <meta property="og:url" content="http://localhost:4000/tags/" />
 
+    <meta property="og:description" content="성장중🌱" />
 
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="Grow Gardenia">
-<meta property="og:title" content="Posts by Tag">
-<meta property="og:url" content="http://localhost:4000/tags/">
+    <link rel="canonical" href="http://localhost:4000/tags/" />
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
 
-  <meta property="og:description" content="성장중🌱">
+        "@type": "Person",
+        "name": "Gardenia",
+        "url": "http://localhost:4000/"
+      }
+    </script>
 
+    <!-- end _includes/seo.html -->
 
+    <link
+      href="/feed.xml"
+      type="application/atom+xml"
+      rel="alternate"
+      title="Grow Gardenia Feed"
+    />
 
+    <!-- https://t.co/dKP3o1e -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace(/\bno-js\b/g, "") + " js ";
+    </script>
 
-
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="http://localhost:4000/tags/">
-
-
-
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": "Gardenia",
-      "url": "http://localhost:4000/"
-    
-  }
-</script>
-
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
-
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+    /></noscript>
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+    <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
-<!-- end custom head snippets -->
-
+    <!-- end custom head snippets -->
   </head>
 
   <body class="layout--tags">
     <nav class="skip-links">
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
-</nav>
+      <ul>
+        <li>
+          <a href="#site-nav" class="screen-reader-shortcut"
+            >Skip to primary navigation</a
+          >
+        </li>
+        <li>
+          <a href="#main" class="screen-reader-shortcut">Skip to content</a>
+        </li>
+        <li>
+          <a href="#footer" class="screen-reader-shortcut">Skip to footer</a>
+        </li>
+      </ul>
+    </nav>
 
-    
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <a class="site-title" href="/"> Grow Gardenia </a>
+            <ul class="visible-links">
+              <li class="masthead__menu-item">
+                <a href="/index.html">Home</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="/categories/">Category</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="/year-archive/">Archive</a>
+              </li>
+            </ul>
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        
-        <a class="site-title" href="/">
-          Grow Gardenia
-          
-        </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/index.html">Home</a>
-            </li><li class="masthead__menu-item">
-              <a href="/categories/">Category</a>
-            </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Archive</a>
-            </li></ul>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">토글 메뉴</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+            <button class="greedy-nav__toggle hidden" type="button">
+              <span class="visually-hidden">Category</span>
+              <div class="navicon"></div>
+            </button>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
 
     <div class="initial-content">
-      
+      <nav class="breadcrumbs">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
 
+            <meta itemprop="position" content="1" />
+          </li>
+          <span class="sep">/</span>
 
-  
-    
+          <li class="current">Posts by Tag</li>
+        </ol>
+      </nav>
 
+      <div id="main" role="main">
+        <div class="sidebar sticky">
+          <div itemscope itemtype="https://schema.org/Person" class="h-card">
+            <div class="author__avatar">
+              <a href="http://localhost:4000/">
+                <img
+                  src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png"
+                  alt="Gardenia"
+                  itemprop="image"
+                  class="u-photo"
+                />
+              </a>
+            </div>
 
+            <div class="author__content">
+              <h3 class="author__name p-name" itemprop="name">
+                <a
+                  class="u-url"
+                  rel="me"
+                  href="http://localhost:4000/"
+                  itemprop="url"
+                  >Gardenia</a
+                >
+              </h3>
 
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+              <div class="author__bio p-note" itemprop="description">
+                <p>반갑습니다 :)</p>
+              </div>
+            </div>
 
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        <li class="current">Posts by Tag</li>
-      
-    
-  </ol>
-</nav>
+            <div class="author__urls-wrapper">
+              <button class="btn btn--inverse">팔로우</button>
+              <ul class="author__urls social-icons">
+                <li>
+                  <a
+                    href="gardenia1109@naver.com"
+                    rel="nofollow noopener noreferrer me"
+                    ><i
+                      class="fas fa-fw fa-envelope-square"
+                      aria-hidden="true"
+                    ></i
+                    ><span class="label">Email</span></a
+                  >
+                </li>
 
-  
+                <li>
+                  <a
+                    href="https://github.com/gardenia0917"
+                    rel="nofollow noopener noreferrer me"
+                    itemprop="sameAs"
+                    ><i class="fab fa-fw fa-github" aria-hidden="true"></i
+                    ><span class="label">GitHub</span></a
+                  >
+                </li>
 
-
-<div id="main" role="main">
-  
-<div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
-
-  
-    <div class="author__avatar">
-      <a href="http://localhost:4000/">
-        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
-      </a>
-    </div>
-  
-
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Gardenia</a>
-    </h3>
-    
-      <div class="author__bio p-note" itemprop="description">
-        <p>반갑습니다 :)</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">팔로우</button>
-    <ul class="author__urls social-icons">
-      
-
-      
-        
-          
-            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-          
-        
-          
-            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
+                <!--
   <li>
     <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
-    </ul>
-  </div>
-</div>
-  
-</div>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="archive">
+          <h1 id="page-title" class="page__title">Posts by Tag</h1>
 
-
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Posts by Tag</h1>
-    
-    
-
-
-
-
-
-<ul class="taxonomy__index">
-  
-</ul>
-
-
-
-
-  </div>
-</div>
+          <ul class="taxonomy__index"></ul>
+        </div>
+      </div>
     </div>
-
-    
 
     <div id="footer" class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
 
-<!-- end custom footer snippets -->
+        <!-- end custom footer snippets -->
         <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>팔로우:</strong></li>
-    
+          <ul class="social-icons">
+            <li><strong>팔로우:</strong></li>
 
-    
-      
-        
-          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-    
+            <li>
+              <a
+                href="https://github.com/gardenia0917"
+                rel="nofollow noopener noreferrer"
+                ><i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                GitHub</a
+              >
+            </li>
 
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
-    
-  </ul>
-</div>
+            <li>
+              <a href="/feed.xml"
+                ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i>
+                피드</a
+              >
+            </li>
+          </ul>
+        </div>
 
-<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
+        <div class="page__footer-copyright">
+          &copy; 2022 Gardenia. Powered by
+          <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp;
+          <a
+            href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+            rel="nofollow"
+            >Minimal Mistakes</a
+          >.
+        </div>
       </footer>
     </div>
 
-    
-  <script src="/assets/js/main.min.js"></script>
-
-
-
-
-
-
-
-
-
-
+    <script src="/assets/js/main.min.js"></script>
   </body>
 </html>
