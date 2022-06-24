@@ -1,7 +1,7 @@
 ---
-title: "코드스테이츠 sec1"
+title: "코드스테이츠 coplit"
 layout: archive
-permalink: categories/sec1
+permalink: categories/coplit
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Sec1 %}
+{% assign posts = site.categories.Coplit %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
