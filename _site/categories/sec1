@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>코드스테이츠 필기 - Grow Gardenia</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 sec1 - Grow Gardenia</title>
 <meta name="description" content="성장중🌱">
 
 
@@ -27,7 +27,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Grow Gardenia">
-<meta property="og:title" content="코드스테이츠 필기">
+<meta property="og:title" content="코드스테이츠 sec1">
 <meta property="og:url" content="http://localhost:4000/categories/sec1">
 
 
@@ -178,7 +178,7 @@
     
       
       
-        <li class="current">코드스테이츠 필기</li>
+        <li class="current">코드스테이츠 sec1</li>
       
     
   </ol>
@@ -290,11 +290,10 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">코드스테이츠 필기</h1>
+      <h1 id="page-title" class="page__title">코드스테이츠 sec1</h1>
     
     <!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->
 
-***
 
 
  
