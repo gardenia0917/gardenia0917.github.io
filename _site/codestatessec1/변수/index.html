@@ -1,0 +1,578 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+
+    <!--폰트 : "Iropke Batang"-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[CodeStates] 변수 - Grow Gardenia</title>
+<meta name="description" content="코드 스테이츠 2일차 변수!">
+
+
+  <meta name="author" content="Gardenia">
+  
+  <meta property="article:author" content="Gardenia">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Grow Gardenia">
+<meta property="og:title" content="[CodeStates] 변수">
+<meta property="og:url" content="http://localhost:4000/codestatessec1/%EB%B3%80%EC%88%98/">
+
+
+  <meta property="og:description" content="코드 스테이츠 2일차 변수!">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-10-06T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-03-25T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/codestatessec1/%EB%B3%80%EC%88%98/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gardenia",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grow Gardenia
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/index.html">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Archive</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#codestatessec1" itemprop="item"><span itemprop="name">Codestatessec1</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[CodeStates] 변수</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+<div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Gardenia</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>반갑습니다 :)</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+   <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">1</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) CodeStates-->
+        <span class="nav__sub-title">CodeStates</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--CodeStates 카테고리 글들을 모아둔 페이지인 /categories/codestatessec1 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Coding Test</span>
+            <ul>
+                
+                    
+                
+            </ul>
+           
+      </li>
+  </ul>
+</nav> 
+</div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[CodeStates] 변수">
+    <meta itemprop="description" content="코드 스테이츠 2일차 변수!">
+    <meta itemprop="datePublished" content="2021-10-06T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-03-25T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/codestatessec1/%EB%B3%80%EC%88%98/" class="u-url" itemprop="url">[CodeStates] 변수
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              
+
+            </nav>
+          </aside>
+        
+        <p>test</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">CodeStates</a><span class="sep">, </span>
+    
+      <a href="/tags/#js" class="page__taxonomy-item p-category" rel="tag">js</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#codestatessec1" class="page__taxonomy-item p-category" rel="tag">codestatessec1</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-03-25">March 25, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BCodeStates%5D+%EB%B3%80%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2Fcodestatessec1%2F%25EB%25B3%2580%25EC%2588%2598%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcodestatessec1%2F%25EB%25B3%2580%25EC%2588%2598%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fcodestatessec1%2F%25EB%25B3%2580%25EC%2588%2598%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      [Github 블로그] 같은 카테고리 내에서의 이전글, 다음글 이동 Date: 2021.03.16
+Updated: 2021.03.16 카테고리: Blog 태그: HTML jekyll Liquid minimal-mistake Blog
+목차 🚀 ‘전체 글’내에서의 이전글, 다음글 이동하는 디폴트 모습 🚀 ‘같은 카테고리’
+내에서의 이전글, 다음글 이동 📜post_pagination.html 내 응용 코드
+📜_navigation.scss 🚀 ‘전체 글’내에서의 이전글, 다음글 이동하는 디폴트
+모습Permalink image minimal-mistake 은 이렇게 포스트 아랫 부분에 “전체 글
+내에서”의 시간 순서를 기준으로 이전 글, 다음 글로 이동하는 버튼 pagination 을
+제공한다. 이를 📜post_pagination.html 에서 담당하고 있다. 블로그 방문자
+재영님께서 전체글이 아닌 “같은 카테고리 내에서”의 시간 순서를 기준으로 이전 글,
+다음 글로 이동하게끔 구현하고 싶다고 말씀해주셔서 나도 이렇게 변경을 한번 진행
+해보기로 했다. 🚀 ‘같은 카테고리’ 내에서의 이전글, 다음글 이동Permalink How to
+Link to Next and Previous Posts for Same Blog Category 코드는 이 글을
+참고하였다. 📜post_pagination.htmlPermalink
+
+<!--첫 번째 문단-->
+     
+  
+
+<!--두 번째 문단-->
+ 기존 코드를 모두 지우고 위 코드를 📜post_pagination.html 에
+붙여넣어주면 된다! [Github 블로그] Minimal-Mistakes 테마의 디렉터리 구조 포스트
+혹은 jekyll 문서를 참고하면 이해에 더 도움이 될 것 같다. 첫 번째 문단 코드 같은
+카테고리내의 이전 포스트와 다음 포스트를 변수에 저장하는 작업이다. assign cat =
+page.categories[0] cat 변수에 이 페이지의 카테고리 문자열을 저장한다. page는 딱
+하나인 “현재의 포스트”를 의미한다. 지금 이 페이지의 카테고리를 cat에 할당하는
+과정이다. page.categories 는 현재 이 포스트가 속한 카테고리들 리스트이다. 보통
+카테고리는 포스트 당 딱 한 개를 설정하니 page.categories[0] 로 현재 포스트의
+카테고리 이름에 접근할 수 있다. assign cat_list = site.categories[cat] cat_list
+변수에 내 블로그 사이트 전체 내에서 cat 카테고리 (즉, 현재의 포스트의
+카테고리)에 속하는 모든 포스트들이 담긴 리스트를 담는다. site는 사이트 전체를
+의미한다. site.categories.카테고리이름 혹은 site.categories[카테고리이름] 은
+해당 카테고리에 속해있는 모든 포스트들을 담은 리스트이다. 같은 카테고리를 가진
+포스트 목록이니 여기서 이전 포스트와 다음 포스트를 찾을 것이다. cat_list에서
+for문을 돌려 같은 카테고리 내의 포스트들을 순회했을 떄 현재 페이지(page)와
+동일한 포스트를 발견한다면 그 포스트의 이전 포스트(이전 인덱스에 위치), 다음
+포스트(다음 인덱스에 위치)를 알 수 있게 된다. forloop.index0 은 0,1,2,3, 이렇게
+0 을 시작점으로 삼았을 때의 현재 인덱스를 알려주는 liquid 문법이다. 그러니 현재
+페이지와 동일한 포스트를 같은 카테고리 내에서 찾는다면 그 이전 인덱스의 포스트와
+그 다음 인덱스의 포스트가 바로 같은 카테고리내의 이전 포스트와 다른 포스트가
+된다. forloop.first 는 for문을 순회하면서 현재 첫번째 인덱스에 있다면 true,
+아니라면 false. forloop.last는 이와는 반대로 현재 마지막 인덱스에 있다면 true,
+아니라면 false. https://documentation.platformos.com/api-reference/liquid/loops
+최종적으로 같은 카테고리 내의 이전 포스트는 prev_post 변수에, 다음 포스트는
+next_post 변수에 할당되게 된다. 기존의 디폴트 📜post_pagination.html 에 없던
+코드이다. 두 번째 문단 코드 같은 카테고리 내의 이전 포스트와 다음 포스트의 존재
+여부에 따른 html 영역과 텍스트 표시 시각적 모양은 css 에서 pagination 클래스에서
+담당하게 된다. 기존 코드를 조금 수정한 것. 내 응용 코드Permalink      
+   
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'gardenia0917/gardenia0917.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    
+    script.setAttribute('theme', 'photon-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>
