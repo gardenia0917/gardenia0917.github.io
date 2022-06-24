@@ -272,7 +272,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 
                     
-                        <li class="nav__sub__category"><a href="/categories/codestates" class="">Sec 1(1)</a></li>
+                        <li class="nav__sub__category"><a href="/categories/codestatessec1" class="">Sec 1(1)</a></li>
                     
                 
             </ul>
@@ -299,7 +299,45 @@
 ***
 
 
+ 
 
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/codestatessec1/%EB%B3%80%EC%88%98/">[CodeStates] 변수</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2021.10.06
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴--> 
+<span class="page__taxonomy">
+  <span itemprop="keywords"><a
+      href="/categories/#codestatessec1"
+      class="page__taxonomy-item-category"
+      rel="tag"
+      >codestatessec1</a
+    >  
+    <a
+      href="/tags/#codestates"
+      class="page__taxonomy-item-tag"
+      rel="tag"
+      >CodeStates</a
+    ><span class="sep"> </span>   
+    <a
+      href="/tags/#js"
+      class="page__taxonomy-item-tag"
+      rel="tag"
+      >js</a
+    > 
+  </span>
+</span>
+            </small>
+        </div>
+      </article>
+</div> 
   </div>
 </div>
     </div>
