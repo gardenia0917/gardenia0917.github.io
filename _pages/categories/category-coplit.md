@@ -1,5 +1,5 @@
 ---
-title: "코드스테이츠 coplit"
+title: "코드 스테이츠 Coplit 복습하기"
 layout: archive
 permalink: categories/coplit
 author_profile: true
