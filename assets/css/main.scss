@@ -1,14 +1,13 @@
-// ---
-// # Only the main Sass file needs front matter (the dashes are enough)
-// search: false
-// ---
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// font
+// "Cafe24Oneprettynight"
 @font-face {
   font-family: "Cafe24Oneprettynight";
   src: local("Cafe24Oneprettynight"),
