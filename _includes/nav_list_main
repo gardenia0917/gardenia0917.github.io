@@ -11,7 +11,7 @@
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Sec1" %}
+                    {% if category[0] == "Coplit" %}
                         <li><a href="/categories/coplit" class="">Coplit ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
