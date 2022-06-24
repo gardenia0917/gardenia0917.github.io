@@ -301,40 +301,40 @@
 
 
 <div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/sec1/%EB%B3%80%EC%88%98/">[CodeStates] 변수</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2021.10.06
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴--> 
-<span class="page__taxonomy">
-  <span itemprop="keywords"><a
-      href="/categories/#sec1"
-      class="page__taxonomy-item-category"
-      rel="tag"
-      >Sec1</a
-    >  
-    <a
-      href="/tags/#js"
-      class="page__taxonomy-item-tag"
-      rel="tag"
-      >js</a
-    ><span class="sep"> </span>   
-    <a
-      href="/tags/#sec1"
-      class="page__taxonomy-item-tag"
-      rel="tag"
-      >Sec1</a
-    > 
-  </span>
-</span>
-            </small>
-        </div>
-      </article>
-</div> 
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sec1/%EB%B3%80%EC%88%98/" rel="permalink">[CodeStates] 변수
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">코드 스테이츠 2일차 변수!
+</p>
+  </article>
+</div>
+ 
   </div>
 </div>
     </div>
