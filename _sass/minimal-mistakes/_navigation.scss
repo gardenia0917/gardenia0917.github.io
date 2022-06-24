@@ -142,7 +142,7 @@
 
     .prev_next {
       font-family: $cute;
-      color:#ffd861;
+      color: #ffd861;
     }
 
     &:hover {
@@ -460,8 +460,10 @@
   font-size: 1.25rem;
   font-family: $sans-serif;
 
-  img { // 방문자수 이미지 크기 맞추느라 추가했던 것
-    width: auto; height: auto;
+  img {
+    // 방문자수 이미지 크기 맞추느라 추가했던 것
+    width: auto;
+    height: auto;
     max-width: 140px;
     max-height: 38px;
     margin-bottom: 1em;
@@ -471,7 +473,7 @@
     color: inherit;
     font-size: $type-size-3;
     font-family: $cute;
-    color: mix(#fff,$primary-color,80%);
+    color: mix(#fff, $primary-color, 80%);
 
     &:hover {
       text-decoration: underline;
@@ -527,10 +529,9 @@
   padding: 0.25rem 0;
   font-size: $type-size-3;
   font-family: $serif;
-  color: mix(#fff,$primary-color,35%);
+  color: mix(#fff, $primary-color, 35%);
   border-bottom: 1px solid $border-color;
 }
-
 
 /*
      Table of contents navigation
@@ -548,7 +549,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-5;
-    background: mix(#fff,$primary-color,30%);
+    background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -601,6 +602,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
