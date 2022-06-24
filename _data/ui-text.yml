@@ -605,7 +605,7 @@ ko: &DEFAULT_KO
   breadcrumb_separator: "/"
   menu_label: "Category"
   search_label:
-  toc_label: "On This Page"
+  toc_label: "목차"
   ext_link_label: "직접 링크"
   less_than: "최대"
   minute_read: "분 소요"
@@ -613,7 +613,7 @@ ko: &DEFAULT_KO
   meta_label:
   tags_label: "태그:"
   categories_label: "카테고리:"
-  date_label: "업데이트:"
+  date_label: "Date:"
   comments_label: "댓글남기기"
   comments_title: "댓글"
   more_label: "더 보기"
@@ -623,7 +623,7 @@ ko: &DEFAULT_KO
   powered_by: "Powered by"
   website_label: "웹사이트"
   email_label: "이메일"
-  recent_posts: "최근 포스트"
+  recent_posts: "Recent Posts"
   undefined_wpm: "Undefined parameter words_per_minute at _config.yml"
   comment_form_info: "이메일은 공개되지 않습니다. 작성 필요 필드:"
   comment_form_comment_label: "댓글"
