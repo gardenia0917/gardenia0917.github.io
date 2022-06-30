@@ -12,7 +12,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-sidebar-category:
+category:
   - title: "Coding Test ✏️"
     children:
       - title: "Coplit"

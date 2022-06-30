@@ -272,4 +272,4 @@ defaults:
       related: true
       mathjax: true
       sidebar:
-        nav: "sidebar-category"
+        nav: "category"
