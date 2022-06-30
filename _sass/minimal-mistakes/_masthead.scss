@@ -10,7 +10,6 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  font-size: $type-size-4;
 
   &__inner-wrap {
     @include clearfix;
@@ -24,8 +23,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $serif;
-    font-weight: bold;
+    font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -50,9 +48,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-  font-family: $helvetica;
   align-self: center;
-  font-size: $type-size-1;
   font-weight: bold;
   // z-index: 20;
 }

@@ -1,0 +1,130 @@
+I"�<h1 id="01_declaration">01_declaration</h1>
+
+<ul>
+  <li>let 키워드로 course 변수 선언하기</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let course;
+</code></pre></div></div>
+
+<h1 id="02_assignment">02_assignment</h1>
+
+<ul>
+  <li>변수(course)에 값(code states) 할당하기</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let course = 'code states';
+</code></pre></div></div>
+
+<h1 id="03_expression">03_expression</h1>
+
+<ul>
+  <li>변수 num1에 숫자 5를 할당, 변수 num2에 숫자 7을 할당, 변수 result에 num1과 num2의 곱을 할당하기</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let num1, num2, result;
+
+num1 = 5;
+num2 = 7;
+result = num1*num2;
+</code></pre></div></div>
+
+<h1 id="04_getruncatdistance">04_getRunCatDistance</h1>
+
+<ul>
+  <li>속력(speed), 시간(time)이 숫자로 주어졌을 때, 이동한 거리를 변수 distance에 할당하여 리턴하는 함수 작성하기</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getRunCatDistance(speed, time) {
+  let distance = speed * time;
+
+  return distance;
+}
+</code></pre></div></div>
+
+<h1 id="05_declarefunction">05_declareFunction</h1>
+
+<ul>
+  <li>첫 번째 인자에 2를 곱하는 함수 multiplyBy2와 비슷하게 첫 번째 인자를 2로 나누는 함수 divideBy2 선언하기</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function multiplyBy2(input) {
+  input = input * 2;
+  return input;
+}
+
+function divideBy2(input) {
+  input = input / 2;
+  return input;
+}
+</code></pre></div></div>
+
+<h1 id="06_callfunction">06_callFunction</h1>
+
+<ul>
+  <li>문자열을 인자로 받아서 느낌표를 붙여서 리턴 해주는 함수 returnWordWithJoy가 있을 때,
+함수 returnWordWithJoy의 첫 번째 인자로 문자열 “I love coding”을 넣어서 호출하고, 그 결과값을 변수 word에 할당하라</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let word = returnWordWithJoy('I love coding');
+
+// 아래 코드는 변경 ❌
+function returnWordWithJoy(word) {
+  if (typeof word !== 'string') {
+    return 'wrong type';
+  } else {
+    return word + '!';
+  }
+}
+</code></pre></div></div>
+
+<h1 id="07_type">07_type</h1>
+
+<ul>
+  <li>thing에 문자열(string) ‘두루마리 휴지’를 할당하고, num에 숫자(number) 3을 할당</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let thing = '두루마리 휴지', num = 3;
+
+// 아래 코드는 변경 ❌
+function goGet(thing, num) {
+  return '혜선아, 가서 ' + thing + ' ' + num + '개 가져다 줄래?';
+}
+let result = goGet(thing, num);
+</code></pre></div></div>
+
+<h1 id="08_plusrighttype">08_plusRightType</h1>
+
+<ul>
+  <li>변수 score에 숫자 100이 할당되도록 하기 코드를 수정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//before
+let score = 90 + '10';
+
+// after
+let score = 100;
+</code></pre></div></div>
+
+<h1 id="09_converttonumber">09_convertToNumber</h1>
+
+<ul>
+  <li>Number() 함수를 이용해서 숫자로 변환하라</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertToNumber(anything) {
+  return Number(anything)
+}
+</code></pre></div></div>
+
+<h1 id="10_converttostring">10_convertToString</h1>
+
+<ul>
+  <li>String() 함수를 이용해서 문자로 변환하라</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertToString(anything) {
+  return String(anything)
+}
+</code></pre></div></div>
+:ET

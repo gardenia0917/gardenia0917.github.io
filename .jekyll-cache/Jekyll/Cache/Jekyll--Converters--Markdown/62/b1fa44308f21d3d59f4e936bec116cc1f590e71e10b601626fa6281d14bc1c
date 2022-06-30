@@ -1,0 +1,363 @@
+I"�)<h1 id="01_isoldenoughtodrink">01_isOldEnoughToDrink</h1>
+
+<ul>
+  <li>나이를 입력받아 술을 마실 수 있는지(18세 이상) 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOldEnoughToDrink(age) {
+  if(age&gt;=18){
+    return true;
+  } return false;
+}
+
+</code></pre></div></div>
+
+<h1 id="02_isgreaterthan30">02_isGreaterThan30</h1>
+
+<ul>
+  <li>온도를 입력받아 해당 온도가 30이 넘는지 확인 후 알맞은 값을 리턴
+    <ul>
+      <li>온도가 30 미만일 때 : ‘여름이 매우 덥네요’</li>
+      <li>온도가 30 이상일 때 : ‘에어컨을 켜야겠다!’</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isGreaterThan30(temp) {
+  if(temp &gt;=30){
+    return "에어컨을 켜야겠다!"
+  } return "여름이 매우 덥네요"
+}
+</code></pre></div></div>
+
+<h1 id="03_equalsten">03_equalsTen</h1>
+
+<ul>
+  <li>수를 입력받아 10과 같은지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function equalsTen(num) {
+  if(num===10){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="04_isgreaterthan">04_isGreaterThan</h1>
+
+<ul>
+  <li>두 개의 수를 입력받아 두번째 수가 첫번째 수보다 큰지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isGreaterThan(num1, num2) {
+  if(num1&lt;num2){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="05_iseven">05_isEven</h1>
+
+<ul>
+  <li>수를 입력받아 짝수인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEven(num) {
+  if(num%2===0){
+    return true;
+  } return false;
+}
+
+</code></pre></div></div>
+
+<h1 id="06_isevenandgreaterthanten">06_isEvenAndGreaterThanTen</h1>
+
+<ul>
+  <li>수를 입력받아 입력된 수가 10보다 크고 짝수인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEvenAndGreaterThanTen(num) {
+  if(num &gt; 10 &amp;&amp; num%2===0){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="07_fizzbuzz">07_fizzBuzz</h1>
+
+<ul>
+  <li>수를 입력받아 3 그리고 5로 각각 나눈 뒤 나머지 값에 따라 알맞은 메시지를 리턴
+    <ul>
+      <li>3으로 나누어 떨어지는 경우, ‘Fizz’를 리턴</li>
+      <li>5으로 나누어 떨어지는 경우, ‘Buzz’를 리턴</li>
+      <li>3과 5로 모두 나누어 떨어지는 경우, ‘FizzBuzz’를 리턴</li>
+      <li>3이나 5로 나누어 떨어지지 않는 경우, ‘No FizzBuzz’를 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function fizzBuzz(num) {
+  if(num % 3 === 0 &amp;&amp; num % 5 === 0){
+    return 'FizzBuzz';
+  }else if(num % 3 === 0){
+    return 'Fizz';
+  }else if(num % 5 === 0){
+    return 'Buzz';
+  }else {
+    return 'No FizzBuzz';
+  }
+}
+</code></pre></div></div>
+
+<h1 id="08_minicalculator">08_miniCalculator</h1>
+
+<ul>
+  <li>두 개의 수와 기호를 입력받아 알맞게 계산한 값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function miniCalculator(num1, num2, operator) {
+  if(operator==='+'){
+    return num1 + num2;
+  }else  if(operator==='-'){
+    return num1 - num2;
+  }else if(operator==='*'){
+    return num1 * num2;
+  }else if(operator==='/'){
+    return num1 / num2;
+  }
+}
+</code></pre></div></div>
+
+<h1 id="09_daysinmonth">09_daysInMonth</h1>
+
+<ul>
+  <li>특정 달(month)을 입력받아 각 달에 몇 일이 있는지 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function daysInMonth(month) {
+  if(month===2){
+    return 28;
+  }else if(month===4 ||month===6 ||month===9 ||month===11){
+    return 30;
+  }return 31;
+}
+</code></pre></div></div>
+
+<h1 id="10_followingday">10_followingDay</h1>
+
+<ul>
+  <li>요일을 입력받아 해당 요일의 다음 요일을 리턴
+    <ul>
+      <li>올바른 요일을 입력받은 경우, 다음 요일을 리턴</li>
+      <li>올바른 요일이 아닌 경우에는 <code class="language-plaintext highlighter-rouge">올바른 요일이 아닙니다 </code>라는 문구를 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function followingDay(day) {
+  if(day==='월요일'){
+    return '화요일';
+  }else if(day==='화요일'){
+    return '수요일';
+  }else if(day==='수요일'){
+    return '목요일';
+  }else if(day==='목요일'){
+    return '금요일';
+  }else if(day==='금요일'){
+    return '토요일';
+  }else if(day==='토요일'){
+    return '일요일';
+  }else if(day==='일요일'){
+    return '월요일';
+  }else {
+    return '올바른 요일이 아닙니다'
+  }
+}
+</code></pre></div></div>
+
+<h1 id="11_iseitherevenandlessthan9">11_isEitherEvenAndLessThan9</h1>
+
+<ul>
+  <li>두 개 수를 입력받아 아래의 2가지 조건을 모두 만족하는지 검사
+    <ul>
+      <li>EitherEven: 적어도 하나의 수는 짝수임</li>
+      <li>LessThan9: 두 수 모두 9보다 작음</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEitherEvenAndLessThan9(num1, num2) {
+  if(num1 &lt; 9 &amp;&amp; num2 &lt; 9){
+    if(num1 % 2===0 || num2 % 2 ===0 ){
+     return true;
+   } return false;
+  }
+  return false;
+}
+</code></pre></div></div>
+
+<h1 id="12_convertscoretograde">12_convertScoreToGrade</h1>
+
+<ul>
+  <li>점수를 입력받아 점수에 해당하는 등급을 리턴
+    <ul>
+      <li>주어진 점수가 100을 초과하거나 0 미만이라면 문자열 <code class="language-plaintext highlighter-rouge">INVALID SCORE</code>를 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertScoreToGrade(score) {
+  if(score &lt; 0 || score &gt; 100){
+    return 'INVALID SCORE'
+  }else if(score&gt;=90){
+    return 'A'
+  }else if(score&gt;=80){
+    return 'B'
+  }else if(score&gt;=70){
+    return 'C'
+  }else if(score&gt;=60){
+    return 'D'
+  }else {
+    return 'F'
+  }
+}
+</code></pre></div></div>
+
+<h1 id="13_convertscoretogradewithplusandminus">13_convertScoreToGradeWithPlusAndMinus</h1>
+
+<ul>
+  <li>점수를 입력받아 점수에 해당하는 등급을 리턴
+    <ul>
+      <li>주어진 점수가 100을 초과하거나 0 미만인 경우, 문자열 <code class="language-plaintext highlighter-rouge">INVALID SCORE</code>를 리턴</li>
+      <li>각 등급의 최고 점수보다 7점 이하인 경우, 등급과 함께 ‘-‘를 리턴 (단, 93점의 경우에는 A를 리턴</li>
+      <li>각 등급의 최저 점수보다 8점 이상인 경우, 등급과 함께 ‘+’를 리턴</li>
+      <li>F+ 와 F- 는 존재❌</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertScoreToGradeWithPlusAndMinus(score) {
+  if(score &lt; 0 || score &gt; 100){
+    return 'INVALID SCORE'
+  }else if(score&gt;98){
+    return 'A+'
+  }else if(score&gt;=93){
+    return 'A'
+  }else if(score&gt;=90){
+    return 'A-'
+  }else if(score&gt;=88){
+    return 'B+'
+  }else if(score&gt;=84){
+    return 'B'
+  }else if(score&gt;=80){
+    return 'B-'
+  }else if(score&gt;=78){
+    return 'C+'
+  }else if(score&gt;=74){
+    return 'C'
+  }else if(score&gt;=70){
+    return 'C-'
+  }else if(score&gt;=68){
+    return 'D+'
+  }else if(score&gt;=64){
+    return 'D'
+  }else if(score&gt;=60){
+    return 'D-'
+  }else {
+    return 'F'
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="14_ispythagorean">14_isPythagorean</h1>
+
+<ul>
+  <li>삼각형의 세 변을 입력받아 직각삼각형(pythagorean)인지 여부를 리턴
+    <ul>
+      <li>자바스크립트에서 x의 제곱(x squared)을 구하는 방법 3가지를 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPythagorean(side1, side2, side3) {
+
+let pow1 = Math.pow(side1,2);
+let pow2 = side2 **2;
+let pow3 = side3 * side3
+
+if(pow1 === pow2 + pow3 || pow2 === pow1 + pow3 || pow3 === pow1 + pow2){
+   return true;
+ } return false;
+}
+</code></pre></div></div>
+
+<h1 id="15_or">15_or</h1>
+
+<ul>
+  <li>두 개의 boolean 값을 입력받아 or 연산을 적용한 것과 같은 결과를 리턴
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">||</code> 연산자 사용은 금지</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function or(expression1, expression2) {
+  if(expression1===true &amp;&amp; expression2===true){
+    return true;
+  }else if(expression1===true &amp;&amp; expression2===false){
+    return true;
+  }if(expression1===false &amp;&amp; expression2===true){
+    return true;
+  } return false;
+}
+
+</code></pre></div></div>
+
+<h1 id="16_addonesecond">16_addOneSecond</h1>
+
+<ul>
+  <li>시, 분, 초를 입력받아 1초를 더한 결과값을 특정 형태의 메시지로 리턴
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">1초 뒤에 {hour}시 {minute}분 {second}초 입니다</code> 형식으로 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addOneSecond(hour, minute, second) {
+  if(second === 59){
+    second = 0;
+    minute += 1
+  }else {
+    second +=1;
+  }
+
+  if(minute === 60){
+    minute = 0;
+    hour += 1;
+  }
+
+  if(hour === 24){
+    hour = 0;
+  }
+
+  return `1초 뒤에 ${hour}시 ${minute}분 ${second}초 입니다`
+}
+
+</code></pre></div></div>
+
+<h1 id="17_isfalsy">17_isFalsy</h1>
+
+<ul>
+  <li>임의의 값을 입력받아 falsy 값인지 여부를 리턴
+    <ul>
+      <li>참조 : <code class="language-plaintext highlighter-rouge">js falsy value</code> 또는 <code class="language-plaintext highlighter-rouge">자바스크립트 거짓 값</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isFalsy(anything) {
+  return !Boolean(anything)
+}
+</code></pre></div></div>
+:ET

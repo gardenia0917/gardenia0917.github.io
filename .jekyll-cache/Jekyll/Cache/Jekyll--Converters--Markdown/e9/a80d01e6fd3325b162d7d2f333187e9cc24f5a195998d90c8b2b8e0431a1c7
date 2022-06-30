@@ -1,0 +1,271 @@
+I"�"<h1 id="01_getfullname">01_getFullName</h1>
+
+<ul>
+  <li>이름과 성을 입력받아 띄어쓰기 하나를 사이에 둔 단일 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFullName(firstName, lastName) {
+  return `${firstName} ${lastName}`
+}
+</code></pre></div></div>
+
+<h1 id="02_checkage">02_checkAge</h1>
+
+<ul>
+  <li>이름과 나이를 입력받아 나이별로 다른 메시지를 리턴
+    <ul>
+      <li>이름이 <code class="language-plaintext highlighter-rouge">Adrian</code>이고, 나이가 <code class="language-plaintext highlighter-rouge">21</code>살 이상이면, <code class="language-plaintext highlighter-rouge">Welcome, Adrian!</code> 을 리턴</li>
+      <li>이름이 <code class="language-plaintext highlighter-rouge">John</code>이고, 만일 <code class="language-plaintext highlighter-rouge">21</code>살보다 적으면, <code class="language-plaintext highlighter-rouge">Go home, John!</code>을 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function checkAge(name, age) {
+  if(age &gt;= 21 ){
+    return `Welcome, ${name}!`
+  } return `Go home, ${name}!`
+}
+</code></pre></div></div>
+
+<h1 id="03_getlengthofword">03_getLengthOfWord</h1>
+
+<ul>
+  <li>단어를 입력받아 단어의 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLengthOfWord(word) {
+  if(word.length &gt; 0){
+    return word.length;
+  } return 0;
+}
+</code></pre></div></div>
+
+<h1 id="04_computeaveragelengthofwords">04_computeAverageLengthOfWords</h1>
+
+<ul>
+  <li>두 단어를 입력받아 두 단어의 평균 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords(word1, word2) {
+  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
+    return (word1.length + word2.length) / 2
+  } return 0;
+}
+
+</code></pre></div></div>
+
+<h1 id="05_computeaveragelengthofwords2">05_computeAverageLengthOfWords2</h1>
+
+<ul>
+  <li>두 단어를 입력받아 두 단어의 평균 길이를 내림하여 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords2(word1, word2) {
+  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
+    let floor =  (word1.length + word2.length) / 2
+    return Math.floor(floor);
+  } return 0;
+}
+</code></pre></div></div>
+
+<h1 id="06_findshortestofthreewords">06_findShortestOfThreeWords</h1>
+
+<ul>
+  <li>차례대로 문자열 3개를 입력받아, 가장 짧은 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findShortestOfThreeWords(word1, word2, word3) {
+  let result = word1;
+
+  if(word1.length &gt; word2.length){
+    result = word2;
+    if(word2.length &gt; word3.length){
+      result = word3;
+    }
+  } else if (word1.length &gt; word3.length){
+    result = word3;
+  }
+return result;
+}
+</code></pre></div></div>
+
+<h1 id="07_isoddlength">07_isOddLength</h1>
+
+<ul>
+  <li>문자열을 입력받아 그 길이가 홀수인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOddLength(word) {
+  if(word.length % 2 !== 0){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="08_arevalidcredentials">08_areValidCredentials</h1>
+
+<ul>
+  <li>이름과 비밀번호를 입력받아 이름이 3글자보다 크고 비밀번호가 8글자 이상이면 true를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function areValidCredentials(name, password) {
+  if(name.length &gt; 3 &amp;&amp; password.length &gt;= 8){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="09_findminlengthofthreewords">09_findMinLengthOfThreeWords</h1>
+
+<ul>
+  <li>세 개의 단어를 입력받아 그 중 가장 짧은 단어의 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findMinLengthOfThreeWords(word1, word2, word3) {
+  let short = word1.length;
+  let wordL1 = word1.length;
+  let wordL2 = word2.length;
+  let wordL3 = word3.length;
+
+  if(wordL1 &gt; wordL2){
+    short = wordL2;
+    if(wordL2 &gt; wordL3){
+      short = wordL3;
+    }
+  }else if (wordL1 &gt; wordL3){
+    short = wordL3;
+  }
+  return short;
+}
+
+</code></pre></div></div>
+
+<h1 id="10_takeletters">10_takeLetters</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자로 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function takeLetters(num, str) {
+  if(num &lt;= 0 || str === ''){
+    return '';
+  }
+
+  return str.slice(0,num);
+}
+</code></pre></div></div>
+
+<h1 id="11_dropletters">11_dropLetters</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자가 제거된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function dropLetters(num, str) {
+   if(num &gt;= str.length){
+    return '';
+  }
+
+  return str.slice(num);
+}
+</code></pre></div></div>
+
+<h1 id="12_compareonlyalphabet">12_compareOnlyAlphabet</h1>
+
+<ul>
+  <li>두 개의 문자열을 입력받아 대소문자를 구분하지 않고(case insensitive) 서로 같은지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareOnlyAlphabet(str1, str2) {
+ let upper1 = str1.toUpperCase()
+ let upper2 = str2.toUpperCase()
+
+ if(upper1 === upper2){
+   return true;
+ } return false;
+}
+</code></pre></div></div>
+
+<h1 id="13_comparenumbers">13_compareNumbers</h1>
+
+<ul>
+  <li>두 개의 수를 입력받아 조건별로 다른 메시지를 리</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumbers(num1, num2) {
+  if(num1 &gt; num2){
+    return `${num1}은(는) ${num2}보다 큽니다`
+  }else if(num1 &lt; num2){
+    return `${num1}은(는) ${num2}보다 작습니다`
+  }else {
+    return `두 수는 같습니다`
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="14_comparenumberstrings">14_compareNumberStrings</h1>
+
+<ul>
+  <li>두 개의 숫자 문자열을 입력받아 더 큰 수를 나타내는 문자열을 구하고, 해당 문자열이 나타내는 수에 5를 더한 수를 나타내는 숫자 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumberStrings(numStr1, numStr2) {
+  let num1 = Number(numStr1);
+  let num2 = Number(numStr2);
+
+  if(num1 &gt; num2){
+    return String(num1+5);
+  } return String(num2+5);
+}
+
+</code></pre></div></div>
+
+<h1 id="15_showtime">15_showTime</h1>
+
+<ul>
+  <li>시간, 분, 초를 입력받아 현재 시각을 나타내는 메세지를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showTime(hour, min, sec) {
+  return `현재 시각은 ${hour}시 ${min}분 ${sec}초 입니다.`
+}
+</code></pre></div></div>
+
+<h1 id="16_computedifference">16_computeDifference</h1>
+
+<ul>
+  <li>두 수를 입력받아 두 수의 차이를 나타내는 메세지를 리턴
+    <ul>
+      <li>절대값은 Math.abs(a-b);</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeDifference(num1, num2) {
+  let abs = Math.abs(num1-num2);
+
+  return `${num1}, ${num2}의 차이는 ${abs}입니다.`
+}
+</code></pre></div></div>
+
+<h1 id="17_makelastseenmsg">17_makeLastSeenMsg</h1>
+
+<ul>
+  <li>사용자의 이름과 미접속 시간(분)을 입력받아 조건별로 다른 메세지를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeLastSeenMsg(name, period) {
+  let day = 60 * 24;
+  let hour = 60;
+
+  if(period&gt;=day){
+    return `${name}: ${Math.floor(period / day)}일 전에 접속함`;
+  }else if(period&gt;=hour){
+    return `${name}: ${Math.floor(period/hour)}시간 전에 접속함`;
+  }else {
+    return `${name}: ${period}분 전에 접속함`;
+  }
+}
+</code></pre></div></div>
+:ET

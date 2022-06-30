@@ -1,0 +1,415 @@
+I"z+<h1 id="01_findthebug">01_findTheBug</h1>
+
+<ul>
+  <li>문자열을 입력받아 버그(‘#’)의 인덱스를 리턴
+    <ul>
+      <li>’#’ 기호가 없는 경우 <code class="language-plaintext highlighter-rouge">undefined</code>를 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findTheBug(word) {
+  for(let i =0 ; word.length&gt;i; i++){
+    if(word[i]==='#'){
+      return i;
+    }
+  }
+  return undefined;
+}
+</code></pre></div></div>
+
+<h1 id="02_sumto">02_sumTo</h1>
+
+<ul>
+  <li>수를 입력받아 0부터 해당 수까지의 합을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function sumTo(num) {
+  let result =0;
+  for(let i =0; num&gt;=i; i++){
+    result = result + i;
+  } return result;
+}
+</code></pre></div></div>
+
+<h1 id="03_isodd">03_isOdd</h1>
+
+<ul>
+  <li>수를 입력받아 홀수인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOdd(num) {
+  if(num &lt; 0){
+    num = -num;
+  }
+  while(num &gt;= 0){
+    if(num === 0){
+      return false;
+    } else if(num === 1){
+      return true;
+    }
+     num = num-2;
+  }
+}
+</code></pre></div></div>
+
+<h1 id="04_factorial">04_factorial</h1>
+
+<ul>
+  <li>수를 입력받아 n-factorial(n!) 값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function factorial(num) {
+  let result = 1;
+  if(num === 0){
+    return 1;
+  }
+
+  for (let i =1; num &gt;= i; i++){
+    result = result * i;
+  }
+  return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="05_repeatstring">05_repeatString</h1>
+
+<ul>
+  <li>문자열과 수를 입력받아 반복된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function repeatString(str, num) {
+  let result= '';
+
+  if(num === 0){
+    result = '';
+  }
+
+  for(let i = 0; num &gt; i; i++){
+    result = result + str;
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="06_makedigits">06_makeDigits</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1부터 <code class="language-plaintext highlighter-rouge">num</code>까지의 정수로 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeDigits(num) {
+  let result = '';
+
+  for(let i = 1; num&gt;= i; i++){
+    result = result + String(i);
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="07_makedigits2">07_makeDigits2</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1부터 <code class="language-plaintext highlighter-rouge">num</code>까지의 정수로 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeDigits2(num) {
+  let result = '1';
+  let i =2;
+
+ while(i&lt;=num){
+   result = result+`-${i}`
+   i++
+ }
+ return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="08_makeodddigits">08_makeOddDigits</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1을 포함하여 <code class="language-plaintext highlighter-rouge">num</code>개의 홀수로 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeOddDigits(num) {
+  let result = '';
+
+  let count = 0;
+  let i = 1;
+  while (count &lt; num) {
+    result = result + String(i);
+    i = i + 2;
+    count++;
+  }
+
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="09_makemultiplesofdigit">09_makeMultiplesOfDigit</h1>
+
+<ul>
+  <li>수를 입력받아 1부터 해당 수까지의 수 중에서 3의 배수로만 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMultiplesOfDigit(num) {
+  let result= '';
+
+  for(let i = 3; i &lt;= num; i+=3 ){
+    result = result + i;
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="10_makemultiplesofdigit2">10_makeMultiplesOfDigit2</h1>
+
+<ul>
+  <li>두 개의 수를 입력받아 두 수를 포함해 두 수 사이의 수 중 2의 배수의 개수를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMultiplesOfDigit2(num1, num2) {
+  let small =num1;
+  let big = num2;
+  let count = 0;
+
+  if(num1 &gt; num2){
+    small = num2;
+    big = num1;
+  }
+
+  if(small === 0){
+    small = 1
+  }
+
+  for(let i = small; i &lt;= big; i++ ){
+    if(i % 2 === 0){
+      count += 1
+    }
+  }
+  return count;
+}
+</code></pre></div></div>
+
+<h1 id="11_countcharacter">11_countCharacter</h1>
+
+<ul>
+  <li>문자열과 문자를 입력받아 문자열에서 문자(letter)가 등장하는 횟수를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countCharacter(str, letter) {
+  let count = 0;
+
+  for(let i =0; i &lt;= str.length; i++){
+    if(str[i]===letter){
+      count= count+1;
+    }
+  }
+  return count;
+}
+
+</code></pre></div></div>
+
+<h1 id="12_getmaxnumberfromstring">12_getMaxNumberFromString</h1>
+
+<ul>
+  <li>숫자 문자열을 입력받아 문자열을 구성하는 각 숫자 중 가장 큰 수를 나타내는 숫자를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getMaxNumberFromString(str) {
+  let numMax = 0;
+
+  for(let i=0; i &lt;= str.length; i++){
+    if(parseInt(str[i]) &gt; numMax){
+      numMax = parseInt(str[i])
+    }
+  }
+  return String(numMax);
+}
+
+</code></pre></div></div>
+
+<h1 id="13_replaceall">13_replaceAll</h1>
+
+<ul>
+  <li>문자열과 두 개의 문자(<code class="language-plaintext highlighter-rouge">from</code>, <code class="language-plaintext highlighter-rouge">to</code>)를 입력받아, 문자열에 등장하는 특정 문자(<code class="language-plaintext highlighter-rouge">from</code>)가 다른 문자(<code class="language-plaintext highlighter-rouge">to</code>)로 바뀐 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function replaceAll(str, from, to) {
+  let result = '';
+
+  for(let i =0; str.length &gt; i;i++){
+    if(str[i]===from){
+      result = result+to;
+    } else {
+      result = result+ str[i];
+    }
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="14_characterandnumber">14_characterAndNumber</h1>
+
+<ul>
+  <li>문자열을 입력받아 각 문자(letter) 뒤에 해당 문자의 인덱스가 추가된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function characterAndNumber(word) {
+  let result = '';
+  if(word.length===0){
+    return '';
+  }
+
+  for(let i =0; word.length &gt; i; i++){
+    result = result+word[i]+i;
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="15_computepower">15_computePower</h1>
+
+<ul>
+  <li>밑(base)과 지수(exponent)를 입력받아 밑의 거듭제곱을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computePower(base, exponent) {
+  let result = 1;
+  for(let i =0; i &lt; exponent; i++ ){
+    result= result*base;
+  }
+  return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="16_getsumoffactors">16_getSumOfFactors</h1>
+
+<ul>
+  <li>수를 입력받아 약수(factor)의 합을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getSumOfFactors(num) {
+  let result =0;
+
+  for(let i =0; i &lt;= num; i++){
+    if(num%i===0){
+      result = result + i
+    }
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="17_isprime">17_isPrime</h1>
+
+<ul>
+  <li>1 이상의 자연수를 입력받아 소수(prime number)인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPrime(num) {
+  let sqrt = Math.sqrt(num)
+
+  if(num===1){
+    return false;
+  }
+  if(num===2){
+    return true;
+  }
+  if(num%2===0){
+    return false;
+  }
+
+  for(let i =3; i &lt; sqrt; i++){
+    if(num % i === 0){
+      return false;
+    }
+  }
+  return true;
+}
+</code></pre></div></div>
+
+<h1 id="18_listprimes">18_listPrimes</h1>
+
+<ul>
+  <li>2 이상의 자연수를 입력받아 2부터 해당 수까지의 소수(prime number)들을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function listPrimes(num) {
+  let result = '2';
+  for(let i =3; i &lt;= num;i+=2){
+    let isPrime = true; // 소수 인 경우
+    let sqrt = Math.sqrt(i);
+    for(let j = 3; j &lt;= sqrt; j+=2 ){
+      if(i%j===0){
+        isPrime = false;
+        break;
+      }
+    }
+    if(isPrime){
+      result= `${result}-${i}`
+    }
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="19_makepermutations">19_makePermutations</h1>
+
+<ul>
+  <li>문자열을 입력받아 해당 문자열에 등장하는 각 문자(letter)를 가지고 만들 수 있는 길이 2의 문자열들을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makePermutations(str) {
+  let result ='';
+  for(let i = 0; i &lt; str.length; i++){
+    for(let j = 0; j&lt; str.length; j++){
+      result = result+`${str[i]}${str[j]},`
+    }
+  }
+  return result.slice(0,result.length-1);
+}
+</code></pre></div></div>
+
+<h1 id="20_hasrepeatedcharacter">20_hasRepeatedCharacter</h1>
+
+<ul>
+  <li>문자열을 입력받아 해당 문자열에 중복된 문자(letter)가 존재하는지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function hasRepeatedCharacter(str) {
+  if(str.length === 0 ){
+    return false;
+  }
+  for(let i = 0; i &lt; str.length-1; i++){
+    for(let j = i+1; j &lt; str.length; j++){
+      if(str[i]===str[j]){
+        return true;
+      }
+    }
+  }
+  return false;
+}
+</code></pre></div></div>
+
+<h1 id="21_makemarginalstring">21_makeMarginalString</h1>
+
+<ul>
+  <li>문자열을 입력받아 해당 문자열을 처음부터 한 글자(letter)씩 다시 작성하려고 합니다. 이 때, 한 글자를 추가할 때마다 부분적으로 완성된 문자열을 전부 이어붙인 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMarginalString(str) {
+   let result ='';
+  for(let i = 0; i &lt; str.length; i++){
+    for(let j = 0; j&lt;= i; j++){
+      result = result+str[j];
+    }
+  }
+  return result;
+}
+</code></pre></div></div>
+:ET

@@ -1,0 +1,337 @@
+I"�'<h1 id="01_getproperty">01_getProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getProperty(obj, property) {
+  return obj[property]
+}
+
+</code></pre></div></div>
+
+<h1 id="02_addproperty">02_addProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값을 true로 설정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addProperty(obj, property) {
+  obj[property] = true;
+}
+</code></pre></div></div>
+
+<h1 id="03_addpropertyandvalue">03_addPropertyAndValue</h1>
+
+<ul>
+  <li>객체와 키, 값을 입력받아 키에 값을 할당</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addPropertyAndValue(obj, property, value) {
+  obj[property] = value;
+}
+</code></pre></div></div>
+
+<h1 id="04_addobjectproperty">04_addObjectProperty</h1>
+
+<ul>
+  <li>두 개의 객체와 키를 입력받아 첫번째 객체의 키에 두번째 객체를 할당</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addObjectProperty(obj1, property, obj2) {
+  obj1[property] = obj2;
+}
+
+</code></pre></div></div>
+
+<h1 id="05_removeproperty">05_removeProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키가 가리키는 속성(property)을 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeProperty(obj, property) {
+  delete obj[property];
+}
+</code></pre></div></div>
+
+<h1 id="06_removenumbervalues">06_removeNumberValues</h1>
+
+<ul>
+  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값을 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumberValues(obj) {
+  for(let i in obj){
+    if(typeof obj[i] === 'number' ){
+      delete obj[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="07_removearrayvalues">07_removeArrayValues</h1>
+
+<ul>
+  <li>객체를 입력받아 배열을 값으로 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeArrayValues(obj) {
+  for(let i in obj){
+    if(Array.isArray(obj[i])){
+      delete obj[i];
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="08_removeoddvalues">08_removeOddValues</h1>
+
+<ul>
+  <li>객체를 입력받아 홀수를 값으로 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeOddValues(obj) {
+  for(let i in obj){
+    if(obj[i]%2===1 &amp;&amp; typeof obj[i] === 'number'){
+      delete obj[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="09_ispersonoldenoughtovote">09_isPersonOldEnoughToVote</h1>
+
+<ul>
+  <li>객체를 입력받아 객체가 가진 <code class="language-plaintext highlighter-rouge">age</code> 속성값이 합법적으로 투표할 수 있는 나이(18세 이상)인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPersonOldEnoughToVote(person) {
+  if(person.age &gt;= 18){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="10_addfullnameproperty">10_addFullNameProperty</h1>
+
+<ul>
+  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">'firstName'</code>, <code class="language-plaintext highlighter-rouge">'lastName'</code> 속성값 사이에 띄어쓰기 하나를 둔 단일 문자열을 <code class="language-plaintext highlighter-rouge">fullName</code> 속성값으로 할</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addFullNameProperty(obj) {
+  obj.fullName = `${obj.firstName} ${obj.lastName}`
+}
+
+</code></pre></div></div>
+
+<h1 id="11_removenumberslargerthan">11_removeNumbersLargerThan</h1>
+
+<ul>
+  <li>수와 객체를 입력받아 입력받은 수보다 큰 수를 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumbersLargerThan(num, obj) {
+  for(let i in obj){
+    if(obj[i] &gt; num &amp;&amp; typeof obj[i] === 'number'){
+      delete obj[i];
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="12_countnumberofkeys">12_countNumberOfKeys</h1>
+
+<ul>
+  <li>객체를 입력받아 속성의 개수를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countNumberOfKeys(obj) {
+  return Object.keys(obj).length;
+}
+
+</code></pre></div></div>
+
+<h1 id="13_printobject">13_printObject</h1>
+
+<ul>
+  <li>객체를 입력받아 키, 값 쌍을 표현하는 문자열을 리턴
+    <ul>
+      <li>각 문자열은 한 줄에 <code class="language-plaintext highlighter-rouge">키: 값</code> 형태로 구성되며, 각 문자열 끝에는 줄바꿈 문자가 포함되야 함</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function printObject(obj) {
+  let result ='';
+
+  for(let i in obj){
+    result = result +i +': '+obj[i] + '\n'
+  }
+  return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="14_getelementofarrayproperty">14_getElementOfArrayProperty</h1>
+
+<ul>
+  <li>객체, 키, 수를 입력받아 주어진 키에 해당하는 값이 배열인 경우, 수가 가리키는 인덱스에 해당하는 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementOfArrayProperty(obj, key, index) {
+  let arrProperty = obj[key];
+  if(Array.isArray(arrProperty) === false){
+    return undefined
+  }
+
+  return arrProperty[index]
+}
+
+</code></pre></div></div>
+
+<h1 id="15_select">15_select</h1>
+
+<ul>
+  <li>배열과 객체를 입력받아 배열의 각 요소들을 객체의 키로 했을 때 그 값을 추출하여 만든 새로운 객체를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function select(arr, obj) {
+  let newObj = {};
+
+  for(let i in obj){
+    for(let j = 0; j &lt; arr.length; j++){
+      if(i === arr[j]){
+        newObj[i] = obj[i];
+      }
+    }
+  }
+return newObj;
+}
+</code></pre></div></div>
+
+<h1 id="16_getlastelementofproperty">16_getLastElementOfProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLastElementOfProperty(obj, property) {
+  let result = obj[property];
+  if(!Array.isArray(result) || result.length === 0 ){
+    return undefined;
+  }
+
+  return result[result.length-1]
+}
+
+</code></pre></div></div>
+
+<h1 id="17_getvalueofnthelement">17_getValueOfNthElement</h1>
+
+<ul>
+  <li>배열과 수를 입력받아 수가 가리키는 인덱스에 해당하는 객체의 <code class="language-plaintext highlighter-rouge">'name'</code> 속성값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getValueOfNthElement(arr, num) {
+  if(arr.length === 0){
+    return 'no name';
+  } else if(arr.length-1 &lt; num){
+    return arr[arr.length-1]['name'];
+  } else {
+    return arr[num]['name']
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="18_getallbutlastelementofproperty">18_getAllButLastElementOfProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소가 제거된 새로운 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllButLastElementOfProperty(obj, key) {
+  let newObj = obj[key];
+  if(!Array.isArray(newObj) || newObj.length === 0 ){
+    return [];
+  }
+
+  return newObj.slice(0,-1);
+}
+
+</code></pre></div></div>
+
+<h1 id="19_extend">19_extend</h1>
+
+<ul>
+  <li>두 개의 객체를 입력받아 두번째 객체의 속성들을 첫번째 객체에 추가</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function extend(obj1, obj2) {
+  for(let i in obj2){
+    if(!(i in obj1)){
+      obj1[i] = obj2[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="20_countallcharacters">20_countAllCharacters</h1>
+
+<ul>
+  <li>문자열을 입력받아 문자열을 구성하는 각 문자(letter)를 키로 갖는 객체를 리턴
+    <ul>
+      <li>각 키의 값은 해당 문자가 문자열에서 등장하는 횟수를 의미하는 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countAllCharacters(str) {
+  let obj = {};
+  for (let i = 0; i &lt; str.length; i++) {
+    if (obj[str[i]] === undefined) {
+      obj[str[i]] = 0;
+    }
+    obj[str[i]]++;
+  }
+  return obj;
+}
+
+</code></pre></div></div>
+
+<h1 id="21_mostfrequentcharacter">21_mostFrequentCharacter</h1>
+
+<ul>
+  <li>문자열을 입력받아 가장 많이 반복되는 문자(letter)를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function mostFrequentCharacter(str) {
+  let obj = { mostCount: 0, mostFrequent: '' };
+  for (let i = 0; i &lt; str.length; i++) {
+    if (str[i] === ' ') {
+      continue;
+    }
+
+    if (obj[str[i]] === undefined) {
+      obj[str[i]] = 0;
+    }
+    obj[str[i]] += 1;
+
+    if (obj[str[i]] &gt; obj['mostCount']) {
+      obj['mostCount'] = obj[str[i]];
+      obj['mostFrequent'] = str[i];
+    }
+  }
+  return obj['mostFrequent'];
+}
+</code></pre></div></div>
+:ET

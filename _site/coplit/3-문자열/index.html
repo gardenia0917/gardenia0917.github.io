@@ -1,0 +1,839 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[CodeStates]Coplit-3-문자열 - Grow Gardenia</title>
+<meta name="description" content="코플릿 복습하기 - 문자열 17문제">
+
+
+  <meta name="author" content="Gardenia">
+  
+  <meta property="article:author" content="Gardenia">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Grow Gardenia">
+<meta property="og:title" content="[CodeStates]Coplit-3-문자열">
+<meta property="og:url" content="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/">
+
+
+  <meta property="og:description" content="코플릿 복습하기 - 문자열 17문제">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-06-24T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-06-24T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gardenia",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grow Gardenia
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#coplit" itemprop="item"><span itemprop="name">Coplit</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[CodeStates]Coplit-3-문자열</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Gardenia</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>천천히 성장하는 중 🌱</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[CodeStates]Coplit-3-문자열">
+    <meta itemprop="description" content="코플릿 복습하기 - 문자열 17문제">
+    <meta itemprop="datePublished" content="2022-06-24T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-24T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/" class="u-url" itemprop="url">[CodeStates]Coplit-3-문자열
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#01_getfullname">01_getFullName</a></li><li><a href="#02_checkage">02_checkAge</a></li><li><a href="#03_getlengthofword">03_getLengthOfWord</a></li><li><a href="#04_computeaveragelengthofwords">04_computeAverageLengthOfWords</a></li><li><a href="#05_computeaveragelengthofwords2">05_computeAverageLengthOfWords2</a></li><li><a href="#06_findshortestofthreewords">06_findShortestOfThreeWords</a></li><li><a href="#07_isoddlength">07_isOddLength</a></li><li><a href="#08_arevalidcredentials">08_areValidCredentials</a></li><li><a href="#09_findminlengthofthreewords">09_findMinLengthOfThreeWords</a></li><li><a href="#10_takeletters">10_takeLetters</a></li><li><a href="#11_dropletters">11_dropLetters</a></li><li><a href="#12_compareonlyalphabet">12_compareOnlyAlphabet</a></li><li><a href="#13_comparenumbers">13_compareNumbers</a></li><li><a href="#14_comparenumberstrings">14_compareNumberStrings</a></li><li><a href="#15_showtime">15_showTime</a></li><li><a href="#16_computedifference">16_computeDifference</a></li><li><a href="#17_makelastseenmsg">17_makeLastSeenMsg</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="01_getfullname">01_getFullName</h1>
+
+<ul>
+  <li>이름과 성을 입력받아 띄어쓰기 하나를 사이에 둔 단일 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFullName(firstName, lastName) {
+  return `${firstName} ${lastName}`
+}
+</code></pre></div></div>
+
+<h1 id="02_checkage">02_checkAge</h1>
+
+<ul>
+  <li>이름과 나이를 입력받아 나이별로 다른 메시지를 리턴
+    <ul>
+      <li>이름이 <code class="language-plaintext highlighter-rouge">Adrian</code>이고, 나이가 <code class="language-plaintext highlighter-rouge">21</code>살 이상이면, <code class="language-plaintext highlighter-rouge">Welcome, Adrian!</code> 을 리턴</li>
+      <li>이름이 <code class="language-plaintext highlighter-rouge">John</code>이고, 만일 <code class="language-plaintext highlighter-rouge">21</code>살보다 적으면, <code class="language-plaintext highlighter-rouge">Go home, John!</code>을 리턴</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function checkAge(name, age) {
+  if(age &gt;= 21 ){
+    return `Welcome, ${name}!`
+  } return `Go home, ${name}!`
+}
+</code></pre></div></div>
+
+<h1 id="03_getlengthofword">03_getLengthOfWord</h1>
+
+<ul>
+  <li>단어를 입력받아 단어의 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLengthOfWord(word) {
+  if(word.length &gt; 0){
+    return word.length;
+  } return 0;
+}
+</code></pre></div></div>
+
+<h1 id="04_computeaveragelengthofwords">04_computeAverageLengthOfWords</h1>
+
+<ul>
+  <li>두 단어를 입력받아 두 단어의 평균 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords(word1, word2) {
+  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
+    return (word1.length + word2.length) / 2
+  } return 0;
+}
+
+</code></pre></div></div>
+
+<h1 id="05_computeaveragelengthofwords2">05_computeAverageLengthOfWords2</h1>
+
+<ul>
+  <li>두 단어를 입력받아 두 단어의 평균 길이를 내림하여 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords2(word1, word2) {
+  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
+    let floor =  (word1.length + word2.length) / 2
+    return Math.floor(floor);
+  } return 0;
+}
+</code></pre></div></div>
+
+<h1 id="06_findshortestofthreewords">06_findShortestOfThreeWords</h1>
+
+<ul>
+  <li>차례대로 문자열 3개를 입력받아, 가장 짧은 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findShortestOfThreeWords(word1, word2, word3) {
+  let result = word1;
+
+  if(word1.length &gt; word2.length){
+    result = word2;
+    if(word2.length &gt; word3.length){
+      result = word3;
+    }
+  } else if (word1.length &gt; word3.length){
+    result = word3;
+  }
+return result;
+}
+</code></pre></div></div>
+
+<h1 id="07_isoddlength">07_isOddLength</h1>
+
+<ul>
+  <li>문자열을 입력받아 그 길이가 홀수인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOddLength(word) {
+  if(word.length % 2 !== 0){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="08_arevalidcredentials">08_areValidCredentials</h1>
+
+<ul>
+  <li>이름과 비밀번호를 입력받아 이름이 3글자보다 크고 비밀번호가 8글자 이상이면 true를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function areValidCredentials(name, password) {
+  if(name.length &gt; 3 &amp;&amp; password.length &gt;= 8){
+    return true;
+  } return false;
+}
+</code></pre></div></div>
+
+<h1 id="09_findminlengthofthreewords">09_findMinLengthOfThreeWords</h1>
+
+<ul>
+  <li>세 개의 단어를 입력받아 그 중 가장 짧은 단어의 길이를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findMinLengthOfThreeWords(word1, word2, word3) {
+  let short = word1.length;
+  let wordL1 = word1.length;
+  let wordL2 = word2.length;
+  let wordL3 = word3.length;
+
+  if(wordL1 &gt; wordL2){
+    short = wordL2;
+    if(wordL2 &gt; wordL3){
+      short = wordL3;
+    }
+  }else if (wordL1 &gt; wordL3){
+    short = wordL3;
+  }
+  return short;
+}
+
+</code></pre></div></div>
+
+<h1 id="10_takeletters">10_takeLetters</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자로 구성된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function takeLetters(num, str) {
+  if(num &lt;= 0 || str === ''){
+    return '';
+  }
+
+  return str.slice(0,num);
+}
+</code></pre></div></div>
+
+<h1 id="11_dropletters">11_dropLetters</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자가 제거된 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function dropLetters(num, str) {
+   if(num &gt;= str.length){
+    return '';
+  }
+
+  return str.slice(num);
+}
+</code></pre></div></div>
+
+<h1 id="12_compareonlyalphabet">12_compareOnlyAlphabet</h1>
+
+<ul>
+  <li>두 개의 문자열을 입력받아 대소문자를 구분하지 않고(case insensitive) 서로 같은지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareOnlyAlphabet(str1, str2) {
+ let upper1 = str1.toUpperCase()
+ let upper2 = str2.toUpperCase()
+
+ if(upper1 === upper2){
+   return true;
+ } return false;
+}
+</code></pre></div></div>
+
+<h1 id="13_comparenumbers">13_compareNumbers</h1>
+
+<ul>
+  <li>두 개의 수를 입력받아 조건별로 다른 메시지를 리</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumbers(num1, num2) {
+  if(num1 &gt; num2){
+    return `${num1}은(는) ${num2}보다 큽니다`
+  }else if(num1 &lt; num2){
+    return `${num1}은(는) ${num2}보다 작습니다`
+  }else {
+    return `두 수는 같습니다`
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="14_comparenumberstrings">14_compareNumberStrings</h1>
+
+<ul>
+  <li>두 개의 숫자 문자열을 입력받아 더 큰 수를 나타내는 문자열을 구하고, 해당 문자열이 나타내는 수에 5를 더한 수를 나타내는 숫자 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumberStrings(numStr1, numStr2) {
+  let num1 = Number(numStr1);
+  let num2 = Number(numStr2);
+
+  if(num1 &gt; num2){
+    return String(num1+5);
+  } return String(num2+5);
+}
+
+</code></pre></div></div>
+
+<h1 id="15_showtime">15_showTime</h1>
+
+<ul>
+  <li>시간, 분, 초를 입력받아 현재 시각을 나타내는 메세지를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showTime(hour, min, sec) {
+  return `현재 시각은 ${hour}시 ${min}분 ${sec}초 입니다.`
+}
+</code></pre></div></div>
+
+<h1 id="16_computedifference">16_computeDifference</h1>
+
+<ul>
+  <li>두 수를 입력받아 두 수의 차이를 나타내는 메세지를 리턴
+    <ul>
+      <li>절대값은 Math.abs(a-b);</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeDifference(num1, num2) {
+  let abs = Math.abs(num1-num2);
+
+  return `${num1}, ${num2}의 차이는 ${abs}입니다.`
+}
+</code></pre></div></div>
+
+<h1 id="17_makelastseenmsg">17_makeLastSeenMsg</h1>
+
+<ul>
+  <li>사용자의 이름과 미접속 시간(분)을 입력받아 조건별로 다른 메세지를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeLastSeenMsg(name, period) {
+  let day = 60 * 24;
+  let hour = 60;
+
+  if(period&gt;=day){
+    return `${name}: ${Math.floor(period / day)}일 전에 접속함`;
+  }else if(period&gt;=hour){
+    return `${name}: ${Math.floor(period/hour)}시간 전에 접속함`;
+  }else {
+    return `${name}: ${period}분 전에 접속함`;
+  }
+}
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">CodeStates</a><span class="sep">, </span>
+    
+      <a href="/tags/#coplit" class="page__taxonomy-item p-category" rel="tag">Coplit</a><span class="sep">, </span>
+    
+      <a href="/tags/#js" class="page__taxonomy-item p-category" rel="tag">JS</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#coplit" class="page__taxonomy-item p-category" rel="tag">Coplit</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-24">June 24, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BCodeStates%5DCoplit-3-%EB%AC%B8%EC%9E%90%EC%97%B4%20http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F3-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F3-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F3-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/coplit/2-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" class="pagination--pager" title="[CodeStates]Coplit-2-조건문
+">이전</a>
+    
+    
+      <a href="/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8/" class="pagination--pager" title="[CodeStates]Coplit-4-반복문
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="permalink">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/6-%EA%B0%9D%EC%B2%B4/" rel="permalink">[CodeStates]Coplit-6-객체
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 객체 21문제
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/5-%EB%B0%B0%EC%97%B4/" rel="permalink">[CodeStates]Coplit-5-배열
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 배열 25문제
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="permalink">[CodeStates]Coplit-4-반복문
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 반복문 21문제
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'gardenia0917/gardenia0917.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    
+    script.setAttribute('theme', 'photon-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>

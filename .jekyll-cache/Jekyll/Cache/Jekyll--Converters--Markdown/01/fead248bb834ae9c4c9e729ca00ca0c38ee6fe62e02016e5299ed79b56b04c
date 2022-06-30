@@ -1,0 +1,377 @@
+I"�(<h1 id="01_gettype">01_getType</h1>
+
+<ul>
+  <li>임의의 값을 입력받아 타입을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getType(anything) {
+  if(Array.isArray(anything)){
+    return 'array';
+  }else if(anything === null){
+    return 'null';
+  }else {
+    return typeof anything;
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="02_getfirstelement">02_getFirstElement</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 첫번째 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFirstElement(arr) {
+  if(arr.length ===0){
+    return undefined;
+  }
+
+  return arr[0];
+}
+
+</code></pre></div></div>
+
+<h1 id="03_getlastelement">03_getLastElement</h1>
+
+<ul>
+  <li>배열를 입력받아 배열의 마지막 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLastElement(arr) {
+  if(arr.length === 0){
+    return undefined;
+  }
+
+  return arr[arr.length-1]
+}
+</code></pre></div></div>
+
+<h1 id="04_getnthelement">04_getNthElement</h1>
+
+<ul>
+  <li>배열과 수를 입력받아 수가 인덱스로 가리키는 배열의 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getNthElement(arr, index) {
+  if(arr.length === 0){
+    return undefined;
+  }
+  if(arr.length &lt;= index){
+    return 'out of index range'
+  }
+
+  return arr[index]
+}
+</code></pre></div></div>
+
+<h1 id="05_computesumofallelements">05_computeSumOfAllElements</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 모든 요소의 합을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeSumOfAllElements(arr) {
+  let result =0;
+  for(let i = 0; i &lt; arr.length; i++){
+    result = result + arr[i];
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="06_getallwords">06_getAllWords</h1>
+
+<ul>
+  <li>문자열을 입력받아 문자열을 구성하는 각 단어를 요소로 갖는 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllWords(str) {
+  if(str.length === 0){
+    return [];
+  }
+  return str.split(' ');
+}
+</code></pre></div></div>
+
+<h1 id="07_getallletters">07_getAllLetters</h1>
+
+<ul>
+  <li>문자열을 입력받아 문자열을 구성하는 각 문자를 요소로 갖는 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllLetters(str) {
+  let result =[];
+  if(str.length === 0){
+    return [];
+  }
+  for(let i =0; i &lt; str.length; i++){
+    result.push(str[i])
+  }
+  return result;
+}
+</code></pre></div></div>
+
+<h1 id="08_getlargestelement">08_getLargestElement</h1>
+
+<ul>
+  <li>배열을 입력받아 가장 큰 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLargestElement(arr) {
+  let max = arr[0];
+  for(let i of arr){
+    if(max &lt; i){
+      max = i;
+    }
+  }
+  return max;
+}
+</code></pre></div></div>
+
+<h1 id="09_getlongestword">09_getLongestWord</h1>
+
+<ul>
+  <li>문자열을 입력받아 문자열에서 가장 긴 단어를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLongestWord(str) {
+  let words = str.split(' ');
+
+  let long = words[0];
+
+  for(let i of words){
+    if(i.length &gt; long.length){
+      long = i;
+    }
+  }
+  return long;
+}
+</code></pre></div></div>
+
+<h1 id="10_getevennumbers">10_getEvenNumbers</h1>
+
+<ul>
+  <li>수를 요소로 갖는 배열을 입력받아 짝수만을 요소로 갖는 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getEvenNumbers(arr) {
+  let result =[];
+
+  for(let i of arr){
+    if(i % 2===0){
+      result.push(i)
+    }
+  }
+  return result
+}
+</code></pre></div></div>
+
+<h1 id="11_addtofront">11_addToFront</h1>
+
+<ul>
+  <li>배열과 요소를 입력받아 주어진 요소를 배열의 맨 앞에 추가하고 해당 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToFront(arr, el) {
+ arr.unshift(el);
+
+ return arr;
+}
+</code></pre></div></div>
+
+<h1 id="12_addtoback">12_addToBack</h1>
+
+<ul>
+  <li>배열과 요소를 입력받아 주어진 요소를 배열의 맨 뒤에 추가하고 해당 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToBack(arr, el) {
+  arr.push(el);
+  return arr;
+}
+</code></pre></div></div>
+
+<h1 id="13_mergearrays">13_mergeArrays</h1>
+
+<ul>
+  <li>두 개의 배열을 입력받아 순서대로 합쳐진 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function mergeArrays(arr1, arr2) {
+  return arr1.concat(arr2)
+}
+</code></pre></div></div>
+
+<h1 id="14_getelementsafter">14_getElementsAfter</h1>
+
+<ul>
+  <li>배열과 인덱스를 입력받아 주어진 인덱스 이후의 요소들을 갖는 새로운 배열을 리</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementsAfter(arr, n) {
+  return arr.slice(n+1)
+}
+
+</code></pre></div></div>
+
+<h1 id="15_getelementsupto">15_getElementsUpTo</h1>
+
+<ul>
+  <li>배열과 인덱스를 입력받아 주어진 인덱스 이전의 요소들을 갖는 새로운 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementsUpTo(arr, n) {
+  if(arr.length &lt; n){
+    return [];
+  }
+  return arr.slice(0,n);
+}
+</code></pre></div></div>
+
+<h1 id="16_getallelementsbutfirst">16_getAllElementsButFirst</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 첫번째 요소를 제외한 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButFirst(arr) {
+  return arr.slice(1)
+}
+</code></pre></div></div>
+
+<h1 id="17_getallelementsbutlast">17_getAllElementsButLast</h1>
+
+<ul>
+  <li>배열을 입력받아 마지막 요소를 제외한 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButLast(arr) {
+  return arr.slice(0,arr.length-1)
+}
+
+</code></pre></div></div>
+
+<h1 id="18_removefromfront">18_removeFromFront</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 첫번째 요소가 삭제된 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromFront(arr) {
+  arr.shift();
+  return arr;
+}
+</code></pre></div></div>
+
+<h1 id="19_removefromback">19_removeFromBack</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 마지막 요소를 삭제한 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromBack(arr) {
+  arr.pop();
+  return arr;
+}
+</code></pre></div></div>
+
+<h1 id="20_removefrombackofnew">20_removeFromBackOfNew</h1>
+
+<ul>
+  <li>배열을 입력받아 배열의 마지막 요소가 제외된 새로운 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromBackOfNew(arr) {
+  return arr.slice(0,arr.length-1)
+}
+</code></pre></div></div>
+
+<h1 id="21_addtobackofnew">21_addToBackOfNew</h1>
+
+<ul>
+  <li>배열과 요소를 입력받아 새로운 요소가 추가된 새로운 배열을 리</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToBackOfNew(arr, el) {
+  let newArr = arr.slice();
+  newArr.push(el);
+  return newArr;
+}
+
+</code></pre></div></div>
+
+<h1 id="22_addtofrontofnew">22_addToFrontOfNew</h1>
+
+<ul>
+  <li>배열과 요소를 입력받아 맨앞에 새로운 요소가 추가된 새로운 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToFrontOfNew(arr, el) {
+  let newArr = arr.slice();
+  newArr.unshift(el);
+  return newArr;
+}
+
+</code></pre></div></div>
+
+<h1 id="23_getallelementsbutnth">23_getAllElementsButNth</h1>
+
+<ul>
+  <li>배열과 인덱스를 입력받아 해당 인덱스의 요소를 제외한 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButNth(arr, n) {
+  let result = [];
+
+  for(let i =0 ; i &lt; arr.length; i++){
+    if(i !== n){
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="24_createphonenumber">24_createPhoneNumber</h1>
+
+<ul>
+  <li>0-9 사이의 정수를 요소로 갖는 배열을 입력받아 전화번호 형식의 문자열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function createPhoneNumber(arr) {
+  let start = '(010)';
+  let len = arr.length;
+  let body = arr.slice(len - 8, len - 4).join('');
+  let end = arr.slice(len - 4, len).join('');
+
+  if (len === 11) {
+    start = `(${arr.slice(0, 3).join('')})`;
+  }
+    return `${start}${body}-${end}`
+}
+</code></pre></div></div>
+
+<h1 id="25_fibonacci">25_fibonacci</h1>
+
+<ul>
+  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 <code class="language-plaintext highlighter-rouge">num</code>번째까지 총 <code class="language-plaintext highlighter-rouge">num + 1</code>개의 피보나치 수열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function fibonacci(num) {
+  let arr =[];
+
+  for(let i =0; i &lt;= num; i++){
+    if(i === 0){
+      arr.push(i)
+    }else if(i === 1){
+      arr.push(i)
+    }else {
+      arr.push(arr[i-2]+arr[i-1]);
+    }
+  }
+  return arr;
+}
+</code></pre></div></div>
+:ET

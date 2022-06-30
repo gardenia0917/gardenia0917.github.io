@@ -1,0 +1,905 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[CodeStates]Coplit-6-객체 - Grow Gardenia</title>
+<meta name="description" content="코플릿 복습하기 - 객체 21문제">
+
+
+  <meta name="author" content="Gardenia">
+  
+  <meta property="article:author" content="Gardenia">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Grow Gardenia">
+<meta property="og:title" content="[CodeStates]Coplit-6-객체">
+<meta property="og:url" content="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/">
+
+
+  <meta property="og:description" content="코플릿 복습하기 - 객체 21문제">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-06-29T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-06-29T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gardenia",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grow Gardenia
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#coplit" itemprop="item"><span itemprop="name">Coplit</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[CodeStates]Coplit-6-객체</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Gardenia</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>천천히 성장하는 중 🌱</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[CodeStates]Coplit-6-객체">
+    <meta itemprop="description" content="코플릿 복습하기 - 객체 21문제">
+    <meta itemprop="datePublished" content="2022-06-29T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-29T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/" class="u-url" itemprop="url">[CodeStates]Coplit-6-객체
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#01_getproperty">01_getProperty</a></li><li><a href="#02_addproperty">02_addProperty</a></li><li><a href="#03_addpropertyandvalue">03_addPropertyAndValue</a></li><li><a href="#04_addobjectproperty">04_addObjectProperty</a></li><li><a href="#05_removeproperty">05_removeProperty</a></li><li><a href="#06_removenumbervalues">06_removeNumberValues</a></li><li><a href="#07_removearrayvalues">07_removeArrayValues</a></li><li><a href="#08_removeoddvalues">08_removeOddValues</a></li><li><a href="#09_ispersonoldenoughtovote">09_isPersonOldEnoughToVote</a></li><li><a href="#10_addfullnameproperty">10_addFullNameProperty</a></li><li><a href="#11_removenumberslargerthan">11_removeNumbersLargerThan</a></li><li><a href="#12_countnumberofkeys">12_countNumberOfKeys</a></li><li><a href="#13_printobject">13_printObject</a></li><li><a href="#14_getelementofarrayproperty">14_getElementOfArrayProperty</a></li><li><a href="#15_select">15_select</a></li><li><a href="#16_getlastelementofproperty">16_getLastElementOfProperty</a></li><li><a href="#17_getvalueofnthelement">17_getValueOfNthElement</a></li><li><a href="#18_getallbutlastelementofproperty">18_getAllButLastElementOfProperty</a></li><li><a href="#19_extend">19_extend</a></li><li><a href="#20_countallcharacters">20_countAllCharacters</a></li><li><a href="#21_mostfrequentcharacter">21_mostFrequentCharacter</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="01_getproperty">01_getProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getProperty(obj, property) {
+  return obj[property]
+}
+
+</code></pre></div></div>
+
+<h1 id="02_addproperty">02_addProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값을 true로 설정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addProperty(obj, property) {
+  obj[property] = true;
+}
+</code></pre></div></div>
+
+<h1 id="03_addpropertyandvalue">03_addPropertyAndValue</h1>
+
+<ul>
+  <li>객체와 키, 값을 입력받아 키에 값을 할당</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addPropertyAndValue(obj, property, value) {
+  obj[property] = value;
+}
+</code></pre></div></div>
+
+<h1 id="04_addobjectproperty">04_addObjectProperty</h1>
+
+<ul>
+  <li>두 개의 객체와 키를 입력받아 첫번째 객체의 키에 두번째 객체를 할당</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addObjectProperty(obj1, property, obj2) {
+  obj1[property] = obj2;
+}
+
+</code></pre></div></div>
+
+<h1 id="05_removeproperty">05_removeProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키가 가리키는 속성(property)을 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeProperty(obj, property) {
+  delete obj[property];
+}
+</code></pre></div></div>
+
+<h1 id="06_removenumbervalues">06_removeNumberValues</h1>
+
+<ul>
+  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값을 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumberValues(obj) {
+  for(let i in obj){
+    if(typeof obj[i] === 'number' ){
+      delete obj[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="07_removearrayvalues">07_removeArrayValues</h1>
+
+<ul>
+  <li>객체를 입력받아 배열을 값으로 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeArrayValues(obj) {
+  for(let i in obj){
+    if(Array.isArray(obj[i])){
+      delete obj[i];
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="08_removeoddvalues">08_removeOddValues</h1>
+
+<ul>
+  <li>객체를 입력받아 홀수를 값으로 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeOddValues(obj) {
+  for(let i in obj){
+    if(obj[i]%2===1 &amp;&amp; typeof obj[i] === 'number'){
+      delete obj[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="09_ispersonoldenoughtovote">09_isPersonOldEnoughToVote</h1>
+
+<ul>
+  <li>객체를 입력받아 객체가 가진 <code class="language-plaintext highlighter-rouge">age</code> 속성값이 합법적으로 투표할 수 있는 나이(18세 이상)인지 여부를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPersonOldEnoughToVote(person) {
+  if(person.age &gt;= 18){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="10_addfullnameproperty">10_addFullNameProperty</h1>
+
+<ul>
+  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">'firstName'</code>, <code class="language-plaintext highlighter-rouge">'lastName'</code> 속성값 사이에 띄어쓰기 하나를 둔 단일 문자열을 <code class="language-plaintext highlighter-rouge">fullName</code> 속성값으로 할</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addFullNameProperty(obj) {
+  obj.fullName = `${obj.firstName} ${obj.lastName}`
+}
+
+</code></pre></div></div>
+
+<h1 id="11_removenumberslargerthan">11_removeNumbersLargerThan</h1>
+
+<ul>
+  <li>수와 객체를 입력받아 입력받은 수보다 큰 수를 갖는 속성을 모두 제거</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumbersLargerThan(num, obj) {
+  for(let i in obj){
+    if(obj[i] &gt; num &amp;&amp; typeof obj[i] === 'number'){
+      delete obj[i];
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="12_countnumberofkeys">12_countNumberOfKeys</h1>
+
+<ul>
+  <li>객체를 입력받아 속성의 개수를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countNumberOfKeys(obj) {
+  return Object.keys(obj).length;
+}
+
+</code></pre></div></div>
+
+<h1 id="13_printobject">13_printObject</h1>
+
+<ul>
+  <li>객체를 입력받아 키, 값 쌍을 표현하는 문자열을 리턴
+    <ul>
+      <li>각 문자열은 한 줄에 <code class="language-plaintext highlighter-rouge">키: 값</code> 형태로 구성되며, 각 문자열 끝에는 줄바꿈 문자가 포함되야 함</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function printObject(obj) {
+  let result ='';
+
+  for(let i in obj){
+    result = result +i +': '+obj[i] + '\n'
+  }
+  return result;
+}
+
+</code></pre></div></div>
+
+<h1 id="14_getelementofarrayproperty">14_getElementOfArrayProperty</h1>
+
+<ul>
+  <li>객체, 키, 수를 입력받아 주어진 키에 해당하는 값이 배열인 경우, 수가 가리키는 인덱스에 해당하는 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementOfArrayProperty(obj, key, index) {
+  let arrProperty = obj[key];
+  if(Array.isArray(arrProperty) === false){
+    return undefined
+  }
+
+  return arrProperty[index]
+}
+
+</code></pre></div></div>
+
+<h1 id="15_select">15_select</h1>
+
+<ul>
+  <li>배열과 객체를 입력받아 배열의 각 요소들을 객체의 키로 했을 때 그 값을 추출하여 만든 새로운 객체를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function select(arr, obj) {
+  let newObj = {};
+
+  for(let i in obj){
+    for(let j = 0; j &lt; arr.length; j++){
+      if(i === arr[j]){
+        newObj[i] = obj[i];
+      }
+    }
+  }
+return newObj;
+}
+</code></pre></div></div>
+
+<h1 id="16_getlastelementofproperty">16_getLastElementOfProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLastElementOfProperty(obj, property) {
+  let result = obj[property];
+  if(!Array.isArray(result) || result.length === 0 ){
+    return undefined;
+  }
+
+  return result[result.length-1]
+}
+
+</code></pre></div></div>
+
+<h1 id="17_getvalueofnthelement">17_getValueOfNthElement</h1>
+
+<ul>
+  <li>배열과 수를 입력받아 수가 가리키는 인덱스에 해당하는 객체의 <code class="language-plaintext highlighter-rouge">'name'</code> 속성값을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getValueOfNthElement(arr, num) {
+  if(arr.length === 0){
+    return 'no name';
+  } else if(arr.length-1 &lt; num){
+    return arr[arr.length-1]['name'];
+  } else {
+    return arr[num]['name']
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="18_getallbutlastelementofproperty">18_getAllButLastElementOfProperty</h1>
+
+<ul>
+  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소가 제거된 새로운 배열을 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllButLastElementOfProperty(obj, key) {
+  let newObj = obj[key];
+  if(!Array.isArray(newObj) || newObj.length === 0 ){
+    return [];
+  }
+
+  return newObj.slice(0,-1);
+}
+
+</code></pre></div></div>
+
+<h1 id="19_extend">19_extend</h1>
+
+<ul>
+  <li>두 개의 객체를 입력받아 두번째 객체의 속성들을 첫번째 객체에 추가</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function extend(obj1, obj2) {
+  for(let i in obj2){
+    if(!(i in obj1)){
+      obj1[i] = obj2[i]
+    }
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="20_countallcharacters">20_countAllCharacters</h1>
+
+<ul>
+  <li>문자열을 입력받아 문자열을 구성하는 각 문자(letter)를 키로 갖는 객체를 리턴
+    <ul>
+      <li>각 키의 값은 해당 문자가 문자열에서 등장하는 횟수를 의미하는 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countAllCharacters(str) {
+  let obj = {};
+  for (let i = 0; i &lt; str.length; i++) {
+    if (obj[str[i]] === undefined) {
+      obj[str[i]] = 0;
+    }
+    obj[str[i]]++;
+  }
+  return obj;
+}
+
+</code></pre></div></div>
+
+<h1 id="21_mostfrequentcharacter">21_mostFrequentCharacter</h1>
+
+<ul>
+  <li>문자열을 입력받아 가장 많이 반복되는 문자(letter)를 리턴</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function mostFrequentCharacter(str) {
+  let obj = { mostCount: 0, mostFrequent: '' };
+  for (let i = 0; i &lt; str.length; i++) {
+    if (str[i] === ' ') {
+      continue;
+    }
+
+    if (obj[str[i]] === undefined) {
+      obj[str[i]] = 0;
+    }
+    obj[str[i]] += 1;
+
+    if (obj[str[i]] &gt; obj['mostCount']) {
+      obj['mostCount'] = obj[str[i]];
+      obj['mostFrequent'] = str[i];
+    }
+  }
+  return obj['mostFrequent'];
+}
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">CodeStates</a><span class="sep">, </span>
+    
+      <a href="/tags/#coplit" class="page__taxonomy-item p-category" rel="tag">Coplit</a><span class="sep">, </span>
+    
+      <a href="/tags/#js" class="page__taxonomy-item p-category" rel="tag">JS</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#coplit" class="page__taxonomy-item p-category" rel="tag">Coplit</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-29">June 29, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BCodeStates%5DCoplit-6-%EA%B0%9D%EC%B2%B4%20http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F6-%25EA%25B0%259D%25EC%25B2%25B4%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F6-%25EA%25B0%259D%25EC%25B2%25B4%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fcoplit%2F6-%25EA%25B0%259D%25EC%25B2%25B4%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/coplit/5-%EB%B0%B0%EC%97%B4/" class="pagination--pager" title="[CodeStates]Coplit-5-배열
+">이전</a>
+    
+    
+      <a href="/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" class="pagination--pager" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="permalink">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/5-%EB%B0%B0%EC%97%B4/" rel="permalink">[CodeStates]Coplit-5-배열
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 배열 25문제
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="permalink">[CodeStates]Coplit-4-반복문
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 반복문 21문제
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="permalink">[CodeStates]Coplit-3-문자열
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">코플릿 복습하기 - 문자열 17문제
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'gardenia0917/gardenia0917.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    
+    script.setAttribute('theme', 'photon-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>
