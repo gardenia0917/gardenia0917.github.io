@@ -8,7 +8,7 @@
             📄 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">Coding Test</span>
+        <span class="nav__sub-title">Coding Test 💻</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Coplit" %}
@@ -23,7 +23,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Lecture</span>
+        <span class="nav__sub-title">Lecture ✒️</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Job" %}
