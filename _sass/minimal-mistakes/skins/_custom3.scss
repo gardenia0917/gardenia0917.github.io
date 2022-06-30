@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Plants Skin
+   ========================================================================== */
+
+/* Colors */
+
+$background-color: #023535 !default; // 배경 색상
+$text-color: #eaeaea !default; //글자 색상
+$primary-color: #0fc2c0 !default; //주 색상
+$border-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color: #4d5357 !default;
+$code-background-color-dark: #3f4447 !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+$footer-background-color: mix(#000, $background-color, 30%) !default;
+$link-color: #0caba8 !default; //링크 색상
+$link-color-hover: #3f8f56 !default;
+$link-color-visited: $link-color !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, #7f22fd, 35%) !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
