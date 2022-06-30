@@ -1,5 +1,5 @@
 ---
-title: "취업준비"
+title: "취업 준비🔥"
 layout: archive
 permalink: categories/job
 author_profile: true
