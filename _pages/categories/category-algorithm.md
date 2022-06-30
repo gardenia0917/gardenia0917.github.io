@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 구현 (with JS)"
 layout: archive
-permalink: categories/algorithm
+permalink: /algorithm
 author_profile: true
 sidebar_main: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "취업 준비 🔥"
 layout: archive
-permalink: categories/job
+permalink: /job
 author_profile: true
 sidebar_main: true
 ---

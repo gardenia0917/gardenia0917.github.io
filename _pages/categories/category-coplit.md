@@ -1,7 +1,7 @@
 ---
 title: "코드 스테이츠 Coplit 복습하기"
 layout: archive
-permalink: categories/coplit
+permalink: /coplit
 author_profile: true
 sidebar_main: true
 ---

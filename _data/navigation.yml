@@ -16,12 +16,12 @@ sidebar-category:
   - title: "Coding Test"
     children:
       - title: "Coplit"
-      - url: "categories/coplit"
+      - url: "coplit"
       - title: "Algorithm"
-      - url: "categories/algorithm"
+      - url: "algorithm"
   - title: "Lecture"
     children:
       - title: "Job"
-      - url: "categories/job"
+      - url: "job"
       - title: "JavaScript"
-      - url: "categories/javascript"
+      - url: "javascript"
