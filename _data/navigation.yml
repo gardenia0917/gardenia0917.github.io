@@ -12,3 +12,16 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sidebar-category:
+  - title: "Coding Test"
+    children:
+      - title: "Coplit"
+      - url: "/coplit"
+      - title: "Algorithm"
+      - url: "/algorithm"
+  - title: "Lecture"
+    children:
+      - title: "Job"
+      - url: "/job"
+      - title: "JavaScript"
+      - url: "/javascript"
