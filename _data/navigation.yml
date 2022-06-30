@@ -13,15 +13,15 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
-  - title: "Coding Test"
+  - title: "Coding Test ✏️"
     children:
       - title: "Coplit"
-      - url: "/coplit"
+      - url: /coplit
       - title: "Algorithm"
-      - url: "/algorithm"
-  - title: "Lecture"
+      - url: /algorithm
+  - title: "Lecture 💻"
     children:
       - title: "Job"
-      - url: "/job"
+      - url: /job
       - title: "JavaScript"
-      - url: "/javascript"
+      - url: /javascript
