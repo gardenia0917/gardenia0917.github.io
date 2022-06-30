@@ -1,4 +1,4 @@
-I"P
+I"O
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -18,7 +18,7 @@
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">토글 메뉴</span>
+          <span class="visually-hidden">카테고리</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
