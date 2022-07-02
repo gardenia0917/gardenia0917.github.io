@@ -1,7 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-02T22:12:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<h1 id="읽어-볼-만한-링크-정리">읽어 볼 만한 링크 정리</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-02T23:19:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<h1 id="준비하기">준비하기</h1>
 
-<p><a href="https://jbee.io/essay/for_junior_frontend_developer/">신입 프론트엔드 개발자가 되려면 무엇을 학습해야 하나요?</a><br />
-<a href="https://youtu.be/IXtfqhBIQos">캡틴판교-프론트엔드 개발 학습 방법-유투브</a></p>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Inflearn" /><category term="Job" /><summary type="html"><![CDATA[인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리]]></summary></entry><entry><title type="html">[CodeStates]Coplit-6-객체</title><link href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-6-객체" /><published>2022-06-29T00:00:00+09:00</published><updated>2022-06-29T00:00:00+09:00</updated><id>http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/"><![CDATA[<h1 id="01_getproperty">01_getProperty</h1>
+<h2 id="올바른-개발-학습법-알기">올바른 개발 학습법 알기</h2>
+
+<h3 id="문과생-사고-방식-버리기">문과생 사고 방식 버리기</h3>
+
+<h4 id="사고방식의-배경">사고방식의 배경</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>🤓</td>
+      <td>문과생</td>
+      <td>엔지니어</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">논술</code>에 가까운 교육</td>
+      <td>문제의 답이 정해진 경우가 많음</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>정해진 답❌</td>
+      <td>답이 없더라도 단계별 과정 중요</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>문제의 해결책이 두루뭉실</td>
+      <td>원인과 해결책 명확</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="문제-해결-방식">문제 해결 방식</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>🤓</td>
+      <td>문과생</td>
+      <td>엔지니어</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>문제를 하나의 큰 덩어리로 봄</td>
+      <td>문제를 여러 단계로 쪼갬</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>한 번에 문제를 해결하려 함</td>
+      <td>여러 단계로 쪼갠 문제의 해결책을 구글링함</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>해결책을 빨리 못찾으면 내 수준의 문제가 아니라고 생각</td>
+      <td>해결책을 못찾으면, 오히려 즐겁다.🤔</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="반드시-읽어봐야-할-개발-학습법들">반드시 읽어봐야 할 개발 학습법들</h3>
+
+<hr />
+
+<h1 id="읽어-볼-만한-링크-정리">읽어 볼 만한 링크 정리</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+      <td>읽고 나서</td>
+    </tr>
+    <tr>
+      <td><a href="https://jbee.io/essay/for_junior_frontend_developer/">신입 프론트엔드 개발자가 되려면 무엇을 학습해야 하나요?</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://youtu.be/IXtfqhBIQos">캡틴판교-프론트엔드 개발 학습 방법-유투브</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://okky.kr/article/680617">비전공자에게 말하는 경험과 조언</a></td>
+      <td>회사에게 나를 뽑아야 할 이유를 어필하라. 프로젝트 완료 후 적어도 두달간 보강하라</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Inflearn" /><category term="Job" /><summary type="html"><![CDATA[인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리]]></summary></entry><entry><title type="html">[CodeStates]Coplit-6-객체</title><link href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-6-객체" /><published>2022-06-29T00:00:00+09:00</published><updated>2022-06-29T00:00:00+09:00</updated><id>http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/"><![CDATA[<h1 id="01_getproperty">01_getProperty</h1>
 
 <ul>
   <li>객체와 키를 입력받아 키에 해당하는 값을 리턴</li>
