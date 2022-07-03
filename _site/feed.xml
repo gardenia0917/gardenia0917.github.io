@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T05:28:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T05:35:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -925,6 +925,26 @@
 </ul>
 
 <h3 id="개발-블로그--github">개발 블로그 &amp; GitHub</h3>
+
+<h4 id="개발자-들이-개발-블로그를-운영하는-이유">개발자 들이 개발 블로그를 운영하는 <code class="language-plaintext highlighter-rouge">이유</code></h4>
+
+<ul>
+  <li>개발자로서 성장에 도움이 된다.
+    <ul>
+      <li>댓글 피드백</li>
+      <li>블로그에 쓰기 위해 공부하고 경험</li>
+      <li>정확하게 설명하기 위해 더 깊게 더 정확하게 공부</li>
+    </ul>
+  </li>
+  <li>개발자 세계에 자신을 알리기 가장 쉬운 방법
+    <ul>
+      <li>개발자 세미나 강연, 출판 제의, 면접 제안 모두 블로그 글로 눈에 띌 수 있다.</li>
+    </ul>
+  </li>
+  <li><a href="https://taegon.kim/archives/7107">개발자가 블로그를 운영해야 할 이유</a></li>
+  <li><a href="https://jbee.io/essay/writing-of-developers/">개발자의 글쓰기, 기술 블로그에 대하여</a></li>
+  <li>자신의 생각과 감정, 경험을 공유 할 수 있다.</li>
+</ul>
 
 <h2 id="코딩-테스트">코딩 테스트</h2>
 
