@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T19:30:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T23:40:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -389,17 +389,197 @@
 <ul>
   <li>페이스북 팔로잉 페이지 물갈이</li>
   <li>트위터 (TweetDeck 활용)</li>
+  <li>Feedly
+    <ul>
+      <li>블로그를 팔로우 하여 보는 식</li>
+    </ul>
+  </li>
+  <li>daily DevBlog 구독</li>
+  <li>GeekNews &amp; devnews</li>
 </ul>
-
-<h2 id="학원">학원</h2>
 
 <h2 id="그룹-스터디">그룹 스터디</h2>
 
-<h2 id="til-저장소">TIL 저장소</h2>
+<h3 id="장점과-단점">장점과 단점</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>장점</td>
+      <td>단점</td>
+    </tr>
+    <tr>
+      <td>남에게 설명할 수 있는 수준으로 학습 가능</td>
+      <td>시간 낭비 발생</td>
+    </tr>
+    <tr>
+      <td>완주하기 어려워도 완주 하게 됨</td>
+      <td>무임승차</td>
+    </tr>
+    <tr>
+      <td>개발자 인맥 넓히기</td>
+      <td>🤭</td>
+    </tr>
+    <tr>
+      <td>자극 받기</td>
+      <td>🔥</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="참고-자료">참고 자료</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+      <td>읽고 나서</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=RdTpUfm2hSo">개발자 질문, “스터디 운영 어떻게 해야하죠?”</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://jojoldu.tistory.com/302?category=689637">3번째 직장에 오기까지 - 5. 두번째 직장 #2</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://gmlwjd9405.github.io/2018/05/05/how-to-study-for-a-developer.html">같이 개발 공부를 잘 하는 법, 입사 후에 더욱 발전하는 법</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Github에 <code class="language-plaintext highlighter-rouge">스터디</code> 검색하여 찾아보기</td>
+      <td>👓</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="tiltoday-i-study-저장소">TIL(Today I Study) 저장소</h2>
+
+<h3 id="장점">장점</h3>
+
+<ul>
+  <li>존재만으로도 학습을 유도</li>
+  <li>블로깅 재료</li>
+  <li>성장 잠재력 어필</li>
+</ul>
 
 <h1 id="취업하기">취업하기</h1>
 
 <h2 id="about-회사">about 회사</h2>
+
+<h3 id="개발자-취업-산업군도메인-5대장">개발자 취업 산업군(도메인) <code class="language-plaintext highlighter-rouge">5</code>대장</h3>
+
+<h4 id="산업군도메인을-알아야-하는-이유">산업군(도메인)을 알아야 하는 이유</h4>
+
+<ul>
+  <li>산업군마다 주로 쓰거나 중요시하는 기술이 다름</li>
+  <li>산업군으로 이력서와 면접에서 강조부분 준비 가능</li>
+  <li>업황이 개발자 채용과 대우(연봉/복지)에 영향을 줌</li>
+  <li>경력 개발자로 이직시 산업군이 중요함</li>
+</ul>
+
+<h4 id="산업군도메인-5대장">산업군(도메인) <code class="language-plaintext highlighter-rouge">5</code>대장</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>✏️</td>
+      <td>컨텐츠</td>
+      <td>커머스</td>
+      <td>핀테크</td>
+      <td>모빌리티</td>
+      <td>인공지능</td>
+    </tr>
+    <tr>
+      <td>설명</td>
+      <td>컨텐츠 제공 서비스/서비스 속도,안전성 중요</td>
+      <td>결제,물류 관련 기술 중요</td>
+      <td>데이터 정확성/트랜잭션 처리 중요</td>
+      <td>지리정보 활용/ 자동차등 하드웨어 연계 중요</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1️⃣</td>
+      <td>SNS</td>
+      <td>Delivery</td>
+      <td>Pay</td>
+      <td>Mobility</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2️⃣</td>
+      <td>Streaming</td>
+      <td>Shopping</td>
+      <td>banking</td>
+      <td>Car Sharing</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3️⃣</td>
+      <td>Potal</td>
+      <td>P2P Market</td>
+      <td>Stock</td>
+      <td>Navigation</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4️⃣</td>
+      <td>Information</td>
+      <td>Crowd Funding</td>
+      <td>P2P Lending</td>
+      <td>Self-driving</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5️⃣</td>
+      <td>Community</td>
+      <td>Platform</td>
+      <td>Cryptocurrency</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="좋은-회사-판단하는-방법"><code class="language-plaintext highlighter-rouge">좋은 회사</code> 판단하는 방법</h3>
+
+<h4 id="si-회사">SI 회사</h4>
+
+<ul>
+  <li><a href="https://www.facebook.com/groups/codingeverybody/permalink/4294604973913339">악덕 보도방 구분법</a></li>
+</ul>
+
+<h4 id="서비스-회사">서비스 회사</h4>
+
+<ul>
+  <li>채용 공고 확인(원티드,잡플래닛,프로그래머스,로켓펀치)</li>
+  <li>잡플래신 평점/리뷰 확인</li>
+  <li><a href="https://github.com/milooy/remote-or-flexible-work-company-in-korea">자율출퇴근/원격근무 회사 체크</a></li>
+  <li>blind 회사명 검색 -&gt; 게시글/댓글 확인</li>
+  <li>개발자 지인에게 물어보기</li>
+  <li>채용 공고로 파악(주요 업무, 자격 요건이 상세하게 명시되었는지 확인)</li>
+  <li>면접에서 파악하기</li>
+</ul>
+
+<h4 id="링크-2">링크</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+      <td>읽고 나서</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=qL9gXibI8P4">본격 비급 - 회사와 개발자! 같이 성장할 수 있을까? 그 비법은 무엇일까</a>]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://youtu.be/euxI9vljXw8">입사/이직할 스타트업을 고르는 방법 - 취업편</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="이력서">이력서</h2>
 
