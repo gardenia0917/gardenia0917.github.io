@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T04:48:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T04:58:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -884,7 +884,12 @@
   </li>
   <li>클론 코딩 강의 혹은 따라 만드는 강의에서 만든 프로젝트를 개선하고 발전 시킴</li>
   <li>Github에서 <code class="language-plaintext highlighter-rouge">토이프로젝트</code> 검색</li>
+  <li>번외) 프로젝트 배포 따라해보기</li>
 </ul>
+
+<h4 id="개발자들이-토이-프로젝트를-만드는-이유">개발자들이 토이 프로젝트를 만드는 이유?</h4>
+
+<p><a href="https://woowabros.github.io/experience/2018/11/12/toy-project.html">프로젝트가 장난이야?!</a></p>
 
 <h3 id="팀-프로젝트">팀 프로젝트</h3>
 
