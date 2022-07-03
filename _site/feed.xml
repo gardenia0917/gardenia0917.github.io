@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T05:35:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-04T06:12:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -944,6 +944,113 @@
   <li><a href="https://taegon.kim/archives/7107">개발자가 블로그를 운영해야 할 이유</a></li>
   <li><a href="https://jbee.io/essay/writing-of-developers/">개발자의 글쓰기, 기술 블로그에 대하여</a></li>
   <li>자신의 생각과 감정, 경험을 공유 할 수 있다.</li>
+</ul>
+
+<h4 id="개발블로그">개발블로그</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>티스토리</td>
+      <td>브런치</td>
+      <td>미디엄</td>
+      <td>노션</td>
+      <td>벨로그</td>
+      <td>GitHub Blog</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>코드 삽입</td>
+      <td>Good 👍</td>
+      <td>Bad 👎</td>
+      <td>OK 👌</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+    </tr>
+    <tr>
+      <td>자유도</td>
+      <td>Good 👍</td>
+      <td>Bad 👎</td>
+      <td>OK 👌</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+    </tr>
+    <tr>
+      <td>구글 노출</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+      <td>OK 👌</td>
+      <td>Good 👍</td>
+      <td>Good 👍</td>
+    </tr>
+    <tr>
+      <td>광고 삽입</td>
+      <td>Good 👍</td>
+      <td>Bad 👎</td>
+      <td>OK 👌</td>
+      <td>Bad 👎</td>
+      <td>Bad 👎</td>
+      <td>Good 👍</td>
+    </tr>
+    <tr>
+      <td>장점</td>
+      <td>지속적 기능 개선</td>
+      <td>깔끔한 디자인과 한글 폰트</td>
+      <td>깔끔한 디자인</td>
+      <td>작성 쉬움. 메모앱 활용</td>
+      <td>개발 블로깅 최적화, 자체 유저들에게 노출</td>
+      <td>높은 자유도</td>
+    </tr>
+    <tr>
+      <td>단점</td>
+      <td>테마, 불편한 에디터</td>
+      <td>본문 복사 금지</td>
+      <td>한글 폰트,목록/검색 ❌</td>
+      <td>메모앱 &gt; 블로그</td>
+      <td>같은 디자인</td>
+      <td>다소 높은 진입 장벽</td>
+    </tr>
+    <tr>
+      <td>총 평</td>
+      <td>무난한 선택</td>
+      <td>개발 블로그 한계</td>
+      <td>한국에서 사용하기 불편</td>
+      <td>생산성 도구로 적합</td>
+      <td>첫 선택으로 가장 추천</td>
+      <td>개성 살리기, 개발 실력 향상👍</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="github-에-해야-할-것들">Github 에 해야 할 것들</h4>
+
+<p><strong>취업</strong></p>
+
+<ul>
+  <li>TIL 저장소 만들고 정리 및 기록</li>
+  <li>기술 서적, 학원 강의, 인강을 수강하며 작성한 코드 올리기</li>
+  <li>
+    <p>프로젝트를 GitHub 저장소에 올리고, README.md 파일 추가</p>
+  </li>
+  <li><a href="https://junilhwang.github.io/TIL/Review/2020-year/end/">주니어 개발자의 2020년 회고(황준일님)</a></li>
+</ul>
+
+<p><strong>취업 외</strong></p>
+
+<ul>
+  <li>본받을 점이 많은 개발자들 Follow
+-&gt; 개발 블로그 주인 혹은 개발자 컨퍼런스 발표자의 깃헙 Follow
+-&gt; 그 들의 활동을 보며 정보와 인사이트를 얻음</li>
+  <li>
+    <p>유명한 오픈소스를 Fork해서 코드 보고 배우기
+-&gt; <code class="language-plaintext highlighter-rouge">정석</code>이라고 할 수 있는 개발 학습법</p>
+  </li>
+  <li><a href="https://www.rinae.dev/posts/how-to-contribute-oss">차근차근 오픈소스에 기여해 보기(동기 부여편)</a></li>
+  <li><a href="https://blog.cometkim.kr/posts/mattermost-contribution/how-i-grow-up-with-mattermost-community/">나는 어떻게 오픈소스 커뮤니티를 통해 성장했나</a></li>
+  <li><a href="https://opensource.guide/ko/how-to-contribute/">오픈소스에 기여하는 방법</a></li>
 </ul>
 
 <h2 id="코딩-테스트">코딩 테스트</h2>
