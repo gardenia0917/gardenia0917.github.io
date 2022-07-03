@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T09:18:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<h1 id="준비하기">준비하기</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T09:25:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<h1 id="준비하기">준비하기</h1>
 
 <h2 id="올바른-개발-학습법-알기">올바른 개발 학습법 알기</h2>
 
@@ -70,6 +70,87 @@
 </ol>
 
 <h3 id="반드시-읽어봐야-할-개발-학습법들">반드시 읽어봐야 할 개발 학습법들</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+      <td>읽고나서</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=Xcy2Pq6LABk">프로그래밍 학습방법</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://evan-moon.github.io/2019/08/26/how-does-developer-study/">개발자가 공부로 살아남는 방법</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://woowabros.github.io/experience/2017/12/11/how-to-study.html">학습에 실패한 이야기</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://euncho.medium.com/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%96%88%EB%8A%94%EA%B0%80-709df6714c42">나는 어떻게 공부했는가?</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://zdnet.co.kr/view/?no=20170616090644">개발자의 평생공부</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://ahnheejong.name/articles/becoming-better-programmer/">프로그래머로서의 성장을 도왔던 태도들</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://medium.com/@jongyoungpark/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B3%B5%EB%B6%80%EB%A5%BC-%EB%A9%88%EC%B6%B0%EB%9D%BC-1afa37644474">프레임워크 공부를 멈춰라</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=U0YWdnSKDfw">개발자가 실력을 향상시킬 방법은 00뿐이에요</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://speakerdeck.com/mingrammer/hoesa-baggeseo-seongjanghagi">회사 밖에서 성장하기</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.slideshare.net/charsyam2/how-to-become-better-engineer">개발자는 어떻게 성장해야 할까</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.moreagile.net/2016/02/learning-new-stuff.html">어려운 것을 쉽게 배우는 방법</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://velog.io/@city7310/%EB%82%B4%EA%B0%80-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D">내게 실용적이었던 프로그래밍 공부방법들</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://mnpk.medium.com/%EB%B2%88%EC%97%AD-%EB%8D%94-%EB%82%98%EC%9D%80-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EB%8A%94-8-%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-45ea6cd70114">더 나은 개발자가 되는 8가지 방법</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://brunch.co.kr/@jypthemiracle/14">개발 배우기가 정말 어려운 이유</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Integerous/goQuality-dev-contents">고퀄리티 개발 컨텐츠 모음</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=nN7MgO3d6cE">개발자의 성장에 대한 이야기(주니어,기술,팀,이직,자기PR)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://brunch.co.kr/@javajigi/26">개발자를 꿈꾸는 취업 준비생에게</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://subicura.com/2021/06/27/study-guide.html">초보 웹 개발자를 위한 학습 안내서</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <hr />
 
