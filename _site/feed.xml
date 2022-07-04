@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-05T00:58:31+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-05T04:05:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -1148,6 +1148,162 @@
 </ul>
 
 <h2 id="기술-면접">기술 면접</h2>
+
+<h3 id="기술-면접은-어떤-면접인가">기술 면접은 어떤 면접인가?</h3>
+
+<blockquote>
+  <p>신입 개발자 채용 면접은 어떻게 진행 되는가?</p>
+</blockquote>
+
+<ul>
+  <li>서류전형 -&gt; (코딩 테스트 or 사전 과제 전형) -&gt; 1차 면접 -&gt; 2차 면접 -&gt; (3차 면접) -&gt; 합격</li>
+  <li>1차 면접
+    <ul>
+      <li>기술 면접</li>
+      <li>면접관 : 실무진 (개발 팀장,시니어 개발자)</li>
+    </ul>
+  </li>
+  <li>2차 면접
+    <ul>
+      <li>기술 면접 or 문화적합성 면접</li>
+      <li>면접관 : CTO, 임원급 직원, 인사담당자 등</li>
+    </ul>
+  </li>
+  <li>
+    <p>블라인드 채용</p>
+
+    <ul>
+      <li>코딩 테스트 or 사전 과제 -&gt; 서류 전형 -&gt; 1차 면접 -&gt; 2차 면접 -&gt; (3차 면접) -&gt; 합격</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">기술 이해도</code> 평가</li>
+  <li>이력서와 포트폴리오에 기재된 기술 스택 or 회사에서 사용하는 기술 스택 or CS 기초
+    <ul>
+      <li>A 기술의 핵심 개념은 무엇이고 설명할 수 있는지</li>
+      <li>A 기술의 핵심 개념과 연결되는 기초적인 CS 지식 이해 했는지</li>
+      <li>왜 A 를 사용 했는지</li>
+      <li>A 기술의 한계는 무엇이고 한계 상황에서 어떻게 대처 할 것인가</li>
+      <li>기초적인 CS 지식, 주 개발 언어와 관련된 기초 지식 질문</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">성장 가능성</code> 평가
+    <ul>
+      <li>신입은 <em>앞으로 얼마나 빠르게 팀과 업무에 적응 할 수 있을지</em> 를 본다.</li>
+      <li>성장 가능성을 어필하려면 Github, 개발 블로그, 이력서, 포트폴리오 이모든 것이 증거가 된다.</li>
+      <li>개발자가 되려는 이유에 대한 답변 준비</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">의사소통 능력</code> 평가
+    <ul>
+      <li>개발자는 협업하는 직업</li>
+      <li>면접에서 의사소통 능력을 반드시 평가</li>
+      <li>의사소통 != 뛰어난 언변
+        <ul>
+          <li>Q. A? A. A~ , 다른사람과 협업시 발생한 문제 해결능력</li>
+        </ul>
+      </li>
+      <li>실력이 약간 부족해도 기존 팀원과 잘 맞는 지원자 채용함</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="기술-면접-준비-방법">기술 면접 준비 방법</h3>
+
+<ul>
+  <li>학습 범위과 우선 순위 정하기
+    <ul>
+      <li>모든 내용 준비하겠다는 욕심 버리기</li>
+      <li>중요한 기술에 대해 제대로 답변하는 것이 목표</li>
+      <li>학습 범위 &amp; 우선순위
+        <ul>
+          <li>나의 이력서/포트폴리오에도 있고 지원한 팀에도 쓰는 기술들</li>
+          <li>지원한 팀에서 쓰지 않지만 내가 쓴 기술들</li>
+          <li>주로 사용하는 프로그래밍 언어</li>
+          <li>프레임 워크</li>
+          <li>컴공 기초</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>면접에서 자주 나오는 질문들을 한글/영문 으로 검색해서 정리 (예상 질문 리스트 만들기)
+    <ul>
+      <li>신입 개발자 면접에서 나오는 질문들은 어느정도 정해져 있음</li>
+      <li>JS 면접 질문, Javascript interview question 같이 검색</li>
+      <li>메모 공간에 정리해 리스트 만들기</li>
+    </ul>
+  </li>
+  <li>학습 내용을 본인의 문장으로 정리하고, 말로 설명 할 수 있을 때 까지 학습하기
+    <ul>
+      <li>양이 많아지면 복붙하거나 대충할 수 있다.</li>
+      <li>자신의 입으로 말할 수 있어야 한다.</li>
+      <li>잘 정리되지 않으면 면접에서 버벅거리게 된다.</li>
+    </ul>
+  </li>
+  <li>최소 면접 3일 전부터 모의 면접 진행
+    <ul>
+      <li>도와줄 사람이 있으면 -&gt; 예상 질문 리스트를 주고 면접관 처럼 질문해달라고 부탁</li>
+      <li>도와줄 사람이 없으면 -&gt; 혼자 입으로 소리 내서 답변하기</li>
+      <li>제대로 답변 ❌ -&gt; 제대로 이해하지 못한 것. 다시 공부하기</li>
+    </ul>
+  </li>
+  <li>면접 끝나면 면접 내용을 반드시 복기해서 기록해두기
+    <ul>
+      <li>이력서나 포트폴리오에 변화가 없다면, 다른 회사에서도 비슷한 질문을 받을 것</li>
+      <li>기억해두려면 복기해 메모해두기</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="링크-3">링크</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+      <td>읽고 나서</td>
+    </tr>
+    <tr>
+      <td><a href="https://brunch.co.kr/@goodgdg/142">지원자도 회사를 평가합니다. 이렇게요</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/JaeYeopHan/Interview_Question_for_Beginner">Technical Interview Guidelines for Beginners</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://gyoogle.dev/blog/">신입 개발자 전공 지식 &amp; 기술 면접 백과사전</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/WeareSoft/tech-interview">tech-interview</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.frontendinterviewhandbook.com/kr/html-questions">프론트엔드 인터뷰 핸드북</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=1xJU8HfBREY&amp;list=PLgXGHBqgT2TvpJ_p9L_yZKPifgdBOzdVH">우아한 Tech</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md">Coding Interview University</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/watch?v=Fg00LN30Ezg">CPU는 어떻게 작동할까?</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Knowre-Dev/WebDevCurriculum">Knowre 웹개발 커리큘럼</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.techinterviewhandbook.org/">Tech interview Handbook</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <h1 id="부록">부록</h1>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Inflearn" /><category term="Job" /><summary type="html"><![CDATA[인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리]]></summary></entry><entry><title type="html">[CodeStates]Coplit-6-객체</title><link href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-6-객체" /><published>2022-06-29T00:00:00+09:00</published><updated>2022-06-29T00:00:00+09:00</updated><id>http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/"><![CDATA[<h1 id="01_getproperty">01_getProperty</h1>
 
