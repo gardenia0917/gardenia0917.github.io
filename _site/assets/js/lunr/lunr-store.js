@@ -40,4 +40,10 @@ var store = [{
         "tags": ["Inflearn","Job"],
         "url": "/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/",
         "teaser": null
+      },{
+        "title": "[Error]Uncaught (in promise) DOMException: play() failed because the user didn't interact with the document first",
+        "excerpt":"Uncaught (in promise) DOMException: play() failed because the user didn’t interact with the document first.      Uncaught (in promise) DOMException: play() failed because the user didn’t interact with the document first. https://goo.gl.xX8pDD   ","categories": ["Error"],
+        "tags": ["Error","code"],
+        "url": "/error/Uncaught-(in-promise)-DOMException-play()-failed-because-the-user-didn't-interact-with-the-document-first/",
+        "teaser": null
       }]
