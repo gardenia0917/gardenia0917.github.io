@@ -1,0 +1,8 @@
+I"=<h1 id="jekyll-블로그-서버-키기변경된거-바로-확인-가능">Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)</h1>
+
+<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></p>
+
+<blockquote>
+  <p>Server address: <u>http://127.0.0.1:4000</u></p>
+</blockquote>
+:ET

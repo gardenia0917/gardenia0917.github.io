@@ -40,4 +40,34 @@ var store = [{
         "tags": ["Inflearn","Job"],
         "url": "/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/",
         "teaser": null
+      },{
+        "title": "[Error]CSS 파일 경로를 못 찾을 때",
+        "excerpt":"because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled. css 파일 경로 문제 보통의 경우 어느 파일이 경로를 못 찾는지 확인 후 수정 참고 Coding JOAH님 블로그 나의 경우 style.css 파일을 찾다가 dev &gt; dist &gt; contents &gt; common 폴더 안에...","categories": ["Error"],
+        "tags": ["Error","TS"],
+        "url": "/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/",
+        "teaser": null
+      },{
+        "title": "[Diary]2주차",
+        "excerpt":"기술 블로그로 만들려고 하지만 일단 블로그이니 하루 회고 형식으로 느낀점을 간단하게 남기려고 한다. 8일 어제 분명히 작동이 되었는데 오늘 다시 실행시키니 에러가 났다. 콘솔창에 because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled 로 해서 갑자기 css 파일을 찾지 못했다고 떴다.....","categories": ["Diary"],
+        "tags": ["Diary"],
+        "url": "/diary/2%EC%A3%BC%EC%B0%A8/",
+        "teaser": null
+      },{
+        "title": "[Etc]쓰고 싶은 포스팅",
+        "excerpt":"깊은 복사 vs 얇은 복사   OOP   class  ","categories": ["ETC"],
+        "tags": ["ETC"],
+        "url": "/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/",
+        "teaser": null
+      },{
+        "title": "[Tips]짧은 Tips -1-",
+        "excerpt":"Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)   bundle exec jekyll serve      Server address: http://127.0.0.1:4000   ","categories": ["Tips"],
+        "tags": ["Tips"],
+        "url": "/tips/%EC%A7%A7%EC%9D%80-tips-1/",
+        "teaser": null
+      },{
+        "title": "[Job]면접질문",
+        "excerpt":"링크                  링크                 실제로 받은 프론트엔드 개발자 면접 질문 모음                 이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교          ","categories": ["Job"],
+        "tags": ["Job"],
+        "url": "/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/",
+        "teaser": null
       }]

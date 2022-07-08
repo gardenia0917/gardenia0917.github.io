@@ -1,0 +1,35 @@
+I"�<h1 id="because-its-mime-type-texthtml-is-not-a-supported-stylesheet-mime-type-and-strict-mime-checking-is-enabled">because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled.</h1>
+
+<blockquote>
+  <p>css 파일 경로 문제</p>
+</blockquote>
+
+<hr />
+
+<p>보통의 경우
+어느 파일이 경로를 못 찾는지 확인 후 수정</p>
+
+<p><strong>참고</strong>
+<a href="https://july7k.tistory.com/140">Coding JOAH님 블로그</a></p>
+
+<hr />
+
+<p>나의 경우</p>
+
+<p>style.css 파일을 찾다가</p>
+
+<p>dev &gt; dist &gt; contents &gt; common 폴더 안에</p>
+
+<p>css 폴더가 없음 발견!!!!</p>
+
+<p>scss -&gt; css 변환이 안되는 줄 알고
+gulp scss 변환 찾아봤으나 소용 없음</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm start</code>를 하면 파일이 자동생성 될 줄 알았으나 적용 ❌</p>
+
+<p>다시 <code class="language-plaintext highlighter-rouge">npm install</code> 후 <code class="language-plaintext highlighter-rouge">npm start</code> 를 하니 제대로 적용 됨</p>
+
+<p><strong>참고</strong>
+<a href="https://spacemonkey925.tistory.com/84">우주원숭이의 개발여행님 블로그</a>
+<a href="https://www.wake-up-neo.com/ko/css/gulpsass%EA%B0%80-scss-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%BB%B4%ED%8C%8C%EC%9D%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%A8/1044086590/">참조2</a></p>
+:ET

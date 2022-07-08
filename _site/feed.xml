@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-06T20:51:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T21:40:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Tips]짧은 Tips -1-</title><link href="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/" rel="alternate" type="text/html" title="[Tips]짧은 Tips -1-" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1</id><content type="html" xml:base="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/"><![CDATA[<h1 id="jekyll-블로그-서버-키기변경된거-바로-확인-가능">Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)</h1>
+
+<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></p>
+
+<blockquote>
+  <p>Server address: <u>http://127.0.0.1:4000</u></p>
+</blockquote>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[짧은 Tips 정리하기1]]></summary></entry><entry><title type="html">[Etc]쓰고 싶은 포스팅</title><link href="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/" rel="alternate" type="text/html" title="[Etc]쓰고 싶은 포스팅" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/"><![CDATA[<h1 id="깊은-복사-vs-얇은-복사">깊은 복사 vs 얇은 복사</h1>
+
+<h1 id="oop">OOP</h1>
+
+<h2 id="class">class</h2>]]></content><author><name>Gardenia</name></author><category term="ETC" /><category term="ETC" /><summary type="html"><![CDATA[기록하고 싶은거, 궁금한거 찾아서 포스팅하기 대기줄📈]]></summary></entry><entry><title type="html">[Diary]2주차</title><link href="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/" rel="alternate" type="text/html" title="[Diary]2주차" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8</id><content type="html" xml:base="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/"><![CDATA[<p>기술 블로그로 만들려고 하지만 일단 블로그이니
+하루 회고 형식으로 느낀점을 간단하게 남기려고 한다.</p>
+
+<h1 id="8일">8일</h1>
+
+<p>어제 분명히 작동이 되었는데 오늘 다시 실행시키니 에러가 났다.</p>
+
+<p>콘솔창에</p>
+
+<blockquote>
+  <p>because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled</p>
+</blockquote>
+
+<p>로 해서 갑자기 css 파일을 찾지 못했다고 떴다..
+경로 문제.
+보통은 경로를 수정해주는데 보니까 나는 css 파일이 없었다.
+scss에서 css로 바껴야 하는데 그것이 되지 않은 것임.
+<code class="language-plaintext highlighter-rouge">npm install</code> 을 다시해서 <code class="language-plaintext highlighter-rouge">npm start</code>하니까 됬다….
+(다음에는 이런일이 발생하면 어떻게 해야하는지 알게 됬다.)</p>
+
+<p>지금은 사운드를 제대로 찾지 못하는 일이 발생했다.
+그것도 일부만!!
+이제 오후 7시 50분인데 이거 고쳐야 한다 😢</p>
+
+<p>실무 뛰면서 느낀 거지만 참 난 모르는게 너무 많다.
+코드를 뜯어봐도 이해 안되는 부분이 많고
+뭘 해달라고 해도 이해를 못 하는게 많이 있다.
+코드에 대한 공부를 좀 더 열심히 해야겠다.</p>
+
+<h1 id="9일">9일</h1>
+
+<h1 id="일주일간-회고">일주일간 회고</h1>]]></content><author><name>Gardenia</name></author><category term="Diary" /><category term="Diary" /><summary type="html"><![CDATA[오늘 일기]]></summary></entry><entry><title type="html">[Error]CSS 파일 경로를 못 찾을 때</title><link href="http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/" rel="alternate" type="text/html" title="[Error]CSS 파일 경로를 못 찾을 때" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/"><![CDATA[<h1 id="because-its-mime-type-texthtml-is-not-a-supported-stylesheet-mime-type-and-strict-mime-checking-is-enabled">because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled.</h1>
+
+<blockquote>
+  <p>css 파일 경로 문제</p>
+</blockquote>
+
+<hr />
+
+<p>보통의 경우
+어느 파일이 경로를 못 찾는지 확인 후 수정</p>
+
+<p><strong>참고</strong>
+<a href="https://july7k.tistory.com/140">Coding JOAH님 블로그</a></p>
+
+<hr />
+
+<p>나의 경우</p>
+
+<p>style.css 파일을 찾다가</p>
+
+<p>dev &gt; dist &gt; contents &gt; common 폴더 안에</p>
+
+<p>css 폴더가 없음 발견!!!!</p>
+
+<p>scss -&gt; css 변환이 안되는 줄 알고
+gulp scss 변환 찾아봤으나 소용 없음</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm start</code>를 하면 파일이 자동생성 될 줄 알았으나 적용 ❌</p>
+
+<p>다시 <code class="language-plaintext highlighter-rouge">npm install</code> 후 <code class="language-plaintext highlighter-rouge">npm start</code> 를 하니 제대로 적용 됨</p>
+
+<p><strong>참고</strong>
+<a href="https://spacemonkey925.tistory.com/84">우주원숭이의 개발여행님 블로그</a>
+<a href="https://www.wake-up-neo.com/ko/css/gulpsass%EA%B0%80-scss-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%BB%B4%ED%8C%8C%EC%9D%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%A8/1044086590/">참조2</a></p>]]></content><author><name>Gardenia</name></author><category term="Error" /><category term="Error" /><category term="TS" /><summary type="html"><![CDATA[Error, css 파일 경로 문제]]></summary></entry><entry><title type="html">[Job]면접질문</title><link href="http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/" rel="alternate" type="text/html" title="[Job]면접질문" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8</id><content type="html" xml:base="http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/"><![CDATA[<h1 id="링크">링크</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>링크</td>
+    </tr>
+    <tr>
+      <td><a href="https://xiubindev.tistory.com/119">실제로 받은 프론트엔드 개발자 면접 질문 모음</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://joshua1988.github.io/web-development/interview/frontend-questions/">이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Job" /><summary type="html"><![CDATA[면접준비질문 리스트, 링크 주어와 정리본, 스스로 답 작성하기🌟]]></summary></entry><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
   <li>81강/1342분</li>
 </ul>
 
@@ -2513,496 +2601,7 @@ return newObj;
   }
   return arr;
 }
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 배열 25문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-1-변수와 자료형</title><link href="http://localhost:4000/coplit/1-%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95/" rel="alternate" type="text/html" title="[CodeStates]Coplit-1-변수와 자료형" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/coplit/1-%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95</id><content type="html" xml:base="http://localhost:4000/coplit/1-%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95/"><![CDATA[<h1 id="01_declaration">01_declaration</h1>
-
-<ul>
-  <li>let 키워드로 course 변수 선언하기</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let course;
-</code></pre></div></div>
-
-<h1 id="02_assignment">02_assignment</h1>
-
-<ul>
-  <li>변수(course)에 값(code states) 할당하기</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let course = 'code states';
-</code></pre></div></div>
-
-<h1 id="03_expression">03_expression</h1>
-
-<ul>
-  <li>변수 num1에 숫자 5를 할당, 변수 num2에 숫자 7을 할당, 변수 result에 num1과 num2의 곱을 할당하기</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let num1, num2, result;
-
-num1 = 5;
-num2 = 7;
-result = num1*num2;
-</code></pre></div></div>
-
-<h1 id="04_getruncatdistance">04_getRunCatDistance</h1>
-
-<ul>
-  <li>속력(speed), 시간(time)이 숫자로 주어졌을 때, 이동한 거리를 변수 distance에 할당하여 리턴하는 함수 작성하기</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getRunCatDistance(speed, time) {
-  let distance = speed * time;
-
-  return distance;
-}
-</code></pre></div></div>
-
-<h1 id="05_declarefunction">05_declareFunction</h1>
-
-<ul>
-  <li>첫 번째 인자에 2를 곱하는 함수 multiplyBy2와 비슷하게 첫 번째 인자를 2로 나누는 함수 divideBy2 선언하기</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function multiplyBy2(input) {
-  input = input * 2;
-  return input;
-}
-
-function divideBy2(input) {
-  input = input / 2;
-  return input;
-}
-</code></pre></div></div>
-
-<h1 id="06_callfunction">06_callFunction</h1>
-
-<ul>
-  <li>문자열을 인자로 받아서 느낌표를 붙여서 리턴 해주는 함수 returnWordWithJoy가 있을 때,
-함수 returnWordWithJoy의 첫 번째 인자로 문자열 “I love coding”을 넣어서 호출하고, 그 결과값을 변수 word에 할당하라</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let word = returnWordWithJoy('I love coding');
-
-// 아래 코드는 변경 ❌
-function returnWordWithJoy(word) {
-  if (typeof word !== 'string') {
-    return 'wrong type';
-  } else {
-    return word + '!';
-  }
-}
-</code></pre></div></div>
-
-<h1 id="07_type">07_type</h1>
-
-<ul>
-  <li>thing에 문자열(string) ‘두루마리 휴지’를 할당하고, num에 숫자(number) 3을 할당</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let thing = '두루마리 휴지', num = 3;
-
-// 아래 코드는 변경 ❌
-function goGet(thing, num) {
-  return '혜선아, 가서 ' + thing + ' ' + num + '개 가져다 줄래?';
-}
-let result = goGet(thing, num);
-</code></pre></div></div>
-
-<h1 id="08_plusrighttype">08_plusRightType</h1>
-
-<ul>
-  <li>변수 score에 숫자 100이 할당되도록 하기 코드를 수정</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//before
-let score = 90 + '10';
-
-// after
-let score = 100;
-</code></pre></div></div>
-
-<h1 id="09_converttonumber">09_convertToNumber</h1>
-
-<ul>
-  <li>Number() 함수를 이용해서 숫자로 변환하라</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertToNumber(anything) {
-  return Number(anything)
-}
-</code></pre></div></div>
-
-<h1 id="10_converttostring">10_convertToString</h1>
-
-<ul>
-  <li>String() 함수를 이용해서 문자로 변환하라</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertToString(anything) {
-  return String(anything)
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 변수와 자료형 10문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-2-조건문</title><link href="http://localhost:4000/coplit/2-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="[CodeStates]Coplit-2-조건문" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/coplit/2-%EC%A1%B0%EA%B1%B4%EB%AC%B8</id><content type="html" xml:base="http://localhost:4000/coplit/2-%EC%A1%B0%EA%B1%B4%EB%AC%B8/"><![CDATA[<h1 id="01_isoldenoughtodrink">01_isOldEnoughToDrink</h1>
-
-<ul>
-  <li>나이를 입력받아 술을 마실 수 있는지(18세 이상) 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOldEnoughToDrink(age) {
-  if(age&gt;=18){
-    return true;
-  } return false;
-}
-
-</code></pre></div></div>
-
-<h1 id="02_isgreaterthan30">02_isGreaterThan30</h1>
-
-<ul>
-  <li>온도를 입력받아 해당 온도가 30이 넘는지 확인 후 알맞은 값을 리턴
-    <ul>
-      <li>온도가 30 미만일 때 : ‘여름이 매우 덥네요’</li>
-      <li>온도가 30 이상일 때 : ‘에어컨을 켜야겠다!’</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isGreaterThan30(temp) {
-  if(temp &gt;=30){
-    return "에어컨을 켜야겠다!"
-  } return "여름이 매우 덥네요"
-}
-</code></pre></div></div>
-
-<h1 id="03_equalsten">03_equalsTen</h1>
-
-<ul>
-  <li>수를 입력받아 10과 같은지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function equalsTen(num) {
-  if(num===10){
-    return true;
-  } return false;
-}
-</code></pre></div></div>
-
-<h1 id="04_isgreaterthan">04_isGreaterThan</h1>
-
-<ul>
-  <li>두 개의 수를 입력받아 두번째 수가 첫번째 수보다 큰지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isGreaterThan(num1, num2) {
-  if(num1&lt;num2){
-    return true;
-  } return false;
-}
-</code></pre></div></div>
-
-<h1 id="05_iseven">05_isEven</h1>
-
-<ul>
-  <li>수를 입력받아 짝수인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEven(num) {
-  if(num%2===0){
-    return true;
-  } return false;
-}
-
-</code></pre></div></div>
-
-<h1 id="06_isevenandgreaterthanten">06_isEvenAndGreaterThanTen</h1>
-
-<ul>
-  <li>수를 입력받아 입력된 수가 10보다 크고 짝수인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEvenAndGreaterThanTen(num) {
-  if(num &gt; 10 &amp;&amp; num%2===0){
-    return true;
-  } return false;
-}
-</code></pre></div></div>
-
-<h1 id="07_fizzbuzz">07_fizzBuzz</h1>
-
-<ul>
-  <li>수를 입력받아 3 그리고 5로 각각 나눈 뒤 나머지 값에 따라 알맞은 메시지를 리턴
-    <ul>
-      <li>3으로 나누어 떨어지는 경우, ‘Fizz’를 리턴</li>
-      <li>5으로 나누어 떨어지는 경우, ‘Buzz’를 리턴</li>
-      <li>3과 5로 모두 나누어 떨어지는 경우, ‘FizzBuzz’를 리턴</li>
-      <li>3이나 5로 나누어 떨어지지 않는 경우, ‘No FizzBuzz’를 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function fizzBuzz(num) {
-  if(num % 3 === 0 &amp;&amp; num % 5 === 0){
-    return 'FizzBuzz';
-  }else if(num % 3 === 0){
-    return 'Fizz';
-  }else if(num % 5 === 0){
-    return 'Buzz';
-  }else {
-    return 'No FizzBuzz';
-  }
-}
-</code></pre></div></div>
-
-<h1 id="08_minicalculator">08_miniCalculator</h1>
-
-<ul>
-  <li>두 개의 수와 기호를 입력받아 알맞게 계산한 값을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function miniCalculator(num1, num2, operator) {
-  if(operator==='+'){
-    return num1 + num2;
-  }else  if(operator==='-'){
-    return num1 - num2;
-  }else if(operator==='*'){
-    return num1 * num2;
-  }else if(operator==='/'){
-    return num1 / num2;
-  }
-}
-</code></pre></div></div>
-
-<h1 id="09_daysinmonth">09_daysInMonth</h1>
-
-<ul>
-  <li>특정 달(month)을 입력받아 각 달에 몇 일이 있는지 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function daysInMonth(month) {
-  if(month===2){
-    return 28;
-  }else if(month===4 ||month===6 ||month===9 ||month===11){
-    return 30;
-  }return 31;
-}
-</code></pre></div></div>
-
-<h1 id="10_followingday">10_followingDay</h1>
-
-<ul>
-  <li>요일을 입력받아 해당 요일의 다음 요일을 리턴
-    <ul>
-      <li>올바른 요일을 입력받은 경우, 다음 요일을 리턴</li>
-      <li>올바른 요일이 아닌 경우에는 <code class="language-plaintext highlighter-rouge">올바른 요일이 아닙니다 </code>라는 문구를 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function followingDay(day) {
-  if(day==='월요일'){
-    return '화요일';
-  }else if(day==='화요일'){
-    return '수요일';
-  }else if(day==='수요일'){
-    return '목요일';
-  }else if(day==='목요일'){
-    return '금요일';
-  }else if(day==='금요일'){
-    return '토요일';
-  }else if(day==='토요일'){
-    return '일요일';
-  }else if(day==='일요일'){
-    return '월요일';
-  }else {
-    return '올바른 요일이 아닙니다'
-  }
-}
-</code></pre></div></div>
-
-<h1 id="11_iseitherevenandlessthan9">11_isEitherEvenAndLessThan9</h1>
-
-<ul>
-  <li>두 개 수를 입력받아 아래의 2가지 조건을 모두 만족하는지 검사
-    <ul>
-      <li>EitherEven: 적어도 하나의 수는 짝수임</li>
-      <li>LessThan9: 두 수 모두 9보다 작음</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isEitherEvenAndLessThan9(num1, num2) {
-  if(num1 &lt; 9 &amp;&amp; num2 &lt; 9){
-    if(num1 % 2===0 || num2 % 2 ===0 ){
-     return true;
-   } return false;
-  }
-  return false;
-}
-</code></pre></div></div>
-
-<h1 id="12_convertscoretograde">12_convertScoreToGrade</h1>
-
-<ul>
-  <li>점수를 입력받아 점수에 해당하는 등급을 리턴
-    <ul>
-      <li>주어진 점수가 100을 초과하거나 0 미만이라면 문자열 <code class="language-plaintext highlighter-rouge">INVALID SCORE</code>를 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertScoreToGrade(score) {
-  if(score &lt; 0 || score &gt; 100){
-    return 'INVALID SCORE'
-  }else if(score&gt;=90){
-    return 'A'
-  }else if(score&gt;=80){
-    return 'B'
-  }else if(score&gt;=70){
-    return 'C'
-  }else if(score&gt;=60){
-    return 'D'
-  }else {
-    return 'F'
-  }
-}
-</code></pre></div></div>
-
-<h1 id="13_convertscoretogradewithplusandminus">13_convertScoreToGradeWithPlusAndMinus</h1>
-
-<ul>
-  <li>점수를 입력받아 점수에 해당하는 등급을 리턴
-    <ul>
-      <li>주어진 점수가 100을 초과하거나 0 미만인 경우, 문자열 <code class="language-plaintext highlighter-rouge">INVALID SCORE</code>를 리턴</li>
-      <li>각 등급의 최고 점수보다 7점 이하인 경우, 등급과 함께 ‘-‘를 리턴 (단, 93점의 경우에는 A를 리턴</li>
-      <li>각 등급의 최저 점수보다 8점 이상인 경우, 등급과 함께 ‘+’를 리턴</li>
-      <li>F+ 와 F- 는 존재❌</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function convertScoreToGradeWithPlusAndMinus(score) {
-  if(score &lt; 0 || score &gt; 100){
-    return 'INVALID SCORE'
-  }else if(score&gt;98){
-    return 'A+'
-  }else if(score&gt;=93){
-    return 'A'
-  }else if(score&gt;=90){
-    return 'A-'
-  }else if(score&gt;=88){
-    return 'B+'
-  }else if(score&gt;=84){
-    return 'B'
-  }else if(score&gt;=80){
-    return 'B-'
-  }else if(score&gt;=78){
-    return 'C+'
-  }else if(score&gt;=74){
-    return 'C'
-  }else if(score&gt;=70){
-    return 'C-'
-  }else if(score&gt;=68){
-    return 'D+'
-  }else if(score&gt;=64){
-    return 'D'
-  }else if(score&gt;=60){
-    return 'D-'
-  }else {
-    return 'F'
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="14_ispythagorean">14_isPythagorean</h1>
-
-<ul>
-  <li>삼각형의 세 변을 입력받아 직각삼각형(pythagorean)인지 여부를 리턴
-    <ul>
-      <li>자바스크립트에서 x의 제곱(x squared)을 구하는 방법 3가지를 사용</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPythagorean(side1, side2, side3) {
-
-let pow1 = Math.pow(side1,2);
-let pow2 = side2 **2;
-let pow3 = side3 * side3
-
-if(pow1 === pow2 + pow3 || pow2 === pow1 + pow3 || pow3 === pow1 + pow2){
-   return true;
- } return false;
-}
-</code></pre></div></div>
-
-<h1 id="15_or">15_or</h1>
-
-<ul>
-  <li>두 개의 boolean 값을 입력받아 or 연산을 적용한 것과 같은 결과를 리턴
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">||</code> 연산자 사용은 금지</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function or(expression1, expression2) {
-  if(expression1===true &amp;&amp; expression2===true){
-    return true;
-  }else if(expression1===true &amp;&amp; expression2===false){
-    return true;
-  }if(expression1===false &amp;&amp; expression2===true){
-    return true;
-  } return false;
-}
-
-</code></pre></div></div>
-
-<h1 id="16_addonesecond">16_addOneSecond</h1>
-
-<ul>
-  <li>시, 분, 초를 입력받아 1초를 더한 결과값을 특정 형태의 메시지로 리턴
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">1초 뒤에 {hour}시 {minute}분 {second}초 입니다</code> 형식으로 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addOneSecond(hour, minute, second) {
-  if(second === 59){
-    second = 0;
-    minute += 1
-  }else {
-    second +=1;
-  }
-
-  if(minute === 60){
-    minute = 0;
-    hour += 1;
-  }
-
-  if(hour === 24){
-    hour = 0;
-  }
-
-  return `1초 뒤에 ${hour}시 ${minute}분 ${second}초 입니다`
-}
-
-</code></pre></div></div>
-
-<h1 id="17_isfalsy">17_isFalsy</h1>
-
-<ul>
-  <li>임의의 값을 입력받아 falsy 값인지 여부를 리턴
-    <ul>
-      <li>참조 : <code class="language-plaintext highlighter-rouge">js falsy value</code> 또는 <code class="language-plaintext highlighter-rouge">자바스크립트 거짓 값</code></li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isFalsy(anything) {
-  return !Boolean(anything)
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 조건문 17문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-3-문자열</title><link href="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-3-문자열" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="01_getfullname">01_getFullName</h1>
+</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 배열 25문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-3-문자열</title><link href="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-3-문자열" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="01_getfullname">01_getFullName</h1>
 
 <ul>
   <li>이름과 성을 입력받아 띄어쓰기 하나를 사이에 둔 단일 문자열을 리턴</li>
