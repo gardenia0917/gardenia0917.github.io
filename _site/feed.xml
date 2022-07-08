@@ -1,14 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T21:40:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Tips]짧은 Tips -1-</title><link href="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/" rel="alternate" type="text/html" title="[Tips]짧은 Tips -1-" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1</id><content type="html" xml:base="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/"><![CDATA[<h1 id="jekyll-블로그-서버-키기변경된거-바로-확인-가능">Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T22:48:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Tips]짧은 Tips -1-</title><link href="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/" rel="alternate" type="text/html" title="[Tips]짧은 Tips -1-" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1</id><content type="html" xml:base="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/"><![CDATA[<h1 id="jekyll-블로그-서버-키기변경된거-바로-확인-가능">Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)</h1>
 
 <p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></p>
 
 <blockquote>
   <p>Server address: <u>http://127.0.0.1:4000</u></p>
-</blockquote>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[짧은 Tips 정리하기1]]></summary></entry><entry><title type="html">[Etc]쓰고 싶은 포스팅</title><link href="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/" rel="alternate" type="text/html" title="[Etc]쓰고 싶은 포스팅" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/"><![CDATA[<h1 id="깊은-복사-vs-얇은-복사">깊은 복사 vs 얇은 복사</h1>
+</blockquote>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[짧은 Tips 정리하기1]]></summary></entry><entry><title type="html">[Etc]쓰고 싶은 포스팅</title><link href="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/" rel="alternate" type="text/html" title="[Etc]쓰고 싶은 포스팅" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/"><![CDATA[<h1 id="그냥-쓰고-싶은-글-들">그냥 쓰고 싶은 글 들</h1>
 
-<h1 id="oop">OOP</h1>
+<h2 id="깊은-복사-vs-얇은-복사">깊은 복사 vs 얇은 복사</h2>
 
-<h2 id="class">class</h2>]]></content><author><name>Gardenia</name></author><category term="ETC" /><category term="ETC" /><summary type="html"><![CDATA[기록하고 싶은거, 궁금한거 찾아서 포스팅하기 대기줄📈]]></summary></entry><entry><title type="html">[Diary]2주차</title><link href="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/" rel="alternate" type="text/html" title="[Diary]2주차" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8</id><content type="html" xml:base="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/"><![CDATA[<p>기술 블로그로 만들려고 하지만 일단 블로그이니
+<h2 id="oop">OOP</h2>
+
+<h3 id="class">class</h3>
+
+<h1 id="면접-준비로-정리하기">면접 준비로 정리하기</h1>
+
+<h2 id="호이스팅">호이스팅</h2>
+
+<h2 id="브라우저-렌더링-원리유저에게-보이는-순서-정리">브라우저 렌더링 원리(유저에게 보이는 순서 정리)</h2>
+
+<h2 id="margin-vs-padding">margin vs padding</h2>
+
+<h2 id="position-사용-방법">position 사용 방법</h2>
+
+<h2 id="get-vs-post">GET vs POST</h2>
+
+<h2 id="this-용법">This 용법</h2>
+
+<h2 id="브라우저-저장소-차이점">브라우저 저장소 차이점</h2>
+
+<ul>
+  <li>Localstorage, SessionStorage,Cookie</li>
+</ul>
+
+<h2 id="restful-api-설명">Restful API 설명</h2>
+
+<ul>
+  <li>GET, PUT, POST, PATCH, OPTION, DELETE</li>
+</ul>
+
+<h2 id="js-vs-ts">JS vs TS</h2>
+
+<h3 id="js는-어떤-언어인가">JS는 어떤 언어인가?</h3>
+
+<h3 id="ts는-어떤-언어인가">TS는 어떤 언어인가?</h3>
+
+<h2 id="event-loop">Event Loop</h2>
+
+<h2 id="마이크로태스크-큐-vs-태스크-큐">마이크로태스크 큐 vs 태스크 큐</h2>
+
+<h2 id="이벤트-버블링">이벤트 버블링</h2>
+
+<p><a href="https://youtu.be/8aGhZQkoFbQ">유투브</a></p>
+
+<h2 id="실행문맥-">실행문맥 ?</h2>
+
+<h2 id="이터러블-이터레이트-프로토콜-설명하기">이터러블, 이터레이트 프로토콜 설명하기</h2>
+
+<h2 id="제네레이터-설명">제네레이터 설명</h2>
+
+<h2 id="트랜젝션">트랜젝션?</h2>
+
+<h2 id="sassscss-사용해봤니-css랑-비교했을-때">SASS,SCSS 사용해봤니? css랑 비교했을 때?</h2>
+
+<h2 id="vue-와-react-차이점-이건-뷰를-해봐야">Vue 와 React 차이점? (이건 뷰를 해봐야…)</h2>
+
+<h2 id="var-let-const-차이점">var let const 차이점</h2>
+
+<h2 id="cors를-대처하는-방법-우회하는-방법">CORS를 대처하는 방법, 우회하는 방법</h2>
+
+<h2 id="mvvm-모델">MVVM 모델?</h2>]]></content><author><name>Gardenia</name></author><category term="ETC" /><category term="ETC" /><summary type="html"><![CDATA[기록하고 싶은거, 궁금한거 찾아서 포스팅하기 대기줄📈]]></summary></entry><entry><title type="html">[Diary]2주차</title><link href="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/" rel="alternate" type="text/html" title="[Diary]2주차" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8</id><content type="html" xml:base="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/"><![CDATA[<p>기술 블로그로 만들려고 하지만 일단 블로그이니
 하루 회고 형식으로 느낀점을 간단하게 남기려고 한다.</p>
 
 <h1 id="8일">8일</h1>
@@ -84,6 +144,12 @@ gulp scss 변환 찾아봤으나 소용 없음</p>
     </tr>
     <tr>
       <td><a href="https://joshua1988.github.io/web-development/interview/frontend-questions/">이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://realmojo.tistory.com/300">프론트엔드 개발자 기술면접 인터뷰 질문 모음(업데이트)</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://joontae-kim.github.io/2021/07/22/interview-question-js-2/">프론트엔드 면접 질문 리스트 - JS</a></td>
     </tr>
   </tbody>
 </table>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Job" /><summary type="html"><![CDATA[면접준비질문 리스트, 링크 주어와 정리본, 스스로 답 작성하기🌟]]></summary></entry><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>

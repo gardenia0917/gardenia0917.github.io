@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[Etc]쓰고 싶은 포스팅",
-        "excerpt":"깊은 복사 vs 얇은 복사   OOP   class  ","categories": ["ETC"],
+        "excerpt":"그냥 쓰고 싶은 글 들 깊은 복사 vs 얇은 복사 OOP class 면접 준비로 정리하기 호이스팅 브라우저 렌더링 원리(유저에게 보이는 순서 정리) margin vs padding position 사용 방법 GET vs POST This 용법 브라우저 저장소 차이점 Localstorage, SessionStorage,Cookie Restful API 설명 GET, PUT, POST, PATCH, OPTION, DELETE JS vs TS...","categories": ["ETC"],
         "tags": ["ETC"],
         "url": "/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/",
         "teaser": null
@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[Job]면접질문",
-        "excerpt":"링크                  링크                 실제로 받은 프론트엔드 개발자 면접 질문 모음                 이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교          ","categories": ["Job"],
+        "excerpt":"링크                  링크                 실제로 받은 프론트엔드 개발자 면접 질문 모음                 이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교                 프론트엔드 개발자 기술면접 인터뷰 질문 모음(업데이트)                 프론트엔드 면접 질문 리스트 - JS          ","categories": ["Job"],
         "tags": ["Job"],
         "url": "/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/",
         "teaser": null
