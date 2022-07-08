@@ -6,7 +6,7 @@ main:
     url: /categories/
   - title: "Years"
     url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Tags"
+    url: /tags/
   # - title: "Sitemap"
   #   url: /sitemap/
