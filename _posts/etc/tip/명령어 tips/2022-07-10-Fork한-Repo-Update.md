@@ -1,26 +1,20 @@
 ---
-title: "[Tips]짧은 Tips -1-"
-excerpt: "짧은 Tips 정리하기1"
+title: "[Command]Fork 한 Repo Update💻"
+excerpt: "Fork Repo 관리시 필요할 듯"
 
 categories:
-  - Tips
+  - Command
 tags:
-  - [Tips]
+  - [Tips, Command]
 
 toc: true
 toc_sticky: true
 
-date: 2022-07-08
-last_modified_at: 2022-07-08
+date: 2022-07-10
+last_modified_at: 2022-07-10
 ---
 
-# Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)
-
-`bundle exec jekyll serve`
-
-> Server address: <U>http://127.0.0.1:4000</U>
-
-# Fork 한 Repo Update.💻
+# Fork 한 Repo Update💻
 
 1. 내 로컬에 Fork Clone
 
@@ -46,4 +40,5 @@ last_modified_at: 2022-07-08
 7. 포크저장소로 push
 
 - `git push`
-  [참고](https://velog.io/@k904808/Fork-%ED%95%9C-Repository-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0)
+
+[참고](https://velog.io/@k904808/Fork-%ED%95%9C-Repository-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0)
