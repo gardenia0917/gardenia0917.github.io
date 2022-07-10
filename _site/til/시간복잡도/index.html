@@ -1,0 +1,814 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+      <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    
+    <!--폰트 : "Iropke Batang"-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[TIL]시간복잡도 - Grow Gardenia</title>
+<meta name="description" content="시간복잡도 이해하기">
+
+
+  <meta name="author" content="Gardenia">
+  
+  <meta property="article:author" content="Gardenia">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Grow Gardenia">
+<meta property="og:title" content="[TIL]시간복잡도">
+<meta property="og:url" content="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/">
+
+
+  <meta property="og:description" content="시간복잡도 이해하기">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-07-10T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-07-10T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gardenia",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grow Gardenia
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/index.html">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Years</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">카테고리</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+           
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#til" itemprop="item"><span itemprop="name">Til</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[TIL]시간복잡도</li>
+      
+    
+  </ol>
+</nav>
+  
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/">
+        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url">Gardenia</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>천천히 성장하는 중 🌱</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article
+    class="page h-entry"
+    itemscope
+    itemtype="https://schema.org/CreativeWork"
+  >
+    <meta
+      itemprop="headline"
+      content="[TIL]시간복잡도"
+    /> <meta
+      itemprop="description"
+      content="시간복잡도 이해하기"
+    /> <meta
+      itemprop="datePublished"
+      content="2022-07-10T00:00:00+09:00"
+    /> <meta
+      itemprop="dateModified"
+      content="2022-07-10T00:00:00+09:00"
+    />
+
+    <div class="page__inner-wrap">
+      
+      <header>
+        
+        <h1 id="page-title" class="page__title p-name" itemprop="headline">
+          <a href="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/" class="u-url" itemprop="url"
+            ><p>[TIL]시간복잡도</p>
+</a
+          >
+        </h1>
+         
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+      </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <aside class="sidebar__right sticky">
+          <nav class="toc">
+            <header>
+              <h4 class="nav__title">
+                <i class="fas fa-file-alt"></i>
+                목차
+              </h4>
+            </header>
+            <ul class="toc__menu"><li><a href="#-알아보자-시간-복잡도">🌱 알아보자 시간 복잡도!</a><ul><li><a href="#big-o-계산-규칙">Big-O 계산 규칙</a><ul><li><a href="#o1---constant-time">O(1) - Constant Time</a></li><li><a href="#on---linear-time">O(n) - Linear time</a></li><li><a href="#on2---quadratic-time">O(n^2) - Quadratic Time</a></li><li><a href="#olog-n---log">O(log n) - Log</a></li></ul></li></ul></li><li><a href="#참고">참고</a></li></ul>
+          </nav>
+        </aside>
+         <h1 id="-알아보자-시간-복잡도">🌱 알아보자 시간 복잡도!</h1>
+
+<ul>
+  <li>알고리즘이 얼마나 걸리느냐</li>
+</ul>
+
+<blockquote>
+  <p>시간복잡도 = 알고리즘을 구성한 명령어가 실행된 횟수</p>
+</blockquote>
+
+<p><strong>시간복잡도의 종류</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>O()</td>
+      <td>빅오</td>
+      <td>최악 시간</td>
+      <td>가장 많이 쓰임 실행시간의 상한</td>
+    </tr>
+    <tr>
+      <td>Ω()</td>
+      <td>오메가</td>
+      <td>최상 시간</td>
+      <td>실행시간의 하한</td>
+    </tr>
+    <tr>
+      <td>Θ()</td>
+      <td>세타</td>
+      <td>평균 시간</td>
+      <td>실행시간의 평균</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="big-o-계산-규칙">Big-O 계산 규칙</h2>
+
+<ul>
+  <li>
+    <ol>
+      <li>Worst Case
+        <ul>
+          <li>항상 최악의 상황을 고려</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Remove Constants
+        <ul>
+          <li>상수를 제거 하라</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Different Terms for Inputs
+        <ul>
+          <li>인자 값이 다를 경우 따로 계산</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Drop Non Dominants
+        <ul>
+          <li>가장 높은 차수만 남김</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="o1---constant-time">O(1) - Constant Time</h3>
+
+<ul>
+  <li>입력 공간에 대해 변하지 않음</li>
+  <li>상수 시간이라고 부름</li>
+  <li>n의 값이 얼마나 크든 상관 ❌</li>
+  <li>단 한 번만 이루어지면 됨</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleO1(arr){
+  console.log(arr[0]);
+}
+</code></pre></div></div>
+
+<h3 id="on---linear-time">O(n) - Linear time</h3>
+
+<ul>
+  <li>선형 시간</li>
+  <li>최악의 경우 n번의 연산을 수행해야 하는 알고리즘에 적용</li>
+  <li>입력 데이터의 크기에 비례해서 처리시간도 늘어나는 알고리즘을 표현할 때 사용</li>
+  <li>코드를 n번 반복</li>
+  <li>e.g. 0부터 n-1까지 숫자 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+    }
+}
+</code></pre></div></div>
+
+<h3 id="on2---quadratic-time">O(n^2) - Quadratic Time</h3>
+
+<ul>
+  <li>2차 시간</li>
+  <li>입력 데이터의 크기의 제곱만큼 처리시간이 걸리는 알고리즘을 표현할 때 사용</li>
+  <li>n * n번 수행</li>
+  <li>e.g. 선택 정렬, 삽입 정렬, 버블 정렬</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn2(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+        for (let j = i; j &lt; n; j++) {
+            console.log(j);
+        }
+    }
+}
+</code></pre></div></div>
+
+<h3 id="olog-n---log">O(log n) - Log</h3>
+
+<ul>
+  <li>이진 탐색 등의 알고리즘을 표현할 때 사용</li>
+  <li>e.g. 2의 2승 부터 n승까지 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleLogn(n) {
+    for (let i = 2; i &lt;= n; i*2) {
+        console.log(i);
+    }
+}
+
+</code></pre></div></div>
+
+<h1 id="참고">참고</h1>
+
+<p><a href="https://itprogramming119.tistory.com/entry/Javascript-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EC%98%88%EC%A0%9C">코딩병원 블로그</a><br />
+<a href="https://overcome-the-limits.tistory.com/18">Plus Ultra 블로그</a><br />
+<a href="https://pizzasheepsdev.tistory.com/3">개발하는 피자 양목장 블로그</a></p>
+ 
+      </section>
+
+      <footer class="page__meta">
+         
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#til" class="page__taxonomy-item p-category" rel="tag">TIL</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#til" class="page__taxonomy-item p-category" rel="tag">TIL</a>
+    
+    </span>
+  </p>
+
+ 
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-07-10">July 10, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BTIL%5D%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84%20%2Ftil%2F%25EC%258B%259C%25EA%25B0%2584%25EB%25B3%25B5%25EC%259E%25A1%25EB%258F%2584%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Ftil%2F%25EC%258B%259C%25EA%25B0%2584%25EB%25B3%25B5%25EC%259E%25A1%25EB%258F%2584%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Ftil%2F%25EC%258B%259C%25EA%25B0%2584%25EB%25B3%25B5%25EC%259E%25A1%25EB%258F%2584%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ 
+  <nav class="pagination">
+    
+      <a href="/error/git-pull-%EC%97%90%EB%9F%AC/" class="pagination--pager" title="[Error]Git pull 에러
+">이전</a>
+    
+    
+      <a href="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/" class="pagination--pager" title="[Tips]MYSQL 문법
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+   
+  <div class="page__related">
+    <h2 class="page__related-title">
+      참고
+    </h2>
+    <div class="grid__wrapper">
+       
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/" rel="permalink">[Tips]용어 사전
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">용어 정리하기
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98/" rel="permalink">[Command]React와 TS 설치하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로젝트 시작할 때 사용하자🔥
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/command/Fork%ED%95%9C-Repo-Update/" rel="permalink">[Command]Fork 한 Repo Update💻
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Fork Repo 관리시 필요할 듯
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/" rel="permalink">[Tips]MYSQL 문법
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          17 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">SQL 정리하기
+</p>
+  </article>
+</div>
+ 
+    </div>
+  </div>
+   
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'gardenia0917/gardenia0917.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    
+    script.setAttribute('theme', 'photon-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>

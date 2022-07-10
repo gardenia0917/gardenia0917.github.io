@@ -1,0 +1,147 @@
+I"m<h1 id="-알아보자-시간-복잡도">🌱 알아보자 시간 복잡도!</h1>
+
+<ul>
+  <li>알고리즘이 얼마나 걸리느냐</li>
+</ul>
+
+<blockquote>
+  <p>시간복잡도 = 알고리즘을 구성한 명령어가 실행된 횟수</p>
+</blockquote>
+
+<p><strong>시간복잡도의 종류</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>O()</td>
+      <td>빅오</td>
+      <td>최악 시간</td>
+      <td>가장 많이 쓰임 실행시간의 상한</td>
+    </tr>
+    <tr>
+      <td>Ω()</td>
+      <td>오메가</td>
+      <td>최상 시간</td>
+      <td>실행시간의 하한</td>
+    </tr>
+    <tr>
+      <td>Θ()</td>
+      <td>세타</td>
+      <td>평균 시간</td>
+      <td>실행시간의 평균</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="big-o-계산-규칙">Big-O 계산 규칙</h2>
+
+<ul>
+  <li>
+    <ol>
+      <li>Worst Case
+        <ul>
+          <li>항상 최악의 상황을 고려</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Remove Constants
+        <ul>
+          <li>상수를 제거 하라</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Different Terms for Inputs
+        <ul>
+          <li>인자 값이 다를 경우 따로 계산</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Drop Non Dominants
+        <ul>
+          <li>가장 높은 차수만 남김</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="o1---constant-time">O(1) - Constant Time</h3>
+
+<ul>
+  <li>입력 공간에 대해 변하지 않음</li>
+  <li>상수 시간이라고 부름</li>
+  <li>n의 값이 얼마나 크든 상관 ❌</li>
+  <li>단 한 번만 이루어지면 됨</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleO1(arr){
+  console.log(arr[0]);
+}
+</code></pre></div></div>
+
+<h3 id="on---linear-time">O(n) - Linear time</h3>
+
+<ul>
+  <li>선형 시간</li>
+  <li>최악의 경우 n번의 연산을 수행해야 하는 알고리즘에 적용</li>
+  <li>입력 데이터의 크기에 비례해서 처리시간도 늘어나는 알고리즘을 표현할 때 사용</li>
+  <li>코드를 n번 반복</li>
+  <li>e.g. 0부터 n-1까지 숫자 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+    }
+}
+</code></pre></div></div>
+
+<h3 id="on2---quadratic-time">O(n^2) - Quadratic Time</h3>
+
+<ul>
+  <li>2차 시간</li>
+  <li>입력 데이터의 크기의 제곱만큼 처리시간이 걸리는 알고리즘을 표현할 때 사용</li>
+  <li>n * n번 수행</li>
+  <li>e.g. 선택 정렬, 삽입 정렬, 버블 정렬</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn2(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+        for (let j = i; j &lt; n; j++) {
+            console.log(j);
+        }
+    }
+}
+</code></pre></div></div>
+
+<h3 id="olog-n---log">O(log n) - Log</h3>
+
+<ul>
+  <li>이진 탐색 등의 알고리즘을 표현할 때 사용</li>
+  <li>e.g. 2의 2승 부터 n승까지 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleLogn(n) {
+    for (let i = 2; i &lt;= n; i*2) {
+        console.log(i);
+    }
+}
+
+</code></pre></div></div>
+
+<h1 id="참고">참고</h1>
+
+<p><a href="https://itprogramming119.tistory.com/entry/Javascript-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EC%98%88%EC%A0%9C">코딩병원 블로그</a><br />
+<a href="https://overcome-the-limits.tistory.com/18">Plus Ultra 블로그</a><br />
+<a href="https://pizzasheepsdev.tistory.com/3">개발하는 피자 양목장 블로그</a></p>
+:ET

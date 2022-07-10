@@ -1,0 +1,53 @@
+I"�<h1 id="fork-한-repo-update">Fork 한 Repo Update💻</h1>
+
+<ol>
+  <li>내 로컬에 Fork Clone</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git clone 포크repo주소</code></li>
+</ul>
+
+<ol>
+  <li>Clone 한 프로젝트 디렉토리 이동 -&gt; 리모트 저장소 확인</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code></li>
+</ul>
+
+<ol>
+  <li>리모트 저장소에 upstream 추가</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git remote add 등록이름 원본repo주소 </code></li>
+</ul>
+
+<ol>
+  <li>추가 확인해보기 - 2번 과 동일</li>
+  <li>원본 저장소 fetch - 가져오기</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">it fetch 등록이름</code></li>
+</ul>
+
+<ol>
+  <li>원본 저장소 merge - 합치기</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git merge 등록이름/브랜치이름</code></li>
+</ul>
+
+<ol>
+  <li>포크저장소로 push</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git push</code></li>
+</ul>
+
+<p><a href="https://velog.io/@k904808/Fork-%ED%95%9C-Repository-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0">참고</a></p>
+:ET

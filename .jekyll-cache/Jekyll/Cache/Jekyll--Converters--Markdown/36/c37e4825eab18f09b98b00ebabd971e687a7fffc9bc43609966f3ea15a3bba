@@ -1,0 +1,45 @@
+I"�<h1 id="react-설치">React 설치</h1>
+
+<h2 id="아직-파일-없을-때">아직 파일 없을 때</h2>
+
+<ol>
+  <li>파일 만들 곳으로 이동</li>
+  <li>React 설치
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">npx create-react-app 프로젝트명(파일이름)</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="파일-있을-때">파일 있을 때</h2>
+
+<ul>
+  <li><u>주로 사용함</u> - github gui에서 repo만들어 clone 한 경우❗️</li>
+</ul>
+
+<ol>
+  <li>클론한 파일 안으로 이동</li>
+  <li>React 설치
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">npx create-react-app .</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="typescript-설치">TypeScript 설치</h1>
+
+<h2 id="react-설치-전-함께-설치-할-때">React 설치 전 함께 설치 할 때</h2>
+
+<p><code class="language-plaintext highlighter-rouge">npx create-react-app 프로젝트명(파일이름) --template typescript</code></p>
+
+<h2 id="typescript만-설치-할-때">TypeScript만 설치 할 때</h2>
+
+<p><code class="language-plaintext highlighter-rouge">npm i typescript @types/node @types/react @types/react-dom @types/jest</code></p>
+
+<h2 id="tsconfigjson-설치">tsconfig.json 설치</h2>
+
+<p><code class="language-plaintext highlighter-rouge">tsc --init</code> - <code class="language-plaintext highlighter-rouge">npm i -g typescript</code>로 전역 설치 한 경우</p>
+
+<p><a href="https://velog.io/@wonyuuu/TypeScript-React-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-TypeScript-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0">참고1</a><br />
+<a href="https://velog.io/@welloff_jj/React-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-TypeScript%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-with-CRA-ESLint-Prettier-%EC%A0%81%EC%9A%A9">참고2</a></p>
+:ET

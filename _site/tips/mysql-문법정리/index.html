@@ -1,0 +1,2185 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+      <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    
+    <!--폰트 : "Iropke Batang"-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[Tips]MYSQL 문법 - Grow Gardenia</title>
+<meta name="description" content="SQL 정리하기">
+
+
+  <meta name="author" content="Gardenia">
+  
+  <meta property="article:author" content="Gardenia">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Grow Gardenia">
+<meta property="og:title" content="[Tips]MYSQL 문법">
+<meta property="og:url" content="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/">
+
+
+  <meta property="og:description" content="SQL 정리하기">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-07-10T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-07-10T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gardenia",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Grow Gardenia Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grow Gardenia
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/index.html">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Years</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">카테고리</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+           
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#tips" itemprop="item"><span itemprop="name">Tips</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[Tips]MYSQL 문법</li>
+      
+    
+  </ol>
+</nav>
+  
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/">
+        <img src="https://user-images.githubusercontent.com/89240523/175433344-3b204075-0570-4212-9a20-20584681d24c.png" alt="Gardenia" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url">Gardenia</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>천천히 성장하는 중 🌱</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="gardenia1109@naver.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article
+    class="page h-entry"
+    itemscope
+    itemtype="https://schema.org/CreativeWork"
+  >
+    <meta
+      itemprop="headline"
+      content="[Tips]MYSQL 문법"
+    /> <meta
+      itemprop="description"
+      content="SQL 정리하기"
+    /> <meta
+      itemprop="datePublished"
+      content="2022-07-10T00:00:00+09:00"
+    /> <meta
+      itemprop="dateModified"
+      content="2022-07-10T00:00:00+09:00"
+    />
+
+    <div class="page__inner-wrap">
+      
+      <header>
+        
+        <h1 id="page-title" class="page__title p-name" itemprop="headline">
+          <a href="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/" class="u-url" itemprop="url"
+            ><p>[Tips]MYSQL 문법</p>
+</a
+          >
+        </h1>
+         
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          15 분 소요
+        
+      </span>
+    
+  </p>
+
+
+      </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <aside class="sidebar__right sticky">
+          <nav class="toc">
+            <header>
+              <h4 class="nav__title">
+                <i class="fas fa-file-alt"></i>
+                목차
+              </h4>
+            </header>
+            <ul class="toc__menu"><li><a href="#basic">BASIC</a><ul><li><a href="#select">SELECT</a><ul><li><a href="#select-distinct문">SELECT DISTINCT문</a></li></ul></li><li><a href="#where">WHERE</a></li><li><a href="#and-or-및-not">AND, OR 및 NOT</a><ul><li><a href="#섞어쓰기">섞어쓰기</a></li></ul></li><li><a href="#order-by">ORDER BY</a></li><li><a href="#insert-into">INSERT INTO</a></li><li><a href="#null">NULL</a></li><li><a href="#update">UPDATE</a></li><li><a href="#delete">DELETE</a></li><li><a href="#limit">LIMIT</a></li><li><a href="#min--max">MIN() &amp; MAX()</a></li><li><a href="#count-avg-sum">COUNT(), AVG(), SUM()</a></li><li><a href="#like">LIKE</a></li><li><a href="#in">IN</a></li><li><a href="#between">BETWEEN</a></li><li><a href="#aliases별칭">Aliases(별칭)</a></li><li><a href="#join">JOIN</a><ul><li><a href="#inner-join">INNER JOIN</a></li><li><a href="#left-join">LEFT JOIN</a></li><li><a href="#right-join">RIGHT JOIN</a></li><li><a href="#full-join">FULL JOIN</a></li><li><a href="#self-join">SELF JOIN</a></li></ul></li><li><a href="#union">UNION</a><ul><li><a href="#union-1">UNION</a></li><li><a href="#union-all">UNION ALL</a></li></ul></li><li><a href="#group-by">GROUP BY</a></li><li><a href="#having">HAVING</a></li><li><a href="#exists">EXISTS</a></li><li><a href="#any">ANY</a></li><li><a href="#all">ALL</a></li><li><a href="#select-into">SELECT INTO</a></li><li><a href="#insert-into-select">INSERT INTO SELECT</a></li><li><a href="#case">CASE</a></li></ul></li><li><a href="#database">DATABASE</a><ul><li><a href="#create-database">CREATE DATABASE</a></li><li><a href="#drop-database">DROP DATABASE</a></li><li><a href="#backup-database">BACKUP DATABASE</a><ul><li><a href="#backup-with-differential">BACKUP WITH DIFFERENTIAL</a></li></ul></li><li><a href="#create-table">CREATE TABLE</a></li><li><a href="#drop-table">DROP TABLE</a></li><li><a href="#alter-table">ALTER TABLE</a><ul><li><a href="#열-추가">열 추가</a></li><li><a href="#열-삭제">열 삭제</a></li><li><a href="#열-변경수정">열 변경/수정</a></li></ul></li><li><a href="#constraints제약조건">Constraints(제약조건)</a></li><li><a href="#not-null">NOT NULL</a></li><li><a href="#unique-constraint">UNIQUE Constraint</a></li><li><a href="#primary-key">PRIMARY KEY</a></li><li><a href="#foreign-key">FOREIGN KEY</a></li><li><a href="#check-constraint">CHECK Constraint</a></li><li><a href="#default-constraint">DEFAULT Constraint</a></li><li><a href="#create-index">CREATE INDEX</a></li><li><a href="#auto-increment">AUTO INCREMENT</a></li><li><a href="#dates">Dates</a></li><li><a href="#create-view">CREATE VIEW</a><ul><li><a href="#create-or-replace-viewview-업데이트">CREATE OR REPLACE VIEW(VIEW 업데이트)</a></li><li><a href="#drop-view">DROP VIEW</a></li></ul></li></ul></li></ul>
+          </nav>
+        </aside>
+         <p><code class="language-plaintext highlighter-rouge">아래 문법 설명은 w3schools의 설명을 기초로 작성되었음</code></p>
+
+<h1 id="basic">BASIC</h1>
+
+<h2 id="select">SELECT</h2>
+
+<ul>
+  <li>데이터 선택</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT CustomerName, City FROM Customers;</p>
+</blockquote>
+
+<ul>
+  <li>모든 데이터를 선택할때 <code class="language-plaintext highlighter-rouge">*</code>를 쓴다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * FROM table_name;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers;</p>
+</blockquote>
+
+<h3 id="select-distinct문">SELECT DISTINCT문</h3>
+
+<ul>
+  <li>SELECT 절 바로 뒤에 DISTINCT 문을 넣고 그 뒤에 가져오길 원하는 칼럼을 나열하면 중복값이 제거된 데이터를 가져올 수 있음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT DISTINCT column1, column2, ...
+FROM table_name;
+</code></pre></div></div>
+
+<h2 id="where">WHERE</h2>
+
+<ul>
+  <li>필터링</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country=’Mexico’;</p>
+</blockquote>
+
+<h2 id="and-or-및-not">AND, OR 및 NOT</h2>
+
+<ul>
+  <li>
+    <p>WHERE 절과 결합 가능</p>
+  </li>
+  <li>
+    <p>AND 구문 : 다 포함 된 것 조회</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country=’Germany’ AND City=’Berlin’;</p>
+</blockquote>
+
+<ul>
+  <li>OR 구문 : 하나라도 포함 되면 조회</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE City=’Berlin’ OR City=’München’;</p>
+</blockquote>
+
+<ul>
+  <li>NOT 구문 : 특정 값을 제외 한 조회</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE NOT Country=’Germany’;</p>
+</blockquote>
+
+<h3 id="섞어쓰기">섞어쓰기</h3>
+
+<ul>
+  <li>국가가 “독일”이 아니고 “미국”이 아닌 “고객”의 모든 필드</li>
+</ul>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE NOT Country=’Germany’ AND NOT Country=’USA’;</p>
+</blockquote>
+
+<h2 id="order-by">ORDER BY</h2>
+
+<ul>
+  <li>오름차순, 내림차순으로 결과를 정렬함</li>
+</ul>
+
+<p>오름차순</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... (ASC)
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country;</p>
+</blockquote>
+
+<p>내림차순</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ...DESC;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country DESC;</p>
+</blockquote>
+
+<p>ex. 여러 열 1 -&gt; “국가”를 기준으로 오름차순으로 정렬되고 “CustomerName” 열을 기준으로 내림차순으로 정렬</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;</p>
+</blockquote>
+
+<h2 id="insert-into">INSERT INTO</h2>
+
+<ul>
+  <li>테이블에 새 레코드 삽입</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+</code></pre></div></div>
+
+<p>테이블의 모든 열에 값을 추가하는 경우</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+</code></pre></div></div>
+
+<p>ex. “CustomerName”, “City” 및 “Country” 열에만 데이터를 삽입</p>
+
+<blockquote>
+  <p>INSERT INTO Customers (CustomerName, City, Country)
+VALUES (‘Cardinal’, ‘Stavanger’, ‘Norway’);</p>
+</blockquote>
+
+<h2 id="null">NULL</h2>
+
+<ul>
+  <li>값이 없는 필드
+NULL 값은 0 값 또는 공백이 포함된 필드와 다르다. NULL 값이 있는 필드는 레코드 생성 중에 <code class="language-plaintext highlighter-rouge">비어 있는</code> 필드</li>
+</ul>
+
+<p>IS NULL -&gt; 비어 있는 것 조회</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+</code></pre></div></div>
+
+<p>ex. 주소가 비어있는 고객 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;</p>
+</blockquote>
+
+<p>IS NOT NULL -&gt; 비어 있지 않은 것 조회</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+</code></pre></div></div>
+
+<p>ex. 주소가 비어있지 않은 고객 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;`</p>
+</blockquote>
+
+<h2 id="update">UPDATE</h2>
+
+<ul>
+  <li>기존의 레코드 수정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>WHERE절 을 생략하면 테이블의 <code class="language-plaintext highlighter-rouge">모든 레코드가 업데이트</code></li>
+</ul>
+
+<p>ex. CustomerID가 1인 고객의 담당자와 도시를 업데이트!</p>
+
+<blockquote>
+  <p>UPDATE Customers
+SET ContactName = ‘Alfred Schmidt’, City= ‘Frankfurt’
+WHERE CustomerID = 1;</p>
+</blockquote>
+
+<p>ex. 나라가 멕시코인 고객들의 담당자를 Juan으로 변경</p>
+
+<blockquote>
+  <p>UPDATE Customers
+SET ContactName=’Juan’
+WHERE Country=’Mexico’;</p>
+</blockquote>
+
+<h2 id="delete">DELETE</h2>
+
+<ul>
+  <li>기존 레코드 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE FROM table_name WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>WHERE절 을 생략하면 테이블의 <code class="language-plaintext highlighter-rouge">모든 레코드가 삭제</code></li>
+</ul>
+
+<p>ex. 고객명이 ‘Alfreds Futterkiste’인 칼럼 삭제</p>
+
+<blockquote>
+  <p>DELETE FROM Customers WHERE CustomerName=’Alfreds Futterkiste’;</p>
+</blockquote>
+
+<p>ex. 모든 기록 삭제</p>
+
+<blockquote>
+  <p>DELETE FROM table_name;</p>
+</blockquote>
+
+<h2 id="limit">LIMIT</h2>
+
+<p>(sql/MS액세스, MySQL, Oracle 방법이 다름)</p>
+
+<ul>
+  <li><a href="https://www.w3schools.com/sql/sql_top.asp">SELECT TOP</a></li>
+  <li>제한된 수의 레코드를 선택</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+</code></pre></div></div>
+
+<p>ex. 처음 세개의 레코드 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+LIMIT 3;</p>
+</blockquote>
+
+<h2 id="min--max">MIN() &amp; MAX()</h2>
+
+<ul>
+  <li>선택열의 가장 작은(큰) 값 반환</li>
+</ul>
+
+<p>MIN()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 가장 저렴한 가격 찾기</p>
+
+<blockquote>
+  <p>SELECT MIN(Price) AS SmallestPrice
+FROM Products;</p>
+</blockquote>
+
+<p>MAX()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 가장 비싼 가격 찾기</p>
+
+<blockquote>
+  <p>SELECT MAX(Price) AS LargestPrice
+FROM Products;
+** AS : SELECT 별칭 주기</p>
+</blockquote>
+
+<h2 id="count-avg-sum">COUNT(), AVG(), SUM()</h2>
+
+<ul>
+  <li>
+    <p>NULL 값 무시</p>
+  </li>
+  <li>
+    <p>COUNT()</p>
+    <ul>
+      <li>지정된 기준과 일치하는 행의 수를 반환</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 제품수 반환하기</p>
+
+<blockquote>
+  <p>SELECT COUNT(ProductID)
+FROM Products;</p>
+</blockquote>
+
+<ul>
+  <li>AVG()
+    <ul>
+      <li>숫자 열의 평균 반환</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 제품의 평균 가격</p>
+
+<blockquote>
+  <p>SELECT AVG(Price)
+FROM Products;</p>
+</blockquote>
+
+<ul>
+  <li>SUM()
+    <ul>
+      <li>숫자 열의 총 합</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. Quantity 합계 조회</p>
+
+<blockquote>
+  <p>SELECT SUM(Quantity)
+FROM OrderDetails;</p>
+</blockquote>
+
+<h2 id="like">LIKE</h2>
+
+<ul>
+  <li>WHERE열의 특정 패턴을 검색</li>
+  <li>%(0,1 또는 여러 문자를 나타냄) 와 _(하나의 단일 문자 나타냄) 함께 자주 사용</li>
+  <li>AND 나 OR 을 결합해서 쓸 수 있음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+</code></pre></div></div>
+
+<p>ex. 고객명이 a로 시작하는 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName LIKE ‘a%’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하고 3글자 이상인 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName LIKE ‘a__%’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하고 마지막 글자가 o로 끝나는 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE ContactName LIKE ‘a%o’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하지 않는 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName NOT LIKE ‘a%’;</p>
+</blockquote>
+
+<h2 id="in">IN</h2>
+
+<ul>
+  <li>여러 값을 지정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+</code></pre></div></div>
+
+<p>ex. 나라가 독일, 프랑스, 영국인 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country IN (‘Germany’, ‘France’, ‘UK’);</p>
+</blockquote>
+
+<p>ex. Suppliers와 동일한 국가의 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country IN (SELECT Country FROM Suppliers);</p>
+</blockquote>
+
+<h2 id="between">BETWEEN</h2>
+
+<ul>
+  <li>주어진 범위 내에서 값을 선택
+    <ul>
+      <li>값은 숫자, 텍스트 또는 날짜일 수 있음</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+</code></pre></div></div>
+
+<p>ex. 가격이 10에서 20사이인 제품 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;</p>
+</blockquote>
+
+<p>ex. OrderDate가 1996년 7월 1일과 1996년 7월 31일 사이의 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Orders
+WHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;</p>
+</blockquote>
+
+<h2 id="aliases별칭">Aliases(별칭)</h2>
+
+<p>열 구문</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name AS alias_name
+FROM table_name;
+</code></pre></div></div>
+
+<p>테이블 구문</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name AS alias_name;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;</p>
+</blockquote>
+
+<h2 id="join">JOIN</h2>
+
+<ul>
+  <li>두 개 이상의 테이블에서 행을 결합하는 데 사용</li>
+</ul>
+
+<p><img src="/img/joins.png" alt="join 그림" /></p>
+
+<h3 id="inner-join">INNER JOIN</h3>
+
+<ul>
+  <li>두 테이블에서 일치하는 값을 가진 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 고객 정보가 있는 모든 주문 조회</p>
+
+<blockquote>
+  <p>SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p>
+</blockquote>
+
+<h3 id="left-join">LEFT JOIN</h3>
+
+<ul>
+  <li>왼쪽 테이블의 모든 레코드를 반환하고 오른쪽 테이블의 일치하는 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 모든 고객과 고객이 가질 수 있는 모든 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;</p>
+</blockquote>
+
+<h3 id="right-join">RIGHT JOIN</h3>
+
+<ul>
+  <li>오른쪽 테이블의 모든 레코드를 반환하고 왼쪽 테이블의 일치하는 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 모든 직원과 직원이 내린 모든 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;</p>
+</blockquote>
+
+<h3 id="full-join">FULL JOIN</h3>
+
+<ul>
+  <li>왼쪽 또는 오른쪽 테이블에 일치하는 항목이 있는 경우 모든 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 모든 고객과 모든 주문 선택</p>
+
+<blockquote>
+  <p>SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;</p>
+</blockquote>
+
+<h3 id="self-join">SELF JOIN</h3>
+
+<ul>
+  <li>테이블은 자신과 조인</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>T1 그리고 T2 동일한 테이블에 대한 다른 테이블 별칭</li>
+</ul>
+
+<p>ex. 같은 도시에 있는 고객과 일치</p>
+
+<blockquote>
+  <p>SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID &lt;&gt; B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;</p>
+</blockquote>
+
+<h2 id="union">UNION</h2>
+
+<ul>
+  <li>두 개 이상의 결과 집합을 결합하는 데 사용되는 <code class="language-plaintext highlighter-rouge">SELECT</code>문
+조건</li>
+</ul>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">SELECT</code>안의 모든 명령문 <code class="language-plaintext highlighter-rouge">UNION</code>에는 동일한 수의 열이 있어야함</li>
+  <li>열에도 유사한 데이터 유형이 있어야함</li>
+  <li>모든 <code class="language-plaintext highlighter-rouge">SELECT</code>문의 열도 같은 순서여야함</li>
+</ol>
+
+<h3 id="union-1">UNION</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+</code></pre></div></div>
+
+<p>ex. “Customers” 및 “Suppliers” 테이블 모두에서 도시(고유한 값만)를 조회</p>
+
+<blockquote>
+  <p>SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;</p>
+</blockquote>
+
+<h3 id="union-all">UNION ALL</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+</code></pre></div></div>
+
+<p>ex. “Customers” 및 “Suppliers” 테이블 모두에서 독일 도시(중복 값도 포함)를 조회</p>
+
+<blockquote>
+  <p>SELECT City, Country FROM Customers
+WHERE Country=’Germany’
+UNION ALL
+SELECT City, Country FROM Suppliers
+WHERE Country=’Germany’
+ORDER BY City;</p>
+</blockquote>
+
+<h2 id="group-by">GROUP BY</h2>
+
+<ul>
+  <li>하나 이상의 열로 결과 집합을 그룹화하기 위해 집계 함수(<code class="language-plaintext highlighter-rouge">COUNT()</code>, <code class="language-plaintext highlighter-rouge">MAX()</code>, <code class="language-plaintext highlighter-rouge">MIN()</code>, <code class="language-plaintext highlighter-rouge">SUM()</code>, <code class="language-plaintext highlighter-rouge">AVG()</code>) 와 함께 자주 사용</li>
+  <li>특정 컬럼 이름을 지정(column-names)해주면 그 컬럼의 UNIQUE한 값에 따라서 데이터를 그룹 짓고, 중복된 열은 제거 됨</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+</code></pre></div></div>
+
+<p>ex. 각 국가의 고객 수를 조회</p>
+
+<blockquote>
+  <p>SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;</p>
+</blockquote>
+
+<h2 id="having">HAVING</h2>
+
+<ul>
+  <li>GROUP BY한 결과에 조건을 붙이고 싶을때 사용</li>
+  <li>GROUP BY의 WHERE 절</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+</code></pre></div></div>
+
+<p>ex. 각 국가의 고객 수를 조회 ( 고객이 5명 이상인 국가만 포함하여)</p>
+
+<blockquote>
+  <p>SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) &gt; 5;</p>
+</blockquote>
+
+<h2 id="exists">EXISTS</h2>
+
+<ul>
+  <li>하위 쿼리에 레코드가 있는지 테스트하는 데 사용</li>
+  <li>하위 쿼리가 하나 이상의 레코드를 반환하는 경우 연산자는 TRUE를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE EXISTS
+(SELECT column_name FROM table_name WHERE condition);
+</code></pre></div></div>
+
+<p>ex. TRUE를 반환하고 제품 가격이 20 미만인 공급자를</p>
+
+<blockquote>
+  <p>SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price &lt; 20);</p>
+</blockquote>
+
+<h2 id="any">ANY</h2>
+
+<ul>
+  <li>결과로 boolean 값을 반환합니다.</li>
+  <li>하위 쿼리 값 중 하나라도 조건을 충족하는 경우 TRUE를 반환</li>
+  <li>범위의 값 중 하나에 대해 작업이 참인 경우 조건이 참임을 의미</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ANY
+  (SELECT column_name
+  FROM table_name
+  WHERE condition);
+</code></pre></div></div>
+
+<p>ex. OrderDetails 테이블에서 Quantity가 10인 레코드를 찾으면 ProductName을 조회
+(Quantity 열의 일부 값이 10이므로 TRUE가 반환됨)</p>
+
+<blockquote>
+  <p>SELECT ProductName
+FROM Products
+WHERE ProductID = ANY
+(SELECT ProductID
+FROM OrderDetails
+WHERE Quantity = 10);</p>
+</blockquote>
+
+<h2 id="all">ALL</h2>
+
+<ul>
+  <li>결과로 boolean 값을 반환합니다.</li>
+  <li>하위 쿼리 값 중 하나라도 조건을 충족하는 경우 TRUE를 반환</li>
+  <li><code class="language-plaintext highlighter-rouge">SELECT</code>, <code class="language-plaintext highlighter-rouge">WHERE</code> 및 <code class="language-plaintext highlighter-rouge">HAVING</code>문과 함께 사용</li>
+</ul>
+
+<p>USE SELECT</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT ALL column_name(s)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>USE WHERE or HAVING</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ALL
+  (SELECT column_name
+  FROM table_name
+  WHERE condition);
+</code></pre></div></div>
+
+<p>ex. 모든 제품 이름을 조회</p>
+
+<blockquote>
+  <p>SELECT ALL ProductName
+FROM Products
+WHERE TRUE;</p>
+</blockquote>
+
+<p>ex. OrderDetails 테이블의 모든 레코드에 Quantity가 10인 경우 ProductName을 조회
+Quantity 열에 값이 10일 뿐만 아니라 다양한 값이 있기 때문에 당연히 FALSE를 반환</p>
+
+<blockquote>
+  <p>SELECT ProductName
+FROM Products
+WHERE ProductID = ALL
+(SELECT ProductID
+FROM OrderDetails
+WHERE Quantity = 10);</p>
+</blockquote>
+
+<h2 id="select-into">SELECT INTO</h2>
+
+<ul>
+  <li>한 테이블의 데이터를 새 테이블로 복사</li>
+</ul>
+
+<p>모든 열 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+</code></pre></div></div>
+
+<p>일부 열만 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, column3, ...
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 고객의 백업 복사본을 생성</p>
+
+<blockquote>
+  <p>SELECT * INTO CustomersBackup2017
+FROM Customers;</p>
+</blockquote>
+
+<p>ex. IN절을 사용하여 테이블을 다른 데이터베이스의 새 테이블로 복사</p>
+
+<blockquote>
+  <p>SELECT * INTO CustomersBackup2017 IN ‘Backup.mdb’
+FROM Customers;</p>
+</blockquote>
+
+<p>ex. 몇 개의 열만 새 테이블에 복사</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName INTO CustomersBackup2017
+FROM Customers;</p>
+</blockquote>
+
+<ul>
+  <li>다른 스키마를 사용하여 비어 있는 새 테이블을 만드는 데 사용할 수도 있음
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">WHERE</code>쿼리가 데이터를 반환하지 않도록 하는 절을 추가하기만 하면 됨</li>
+    </ul>
+  </li>
+</ul>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * INTO newtable
+FROM oldtable
+WHERE 1 = 0;</p>
+</blockquote>
+
+<h2 id="insert-into-select">INSERT INTO SELECT</h2>
+
+<ul>
+  <li>select 한 것ㅇ르 insert 하는 구문</li>
+  <li>select하는 테이블과 insert할 테이블의 컬럼은 일치해야 함</li>
+</ul>
+
+<p>한 테이블의 모든 열을 다른 테이블로 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+</code></pre></div></div>
+
+<p>한 테이블의 일부 열만 다른 테이블로 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex.”공급자”를 “고객”으로 복사
+(데이터로 채워지지 않은 열에는 NULL이 포함됨).</p>
+
+<blockquote>
+  <p>INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers;</p>
+</blockquote>
+
+<h2 id="case">CASE</h2>
+
+<ul>
+  <li>if 문과 같은 기능</li>
+  <li>조건을 통과하고 첫 번째 조건은 (if-then-else 명령문 등)을 충족하는 값을 반환</li>
+  <li>조건이 true이면 읽기를 중지하고 결과를 반환</li>
+  <li>조건이 참이 아니면 ELSE절의 값을 반환</li>
+  <li>없는 경우 ELSE 부분이고 조건이 참이 아니면 NULL을 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+</code></pre></div></div>
+
+<p>ex. City별로 고객을 주문합니다. 그러나 City가 NULL이면 국가별 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, City, Country
+FROM Customers
+ORDER BY
+(CASE</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WHEN City IS NULL THEN Country
+ELSE City
+</code></pre></div></div>
+
+<p>END);</p>
+
+<h1 id="database">DATABASE</h1>
+
+<h2 id="create-database">CREATE DATABASE</h2>
+
+<ul>
+  <li>새 SQL 데이터베이스를 생성</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE DATABASE databasename;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>CREATE DATABASE testDB;</p>
+</blockquote>
+
+<h2 id="drop-database">DROP DATABASE</h2>
+
+<ul>
+  <li>기존 SQL 데이터베이스를 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP DATABASE databasename;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>DROP DATABASE testDB;</p>
+</blockquote>
+
+<h2 id="backup-database">BACKUP DATABASE</h2>
+
+<ul>
+  <li>SQL Server에서 기존 SQL 데이터베이스의 전체 백업을 만듬</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BACKUP DATABASE databasename
+TO DISK = 'filepath';
+</code></pre></div></div>
+
+<p>ex. 기존 데이터베이스 “testDB”의 전체 백업을 D 디스크에 생성</p>
+
+<blockquote>
+  <p>BACKUP DATABASE testDB
+TO DISK = ‘D:\backups\testDB.bak’;</p>
+</blockquote>
+
+<h3 id="backup-with-differential">BACKUP WITH DIFFERENTIAL</h3>
+
+<ul>
+  <li>전체 백업 이후 변경된 부분만 백업</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BACKUP DATABASE databasename
+TO DISK = 'filepath'
+WITH DIFFERENTIAL;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>BACKUP DATABASE testDB
+TO DISK = ‘D:\backups\testDB.bak’
+WITH DIFFERENTIAL;</p>
+</blockquote>
+
+<h2 id="create-table">CREATE TABLE</h2>
+
+<ul>
+  <li>데이터베이스에 새 테이블을 생성</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+</code></pre></div></div>
+
+<p>ex. PersonID, LastName, FirstName, Address 및 City의 5개 열이 포함된 “Persons”라는 테이블을 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PersonID int,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+'City varchar(255)
+</code></pre></div></div>
+
+<p>);</p>
+
+<h2 id="drop-table">DROP TABLE</h2>
+
+<ul>
+  <li>데이터베이스의 기존 테이블을 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP TABLE table_name;
+</code></pre></div></div>
+
+<p>ex. 기존 테이블 “Shippers”를 삭제</p>
+
+<blockquote>
+  <p>DROP TABLE Shippers;</p>
+</blockquote>
+
+<h2 id="alter-table">ALTER TABLE</h2>
+
+<ul>
+  <li>기존 테이블의 열을 추가, 삭제 또는 수정</li>
+  <li>기존 테이블에 다양한 제약 조건을 추가 및 삭제</li>
+</ul>
+
+<h3 id="열-추가">열 추가</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+ADD column_name datatype;
+</code></pre></div></div>
+
+<p>ex. “Customers” 테이블에 “Email” 열을 추가</p>
+
+<blockquote>
+  <p>ALTER TABLE Customers
+ADD Email varchar(255);</p>
+</blockquote>
+
+<h3 id="열-삭제">열 삭제</h3>
+
+<ul>
+  <li>일부 데이터베이스 시스템에서는 열 삭제를 허용하지 않음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+DROP COLUMN column_name;
+</code></pre></div></div>
+
+<p>ex. “Customers” 테이블에서 “Email” 열을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Customers
+DROP COLUMN Email;</p>
+</blockquote>
+
+<h3 id="열-변경수정">열 변경/수정</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
+</code></pre></div></div>
+
+<p>ex. “Persons” 테이블에서 “DateOfBirth”라는 열의 데이터 유형을 변경</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER COLUMN DateOfBirth year;</p>
+</blockquote>
+
+<h2 id="constraints제약조건">Constraints(제약조건)</h2>
+
+<ul>
+  <li>명령문을 사용하여 테이블을 생성할 때 또는 명령문으로 테이블을 생성한 후에 제약 조건을 지정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    column3 datatype constraint,
+    ....
+);
+</code></pre></div></div>
+
+<p>제약 조건</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">NOT NULL</code> - 컬럼이 NULL 값을 가질 수 없도록 보장
+<code class="language-plaintext highlighter-rouge">UNIQUE</code> - 열의 모든 값이 서로 다른지 확인
+<code class="language-plaintext highlighter-rouge">PRIMARY KEY</code> - (A)의 조합 <code class="language-plaintext highlighter-rouge">NOT NULL</code>과 <code class="language-plaintext highlighter-rouge">UNIQUE</code>. 테이블의 각 행을 고유하게 식별
+<code class="language-plaintext highlighter-rouge">FOREIGN KEY</code> - 테이블 간의 링크를 파괴하는 작업 방지
+<code class="language-plaintext highlighter-rouge">CHECK</code> - 컬럼의 값이 특정 조건을 만족하는지 확인
+<code class="language-plaintext highlighter-rouge">DEFAULT</code> - 값이 지정되지 않은 경우 열의 기본값을 설정합니다.
+<code class="language-plaintext highlighter-rouge">CREATE INDEX</code> - 데이터베이스에서 데이터를 매우 빠르게 생성하고 검색하는 데 사용</p>
+</blockquote>
+
+<h2 id="not-null">NOT NULL</h2>
+
+<ul>
+  <li>기본적으로 열은 NULL 값을 보유할 수 있다.</li>
+  <li>NOT NULL 제약 조건은 열이 NULL 값을 허용하지 않도록 함</li>
+  <li>필드에 항상 값이 포함
+    <ul>
+      <li>필드에 값을 추가하지 않고는 새 레코드를 삽입하거나 레코드를 업데이트할 수 없다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>ex. “Persons” 테이블이 생성될 때 “ID”, “LastName” 및 “FirstName” 열이 NULL 값을 허용하지 않도록 함</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255) NOT NULL,
+Age int
+);</p>
+</blockquote>
+
+<h2 id="unique-constraint">UNIQUE Constraint</h2>
+
+<ul>
+  <li>열의 모든 값이 서로 다른지 확인</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
+</code></pre></div></div>
+
+<p>ex. 테이블이 이미 생성된 경우 “ID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD UNIQUE (ID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정하고 UNIQUE여러 열에 대한 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);</p>
+</blockquote>
+
+<p>ex. 제약 조건을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP INDEX UC_Person;</p>
+</blockquote>
+
+<h2 id="primary-key">PRIMARY KEY</h2>
+
+<ul>
+  <li>고유하게 식별</li>
+  <li>UNIQUE 값을 포함해야 하며 NULL 값을 포함할 수 없다.</li>
+</ul>
+
+<p>ex. PRIMARY KEY”Persons” 테이블이 생성될 때 “ID” 열에 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+PRIMARY KEY (ID)
+);</p>
+</blockquote>
+
+<p>ex. 테이블이 이미 생성된 경우 “ID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD PRIMARY KEY (ID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 PRIMARY KEY하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP PRIMARY KEY;</p>
+</blockquote>
+
+<h2 id="foreign-key">FOREIGN KEY</h2>
+
+<ul>
+  <li>테이블 간의 링크를 파괴하는 작업을 방지하는 데 사용</li>
+  <li>외래 키가 있는 테이블이 자식 테이블, 기본 키가 있는 테이블이 참조 또는 부모 테이블</li>
+</ul>
+
+<p>ex. FOREIGN KEY”Orders” 테이블이 생성될 때 “PersonID” 열에 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Orders (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OrderID int NOT NULL,
+OrderNumber int NOT NULL,
+PersonID int,
+PRIMARY KEY (OrderID),
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. “Orders” 테이블이 이미 생성된 경우 “PersonID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 FOREIGN KEY하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+ADD CONSTRAINT FK_PersonOrder
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+DROP FOREIGN KEY FK_PersonOrder;</p>
+</blockquote>
+
+<h2 id="check-constraint">CHECK Constraint</h2>
+
+<ul>
+  <li>열에 배치할 수 있는 값 범위를 제한</li>
+  <li>제약 조건 을 정의하면 이 열에 대해 특정 값만 허용</li>
+</ul>
+
+<p>ex. CHECK”Persons” 테이블이 생성될 때 “Age” 열에 대한 제약 조건을 생성
+사람의 나이는 18 세 이상</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+CHECK (Age&gt;=18)
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 제약 조건의 이름을 지정 CHECK하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+City varchar(255),
+CONSTRAINT CHK_Person CHECK (Age&gt;=18 AND City='Sandnes')
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 테이블이 이미 생성된 경우 “Age” 열에 대한 제약 조건</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CHECK (Age&gt;=18);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 CHECK하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT CHK_PersonAge CHECK (Age&gt;=18 AND City=’Sandnes’);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP CHECK CHK_PersonAge;</p>
+</blockquote>
+
+<h2 id="default-constraint">DEFAULT Constraint</h2>
+
+<ul>
+  <li>열의 기본값을 설정</li>
+  <li>다른 값이 지정되지 않은 경우 기본값이 모든 새 레코드에 추가</li>
+</ul>
+
+<p>ex. “Persons” 테이블이 생성될 때 “City” 열에 대한 값을 설정</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+City varchar(255) DEFAULT 'Sandnes'
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 테이블이 이미 생성된 경우 “City” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER City SET DEFAULT ‘Sandnes’;</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER City DROP DEFAULT;</p>
+</blockquote>
+
+<h2 id="create-index">CREATE INDEX</h2>
+
+<ul>
+  <li>테이블에 인덱스를 생성하는 데 사용
+    <ul>
+      <li>인덱스는 다른 방법보다 더 빠르게 데이터베이스에서 데이터를 검색하는 데 사용</li>
+      <li>자주 검색되는 열에만 인덱스사용(업데이트 시간이 오래 걸림)</li>
+    </ul>
+  </li>
+  <li>중복값 허용</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE INDEX index_name
+ON table_name (column1, column2, ...);
+</code></pre></div></div>
+
+<ul>
+  <li>중복값 불허용</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...);
+</code></pre></div></div>
+
+<p>ex. “Persons” 테이블의 “LastName” 열에 “idx_lastname”이라는 인덱스를 생성</p>
+
+<blockquote>
+  <p>CREATE INDEX idx_lastname
+ON Persons (LastName);</p>
+</blockquote>
+
+<p>ex. 열 조합에 대한 인덱스를 생성</p>
+
+<blockquote>
+  <p>CREATE INDEX idx_pname
+ON Persons (LastName, FirstName);</p>
+</blockquote>
+
+<p>ex. 테이블에서 인덱스를 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE table_name
+DROP INDEX index_name;</p>
+</blockquote>
+
+<h2 id="auto-increment">AUTO INCREMENT</h2>
+
+<ul>
+  <li>새 레코드가 테이블에 삽입될 때 고유 번호가 자동으로 생성</li>
+  <li>기본 키 필드</li>
+</ul>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Personid int NOT NULL AUTO_INCREMENT,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+PRIMARY KEY (Personid)
+</code></pre></div></div>
+
+<p>);</p>
+
+<h2 id="dates">Dates</h2>
+
+<ul>
+  <li>DATE - YYYY-MM-DD 형식</li>
+  <li>DATETIME - 형식: YYYY-MM-DD HH:MI:SS</li>
+  <li>TIMESTAMP - 형식: YYYY-MM-DD HH:MI:SS</li>
+  <li>YEAR - YYYY 또는 YY 형식</li>
+</ul>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Orders WHERE OrderDate=’2008-11-11’</p>
+</blockquote>
+
+<h2 id="create-view">CREATE VIEW</h2>
+
+<ul>
+  <li>SQL 문의 결과 집합을 기반으로 하는 가상 테이블</li>
+  <li>실제 테이블과 마찬가지로 행과 열을 포함</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 브라질의 모든 고객을 표시하는 보기를 생성</p>
+
+<blockquote>
+  <p>CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = ‘Brazil’;</p>
+</blockquote>
+
+<p>위에꺼랑 같은 보기</p>
+
+<blockquote>
+  <p>SELECT * FROM [Brazil Customers];</p>
+</blockquote>
+
+<h3 id="create-or-replace-viewview-업데이트">CREATE OR REPLACE VIEW(VIEW 업데이트)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE OR REPLACE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. Brazil Customers” 보기에 “City” 열을 추가</p>
+
+<blockquote>
+  <p>CREATE OR REPLACE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName, City
+FROM Customers
+WHERE Country = ‘Brazil’;</p>
+</blockquote>
+
+<h3 id="drop-view">DROP VIEW</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP VIEW view_name;
+</code></pre></div></div>
+
+<blockquote>
+  <p>DROP VIEW [Brazil Customers];</p>
+</blockquote>
+ 
+      </section>
+
+      <footer class="page__meta">
+         
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#tips" class="page__taxonomy-item p-category" rel="tag">Tips</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#tips" class="page__taxonomy-item p-category" rel="tag">Tips</a>
+    
+    </span>
+  </p>
+
+ 
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-07-10">July 10, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BTips%5DMYSQL+%EB%AC%B8%EB%B2%95%20%2Ftips%2Fmysql-%25EB%25AC%25B8%25EB%25B2%2595%25EC%25A0%2595%25EB%25A6%25AC%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Ftips%2Fmysql-%25EB%25AC%25B8%25EB%25B2%2595%25EC%25A0%2595%25EB%25A6%25AC%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Ftips%2Fmysql-%25EB%25AC%25B8%25EB%25B2%2595%25EC%25A0%2595%25EB%25A6%25AC%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ 
+  <nav class="pagination">
+    
+      <a href="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/" class="pagination--pager" title="[TIL]시간복잡도
+">이전</a>
+    
+    
+      <a href="/command/Fork%ED%95%9C-Repo-Update/" class="pagination--pager" title="[Command]Fork 한 Repo Update💻
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+   
+  <div class="page__related">
+    <h2 class="page__related-title">
+      참고
+    </h2>
+    <div class="grid__wrapper">
+       
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/" rel="permalink">[Tips]용어 사전
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">용어 정리하기
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98/" rel="permalink">[Command]React와 TS 설치하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로젝트 시작할 때 사용하자🔥
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/command/Fork%ED%95%9C-Repo-Update/" rel="permalink">[Command]Fork 한 Repo Update💻
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Fork Repo 관리시 필요할 듯
+</p>
+  </article>
+</div>
+  
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/" rel="permalink">[TIL]시간복잡도
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">시간복잡도 이해하기
+</p>
+  </article>
+</div>
+ 
+    </div>
+  </div>
+   
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/gardenia0917" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Gardenia. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', 'gardenia0917/gardenia0917.github.io');
+    script.setAttribute('issue-term', 'pathname');
+    
+    script.setAttribute('theme', 'photon-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>

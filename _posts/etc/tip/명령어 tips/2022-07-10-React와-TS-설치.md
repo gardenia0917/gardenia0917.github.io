@@ -6,7 +6,7 @@ categories:
   - Command
 tags:
   - [Tips, Command]
-
+published: true
 toc: true
 toc_sticky: true
 

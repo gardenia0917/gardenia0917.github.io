@@ -1,0 +1,108 @@
+I"M<h1 id="git-pull">git pull</h1>
+
+<ul>
+  <li>다른 repogitory 또는 로컬 브랜치를 가져와서 합치는 것</li>
+  <li>git fetch와 git merge FETCH_HEAD의 약자이다.</li>
+</ul>
+
+<h2 id="what-is-fetch_head">What is FETCH_HEAD?</h2>
+
+<ul>
+  <li>원격 저장소로부터 가져온 브랜치의 HEAD를 의미</li>
+  <li>원격 저장소로 부터 가져온 모든 브랜치의 HEAD를 .git/FETCH_HEAD에 기록함</li>
+</ul>
+
+<h3 id="error">ERROR</h3>
+
+<p>git pull 하는 법을 구성하지 않았을 때 경고 문구가 나옴</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+</code></pre></div></div>
+
+<p>다른 건 필요 없고 중간에 3개 명령어만 기억해두자!</p>
+
+<blockquote>
+  <p>git config pull.rebase false
+pull 할 때 rebase를 하지 않고 merge한다.</p>
+</blockquote>
+
+<blockquote>
+  <p>git config pull.rebase true
+pull 할 때 rebase를 한다.</p>
+</blockquote>
+
+<blockquote>
+  <p>git config pull.ff only
+fast-foward 일때만 pull을 허용한다.</p>
+</blockquote>
+
+<h3 id="fast-foward-란">Fast-foward 란?</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Fast-foward 관계 ⭕</th>
+      <th>Fast-foward 관계 ❌</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>설명</td>
+      <td>Merge 커밋을 남기지 않고 병합 가능</td>
+      <td>Merge 커밋을 남겨야 병합 가능 충돌 없이 따라갈 수 없는 관계</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>충돌 없이 앞선 커밋을 따라갈 수 있음</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>즉, Fast-Foward 관계란 앞선 커밋을 충돌 없이 따라갈 수 있는 관계</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/img/fastfowardO.png" alt="Fast-foward 관계 ⭕ " /><img src="/img/fastfowardX.png" alt="Fast-foward 관계 ❌ " /></p>
+
+<h2 id="merge-kind">Merge kind</h2>
+
+<h3 id="보통의-병합ff">보통의 병합(–ff)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge {branch name}</code>
+현 브랜치와 병합할 브랜치가 Fast-Forward 관계 O: 병할할 브랜치(커밋)을 따라감. without Merge 커밋
+현 브랜치와 병합할 브랜치가 Fast-Forward 관계 X : 병합할 브랜치와 병합됨. with Merge 커밋</p>
+
+<h3 id="이기적인-병합no-ff">이기적인 병합(–no-ff)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --no-ff {branch name}</code>
+현재 브랜치와 병합 대상의 관계가 Fast-Forward이던 아니던 무조건 Merge 커밋과 같이 병합</p>
+
+<h3 id="소심한-병합ff-only">소심한 병합(–ff-only)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --ff-only {branch name}</code>
+현재 브랜치와 병합 대상의 관계가 Fast-Forward인 경우에만 병합 진행
+merge commit 생성 X</p>
+
+<h3 id="양아치-병합squash">양아치 병합(–squash)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --squash {branch name}</code>
+현재 브랜치에 병합 대상과의 차이나는 commit을 하나로 합쳐서 커밋</p>
+
+<p>참조 :
+<a href="https://wookkl.tistory.com/46">Git: pull strategy(전략,종류)</a>
+<a href="https://minemanemo.tistory.com/46">[GIT] 병합(merge) 종류 별 완벽 설명</a></p>
+:ET

@@ -1,2939 +1,1961 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T22:48:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Tips]짧은 Tips -1-</title><link href="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/" rel="alternate" type="text/html" title="[Tips]짧은 Tips -1-" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1</id><content type="html" xml:base="http://localhost:4000/tips/%EC%A7%A7%EC%9D%80-tips-1/"><![CDATA[<h1 id="jekyll-블로그-서버-키기변경된거-바로-확인-가능">Jekyll 블로그 서버 키기(변경된거 바로 확인 가능)</h1>
-
-<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></p>
-
-<blockquote>
-  <p>Server address: <u>http://127.0.0.1:4000</u></p>
-</blockquote>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[짧은 Tips 정리하기1]]></summary></entry><entry><title type="html">[Etc]쓰고 싶은 포스팅</title><link href="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/" rel="alternate" type="text/html" title="[Etc]쓰고 싶은 포스팅" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/"><![CDATA[<h1 id="그냥-쓰고-싶은-글-들">그냥 쓰고 싶은 글 들</h1>
-
-<h2 id="깊은-복사-vs-얇은-복사">깊은 복사 vs 얇은 복사</h2>
-
-<h2 id="oop">OOP</h2>
-
-<h3 id="class">class</h3>
-
-<h1 id="면접-준비로-정리하기">면접 준비로 정리하기</h1>
-
-<h2 id="호이스팅">호이스팅</h2>
-
-<h2 id="브라우저-렌더링-원리유저에게-보이는-순서-정리">브라우저 렌더링 원리(유저에게 보이는 순서 정리)</h2>
-
-<h2 id="margin-vs-padding">margin vs padding</h2>
-
-<h2 id="position-사용-방법">position 사용 방법</h2>
-
-<h2 id="get-vs-post">GET vs POST</h2>
-
-<h2 id="this-용법">This 용법</h2>
-
-<h2 id="브라우저-저장소-차이점">브라우저 저장소 차이점</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-11T01:55:08+09:00</updated><id>/feed.xml</id><title type="html">Grow Gardenia</title><subtitle>성장중🌱</subtitle><author><name>Gardenia</name></author><entry><title type="html">[Error]Git pull 에러</title><link href="/error/git-pull-%EC%97%90%EB%9F%AC/" rel="alternate" type="text/html" title="[Error]Git pull 에러" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/error/git-pull-%EC%97%90%EB%9F%AC</id><content type="html" xml:base="/error/git-pull-%EC%97%90%EB%9F%AC/"><![CDATA[<h1 id="git-pull">git pull</h1>
 
 <ul>
-  <li>Localstorage, SessionStorage,Cookie</li>
+  <li>다른 repogitory 또는 로컬 브랜치를 가져와서 합치는 것</li>
+  <li>git fetch와 git merge FETCH_HEAD의 약자이다.</li>
 </ul>
 
-<h2 id="restful-api-설명">Restful API 설명</h2>
+<h2 id="what-is-fetch_head">What is FETCH_HEAD?</h2>
 
 <ul>
-  <li>GET, PUT, POST, PATCH, OPTION, DELETE</li>
+  <li>원격 저장소로부터 가져온 브랜치의 HEAD를 의미</li>
+  <li>원격 저장소로 부터 가져온 모든 브랜치의 HEAD를 .git/FETCH_HEAD에 기록함</li>
 </ul>
 
-<h2 id="js-vs-ts">JS vs TS</h2>
+<h3 id="error">ERROR</h3>
 
-<h3 id="js는-어떤-언어인가">JS는 어떤 언어인가?</h3>
+<p>git pull 하는 법을 구성하지 않았을 때 경고 문구가 나옴</p>
 
-<h3 id="ts는-어떤-언어인가">TS는 어떤 언어인가?</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
 
-<h2 id="event-loop">Event Loop</h2>
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
 
-<h2 id="마이크로태스크-큐-vs-태스크-큐">마이크로태스크 큐 vs 태스크 큐</h2>
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+</code></pre></div></div>
 
-<h2 id="이벤트-버블링">이벤트 버블링</h2>
-
-<p><a href="https://youtu.be/8aGhZQkoFbQ">유투브</a></p>
-
-<h2 id="실행문맥-">실행문맥 ?</h2>
-
-<h2 id="이터러블-이터레이트-프로토콜-설명하기">이터러블, 이터레이트 프로토콜 설명하기</h2>
-
-<h2 id="제네레이터-설명">제네레이터 설명</h2>
-
-<h2 id="트랜젝션">트랜젝션?</h2>
-
-<h2 id="sassscss-사용해봤니-css랑-비교했을-때">SASS,SCSS 사용해봤니? css랑 비교했을 때?</h2>
-
-<h2 id="vue-와-react-차이점-이건-뷰를-해봐야">Vue 와 React 차이점? (이건 뷰를 해봐야…)</h2>
-
-<h2 id="var-let-const-차이점">var let const 차이점</h2>
-
-<h2 id="cors를-대처하는-방법-우회하는-방법">CORS를 대처하는 방법, 우회하는 방법</h2>
-
-<h2 id="mvvm-모델">MVVM 모델?</h2>]]></content><author><name>Gardenia</name></author><category term="ETC" /><category term="ETC" /><summary type="html"><![CDATA[기록하고 싶은거, 궁금한거 찾아서 포스팅하기 대기줄📈]]></summary></entry><entry><title type="html">[Diary]2주차</title><link href="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/" rel="alternate" type="text/html" title="[Diary]2주차" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8</id><content type="html" xml:base="http://localhost:4000/diary/2%EC%A3%BC%EC%B0%A8/"><![CDATA[<p>기술 블로그로 만들려고 하지만 일단 블로그이니
-하루 회고 형식으로 느낀점을 간단하게 남기려고 한다.</p>
-
-<h1 id="8일">8일</h1>
-
-<p>어제 분명히 작동이 되었는데 오늘 다시 실행시키니 에러가 났다.</p>
-
-<p>콘솔창에</p>
+<p>다른 건 필요 없고 중간에 3개 명령어만 기억해두자!</p>
 
 <blockquote>
-  <p>because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled</p>
+  <p>git config pull.rebase false
+pull 할 때 rebase를 하지 않고 merge한다.</p>
 </blockquote>
 
-<p>로 해서 갑자기 css 파일을 찾지 못했다고 떴다..
-경로 문제.
-보통은 경로를 수정해주는데 보니까 나는 css 파일이 없었다.
-scss에서 css로 바껴야 하는데 그것이 되지 않은 것임.
-<code class="language-plaintext highlighter-rouge">npm install</code> 을 다시해서 <code class="language-plaintext highlighter-rouge">npm start</code>하니까 됬다….
-(다음에는 이런일이 발생하면 어떻게 해야하는지 알게 됬다.)</p>
-
-<p>지금은 사운드를 제대로 찾지 못하는 일이 발생했다.
-그것도 일부만!!
-이제 오후 7시 50분인데 이거 고쳐야 한다 😢</p>
-
-<p>실무 뛰면서 느낀 거지만 참 난 모르는게 너무 많다.
-코드를 뜯어봐도 이해 안되는 부분이 많고
-뭘 해달라고 해도 이해를 못 하는게 많이 있다.
-코드에 대한 공부를 좀 더 열심히 해야겠다.</p>
-
-<h1 id="9일">9일</h1>
-
-<h1 id="일주일간-회고">일주일간 회고</h1>]]></content><author><name>Gardenia</name></author><category term="Diary" /><category term="Diary" /><summary type="html"><![CDATA[오늘 일기]]></summary></entry><entry><title type="html">[Error]CSS 파일 경로를 못 찾을 때</title><link href="http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/" rel="alternate" type="text/html" title="[Error]CSS 파일 경로를 못 찾을 때" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C</id><content type="html" xml:base="http://localhost:4000/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/"><![CDATA[<h1 id="because-its-mime-type-texthtml-is-not-a-supported-stylesheet-mime-type-and-strict-mime-checking-is-enabled">because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled.</h1>
-
 <blockquote>
-  <p>css 파일 경로 문제</p>
+  <p>git config pull.rebase true
+pull 할 때 rebase를 한다.</p>
 </blockquote>
 
-<hr />
+<blockquote>
+  <p>git config pull.ff only
+fast-foward 일때만 pull을 허용한다.</p>
+</blockquote>
 
-<p>보통의 경우
-어느 파일이 경로를 못 찾는지 확인 후 수정</p>
-
-<p><strong>참고</strong>
-<a href="https://july7k.tistory.com/140">Coding JOAH님 블로그</a></p>
-
-<hr />
-
-<p>나의 경우</p>
-
-<p>style.css 파일을 찾다가</p>
-
-<p>dev &gt; dist &gt; contents &gt; common 폴더 안에</p>
-
-<p>css 폴더가 없음 발견!!!!</p>
-
-<p>scss -&gt; css 변환이 안되는 줄 알고
-gulp scss 변환 찾아봤으나 소용 없음</p>
-
-<p><code class="language-plaintext highlighter-rouge">npm start</code>를 하면 파일이 자동생성 될 줄 알았으나 적용 ❌</p>
-
-<p>다시 <code class="language-plaintext highlighter-rouge">npm install</code> 후 <code class="language-plaintext highlighter-rouge">npm start</code> 를 하니 제대로 적용 됨</p>
-
-<p><strong>참고</strong>
-<a href="https://spacemonkey925.tistory.com/84">우주원숭이의 개발여행님 블로그</a>
-<a href="https://www.wake-up-neo.com/ko/css/gulpsass%EA%B0%80-scss-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%BB%B4%ED%8C%8C%EC%9D%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%A8/1044086590/">참조2</a></p>]]></content><author><name>Gardenia</name></author><category term="Error" /><category term="Error" /><category term="TS" /><summary type="html"><![CDATA[Error, css 파일 경로 문제]]></summary></entry><entry><title type="html">[Job]면접질문</title><link href="http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/" rel="alternate" type="text/html" title="[Job]면접질문" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8</id><content type="html" xml:base="http://localhost:4000/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/"><![CDATA[<h1 id="링크">링크</h1>
+<h3 id="fast-foward-란">Fast-foward 란?</h3>
 
 <table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Fast-foward 관계 ⭕</th>
+      <th>Fast-foward 관계 ❌</th>
+    </tr>
+  </thead>
   <tbody>
-    <tr>
-      <td>링크</td>
-    </tr>
-    <tr>
-      <td><a href="https://xiubindev.tistory.com/119">실제로 받은 프론트엔드 개발자 면접 질문 모음</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://joshua1988.github.io/web-development/interview/frontend-questions/">이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://realmojo.tistory.com/300">프론트엔드 개발자 기술면접 인터뷰 질문 모음(업데이트)</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://joontae-kim.github.io/2021/07/22/interview-question-js-2/">프론트엔드 면접 질문 리스트 - JS</a></td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Job" /><summary type="html"><![CDATA[면접준비질문 리스트, 링크 주어와 정리본, 스스로 답 작성하기🌟]]></summary></entry><entry><title type="html">[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드</title><link href="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/" rel="alternate" type="text/html" title="[Inflearn]비전공자를 위한 개발자 취업 올인원 가이드" /><published>2022-07-01T00:00:00+09:00</published><updated>2022-07-01T00:00:00+09:00</updated><id>http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C</id><content type="html" xml:base="http://localhost:4000/job/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B7%A8%EC%97%85-%EC%98%AC%EC%9D%B8%EC%9B%90-%EA%B0%80%EC%9D%B4%EB%93%9C/"><![CDATA[<ul>
-  <li>81강/1342분</li>
-</ul>
-
-<h1 id="준비하기">준비하기</h1>
-
-<h2 id="올바른-개발-학습법-알기">올바른 개발 학습법 알기</h2>
-
-<h3 id="문과생-사고-방식-버리기">문과생 사고 방식 버리기</h3>
-
-<h4 id="사고방식의-배경">사고방식의 배경</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>🤓</td>
-      <td>문과생</td>
-      <td>엔지니어</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td><code class="language-plaintext highlighter-rouge">논술</code>에 가까운 교육</td>
-      <td>문제의 답이 정해진 경우가 많음</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>정해진 답❌</td>
-      <td>답이 없더라도 단계별 과정 중요</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>문제의 해결책이 두루뭉실</td>
-      <td>원인과 해결책 명확</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="문제-해결-방식">문제 해결 방식</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>🤓</td>
-      <td>문과생</td>
-      <td>엔지니어</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>문제를 하나의 큰 덩어리로 봄</td>
-      <td>문제를 여러 단계로 쪼갬</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>한 번에 문제를 해결하려 함</td>
-      <td>여러 단계로 쪼갠 문제의 해결책을 구글링함</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>해결책을 빨리 못찾으면 내 수준의 문제가 아니라고 생각</td>
-      <td>해결책을 못찾으면, 오히려 즐겁다.🤔</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="수학-공부하듯이-개발-공부하기"><code class="language-plaintext highlighter-rouge">수학</code> 공부하듯이 <code class="language-plaintext highlighter-rouge">개발</code> 공부하기</h4>
-
-<ol>
-  <li>수학 공부는 공식 암기보다 문제풀이와 오답 분석이 중요하다. 개발도 same.</li>
-  <li>직접 코드를 작성해보고, 문제가 발생하면 문제의 원인을 분석하는 방식으로 학습</li>
-  <li>수학의 오답 분석이 개발의 디버깅과 같다.</li>
-  <li>개발자로 일할 때, 업무의 50%는 디버깅이다.</li>
-  <li>개발자의 실력 차이는 디버깅 능력 차이</li>
-  <li>수학 공부하듯 문제 해결 연습하기</li>
-</ol>
-
-<h3 id="반드시-읽어봐야-할-개발-학습법들">반드시 읽어봐야 할 개발 학습법들</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=Xcy2Pq6LABk">프로그래밍 학습방법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://evan-moon.github.io/2019/08/26/how-does-developer-study/">개발자가 공부로 살아남는 방법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://woowabros.github.io/experience/2017/12/11/how-to-study.html">학습에 실패한 이야기</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://euncho.medium.com/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%96%88%EB%8A%94%EA%B0%80-709df6714c42">나는 어떻게 공부했는가?</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://zdnet.co.kr/view/?no=20170616090644">개발자의 평생공부</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://ahnheejong.name/articles/becoming-better-programmer/">프로그래머로서의 성장을 도왔던 태도들</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://medium.com/@jongyoungpark/%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B3%B5%EB%B6%80%EB%A5%BC-%EB%A9%88%EC%B6%B0%EB%9D%BC-1afa37644474">프레임워크 공부를 멈춰라</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=U0YWdnSKDfw">개발자가 실력을 향상시킬 방법은 00뿐이에요</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://speakerdeck.com/mingrammer/hoesa-baggeseo-seongjanghagi">회사 밖에서 성장하기</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.slideshare.net/charsyam2/how-to-become-better-engineer">개발자는 어떻게 성장해야 할까</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.moreagile.net/2016/02/learning-new-stuff.html">어려운 것을 쉽게 배우는 방법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://velog.io/@city7310/%EB%82%B4%EA%B0%80-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D">내게 실용적이었던 프로그래밍 공부방법들</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://mnpk.medium.com/%EB%B2%88%EC%97%AD-%EB%8D%94-%EB%82%98%EC%9D%80-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EB%8A%94-8-%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-45ea6cd70114">더 나은 개발자가 되는 8가지 방법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://brunch.co.kr/@jypthemiracle/14">개발 배우기가 정말 어려운 이유</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/Integerous/goQuality-dev-contents">고퀄리티 개발 컨텐츠 모음</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=nN7MgO3d6cE">개발자의 성장에 대한 이야기(주니어,기술,팀,이직,자기PR)</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://brunch.co.kr/@javajigi/26">개발자를 꿈꾸는 취업 준비생에게</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://subicura.com/2021/06/27/study-guide.html">초보 웹 개발자를 위한 학습 안내서</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h1 id="읽어-볼-만한-링크-정리">읽어 볼 만한 링크 정리</h1>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://jbee.io/essay/for_junior_frontend_developer/">신입 프론트엔드 개발자가 되려면 무엇을 학습해야 하나요?</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://youtu.be/IXtfqhBIQos">캡틴판교-프론트엔드 개발 학습 방법-유투브</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://okky.kr/article/680617">비전공자에게 말하는 경험과 조언</a></td>
-      <td>회사에게 나를 뽑아야 할 이유를 어필하라. 프로젝트 완료 후 적어도 두달간 보강하라</td>
-    </tr>
-  </tbody>
-</table>
-
-<h1 id="학습하기">학습하기</h1>
-
-<h2 id="책">책</h2>
-
-<h3 id="가장-먼저-읽어야-할-책-2권">가장 먼저 읽어야 할 책 2권</h3>
-
-<ul>
-  <li>프로그래머의 길,멘토에게 묻다.</li>
-  <li>커리어 스킬</li>
-</ul>
-
-<h4 id="책의-장점">책의 장점</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>책의 <code class="language-plaintext highlighter-rouge">목차</code></td>
-      <td><code class="language-plaintext highlighter-rouge">정제된 문장</code>으로 기술 정의</td>
-    </tr>
-    <tr>
-      <td>중요한 내용 어림짐작가능</td>
-      <td>면접 준비시 책에 정리된 문장 활용 가능</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="책의-단점">책의 단점</h4>
-
-<ol>
-  <li>눈으로만 읽고 끝낼 가능성이 높다.</li>
-  <li>예제 오류의 경우 시간낭비 발생</li>
-  <li>글과 그림으로 설명해서 이해 안될 수 있다.</li>
-  <li>예전버전의 책이 많다.</li>
-  <li>저자와의 직접적인 소통이 쉽지 않음.</li>
-  <li>책만 읽고 기술을 다 익혔다고 착각할 수 있다.</li>
-</ol>
-
-<h3 id="기술-서적-선택-순서">기술 서적 선택 순서</h3>
-
-<ol>
-  <li>개발 언어 기본서</li>
-  <li>본인이 만들고 싶은 프로그램/서비스의 핵심이 되는 기술</li>
-  <li>많은 개발자들이 추천하는 개발자 필독서(아래 링크)</li>
-  <li>목표로 하는 회사에서 사용하는 기술, 혹은 그 회사에서 추천하는 기술 서적</li>
-  <li>서점에서 보고 구미 당기는 기술 서적</li>
-</ol>
-
-<h4 id="링크">링크</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.sangkon.com/good_books_for_dev_2018/">내 마음대로 선정한 개발자 도서 50선</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://johngrib.github.io/wiki/my-favorite-books/">나의 성장을 도와준 고마운 책들</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://ryan-han.com/post/etc/books/">내가 읽은+읽을 개발서적 정리</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="인터넷">인터넷</h2>
-
-<h4 id="인터넷의-장점">인터넷의 장점</h4>
-
-<ol>
-  <li>낯선 행위들을 <code class="language-plaintext highlighter-rouge">눈</code>으로 확인</li>
-</ol>
-
-<h4 id="인터넷의-단점">인터넷의 단점</h4>
-
-<ol>
-  <li>강사가 a부터 z까지 다 해주기 때문에, 눈으로만 보고 이해했다고 착각하기 쉽다.</li>
-  <li>강의는 매끄러워야 하기때문에 시행착오를 겪는 과정이 생략된다.</li>
-  <li>강사에 의해 학습의 너비와 깊이가 결정됨</li>
-  <li>수동적인 학습 습관이 굳어질 수 있다.</li>
-</ol>
-
-<h3 id="인터넷-강의-추천">인터넷 강의 추천</h3>
-
-<h4 id="링크-1">링크</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://coding-groot.tistory.com/93">나의 온라인 컴퓨터 공학 공부법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=Tq3W8UyltFs&amp;list=PLy-g2fnSzUTAaDcLW7hpq0e8Jlt7Zfgd6">컴맹을 위한 Go 언어 기초 프로그래밍 기초 강좌</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kocw.net/home/search/kemView.do?kemId=1046323&amp;ar=pop">운영체제-이화여대 반효경 교수님</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=tpIctyqH29Q&amp;list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye">Crash Course</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/user/damazzang/videos">엔지니어 대한민국</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=Lbh8Bh_SEzU">Linux Sysadmin Basics</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.inflearn.com/course/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%9D%BC%EC%9D%B8-%ED%88%B4">리눅스 커맨드라인 툴</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.edwith.org/search/index?categoryId=72">CS50</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=Bt11jaoqt_Y&amp;list=PL2mzT_U4XxDm7p6g1o3KeQMsyRLfzSaVW">승지니어 기술면접 라이브코딩 기본편</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=go8y4-vVg3Y&amp;list=PL2mzT_U4XxDl8PP-jMk4rt6BPzBtS__pQ">승지니어 기술면접 라이브코딩 실전편</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/c/TaehoonMoon/videos">Taehoon</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/user/newlec1/playlists">뉴렉처</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/channel/UC2nkWbaJt1KQDi2r2XclzTQ">얄팍한 코딩사전</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">모든 개발자를 위한 HTTP 웹 기본지식</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="블로그">블로그</h2>
-
-<h4 id="개발자가-구글링해서-찾아보는-것들">개발자가 <code class="language-plaintext highlighter-rouge">구글링</code>해서 찾아보는 것들</h4>
-
-<ul>
-  <li>사용하려는 기술의 <code class="language-plaintext highlighter-rouge">공식 문서</code></li>
-  <li>문재 해결을 위한 <code class="language-plaintext highlighter-rouge">질문과 답변</code></li>
-  <li>개발자가 작성한 <code class="language-plaintext highlighter-rouge">개발 블로그 글</code></li>
-</ul>
-
-<h3 id="공식-문서와-스택오버플로우">공식 문서와 스택오버플로우</h3>
-
-<p><a href="https://www.rinae.dev/posts/how-i-use-stackoverflow-kor">내가 StackOverflow를 사용하는 방법</a></p>
-
-<h3 id="개발-블로그-글">개발 블로그 글</h3>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">학습 주제</code>를 제공
-    <ul>
-      <li>좋은 회사에 다니는 신입 개발자들이 학습하고 기록한 글</li>
-      <li>개인 프로젝트 개발 경험이 담긴 글</li>
-      <li>버전 관리, 협업 방식. 개발 문화 등 개발자로 일할 때 필요한 지식을 소개하는 글</li>
-    </ul>
-  </li>
-  <li>이해하기 쉬운 설명과 <code class="language-plaintext highlighter-rouge">시각화</code>된 자료</li>
-  <li>개발자들의 학습 수준을 보며 <code class="language-plaintext highlighter-rouge">자극</code> 받음</li>
-  <li>회사 기술 블로그로 회사에서 <code class="language-plaintext highlighter-rouge">사용하는 기술과 개발 문화</code>를 알 수 있다.</li>
-</ul>
-
-<h3 id="input의-생활화">input의 생활화</h3>
-
-<ul>
-  <li>생활 속에서 개발 컨텐츠를 꾸준히 소비하는 자기만의 시스템 만들기</li>
-</ul>
-
-<p><span style="color:yellow">필요한 이유<span></span></span></p>
-
-<ul>
-  <li>다양한 개발 기술과 흐름을 알면 유익
-    <ul>
-      <li>좋은 회사에 취업/이직시 도움이 됨</li>
-      <li>정보 = key + Value</li>
-      <li>개발자들과의 대화에 도움이 됨</li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="input을-얻는-6가지-방법">Input을 얻는 6가지 방법</h4>
-
-<ul>
-  <li>페이스북 팔로잉 페이지 물갈이</li>
-  <li>트위터 (TweetDeck 활용)</li>
-  <li>Feedly
-    <ul>
-      <li>블로그를 팔로우 하여 보는 식</li>
-    </ul>
-  </li>
-  <li>daily DevBlog 구독</li>
-  <li>GeekNews &amp; devnews</li>
-</ul>
-
-<h2 id="그룹-스터디">그룹 스터디</h2>
-
-<h3 id="장점과-단점">장점과 단점</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>장점</td>
-      <td>단점</td>
-    </tr>
-    <tr>
-      <td>남에게 설명할 수 있는 수준으로 학습 가능</td>
-      <td>시간 낭비 발생</td>
-    </tr>
-    <tr>
-      <td>완주하기 어려워도 완주 하게 됨</td>
-      <td>무임승차</td>
-    </tr>
-    <tr>
-      <td>개발자 인맥 넓히기</td>
-      <td>🤭</td>
-    </tr>
-    <tr>
-      <td>자극 받기</td>
-      <td>🔥</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="참고-자료">참고 자료</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=RdTpUfm2hSo">개발자 질문, “스터디 운영 어떻게 해야하죠?”</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://jojoldu.tistory.com/302?category=689637">3번째 직장에 오기까지 - 5. 두번째 직장 #2</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://gmlwjd9405.github.io/2018/05/05/how-to-study-for-a-developer.html">같이 개발 공부를 잘 하는 법, 입사 후에 더욱 발전하는 법</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Github에 <code class="language-plaintext highlighter-rouge">스터디</code> 검색하여 찾아보기</td>
-      <td>👓</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="tiltoday-i-study-저장소">TIL(Today I Study) 저장소</h2>
-
-<h3 id="장점">장점</h3>
-
-<ul>
-  <li>존재만으로도 학습을 유도</li>
-  <li>블로깅 재료</li>
-  <li>성장 잠재력 어필</li>
-</ul>
-
-<h1 id="취업하기">취업하기</h1>
-
-<h2 id="about-회사">about 회사</h2>
-
-<h3 id="개발자-취업-산업군도메인-5대장">개발자 취업 산업군(도메인) <code class="language-plaintext highlighter-rouge">5</code>대장</h3>
-
-<h4 id="산업군도메인을-알아야-하는-이유">산업군(도메인)을 알아야 하는 이유</h4>
-
-<ul>
-  <li>산업군마다 주로 쓰거나 중요시하는 기술이 다름</li>
-  <li>산업군으로 이력서와 면접에서 강조부분 준비 가능</li>
-  <li>업황이 개발자 채용과 대우(연봉/복지)에 영향을 줌</li>
-  <li>경력 개발자로 이직시 산업군이 중요함</li>
-</ul>
-
-<h4 id="산업군도메인-5대장">산업군(도메인) <code class="language-plaintext highlighter-rouge">5</code>대장</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>✏️</td>
-      <td>컨텐츠</td>
-      <td>커머스</td>
-      <td>핀테크</td>
-      <td>모빌리티</td>
-      <td>인공지능</td>
-    </tr>
     <tr>
       <td>설명</td>
-      <td>컨텐츠 제공 서비스/서비스 속도,안전성 중요</td>
-      <td>결제,물류 관련 기술 중요</td>
-      <td>데이터 정확성/트랜잭션 처리 중요</td>
-      <td>지리정보 활용/ 자동차등 하드웨어 연계 중요</td>
+      <td>Merge 커밋을 남기지 않고 병합 가능</td>
+      <td>Merge 커밋을 남겨야 병합 가능 충돌 없이 따라갈 수 없는 관계</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>충돌 없이 앞선 커밋을 따라갈 수 있음</td>
       <td> </td>
     </tr>
     <tr>
-      <td>1️⃣</td>
-      <td>SNS</td>
-      <td>Delivery</td>
-      <td>Pay</td>
-      <td>Mobility</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2️⃣</td>
-      <td>Streaming</td>
-      <td>Shopping</td>
-      <td>banking</td>
-      <td>Car Sharing</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>3️⃣</td>
-      <td>Potal</td>
-      <td>P2P Market</td>
-      <td>Stock</td>
-      <td>Navigation</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>4️⃣</td>
-      <td>Information</td>
-      <td>Crowd Funding</td>
-      <td>P2P Lending</td>
-      <td>Self-driving</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>5️⃣</td>
-      <td>Community</td>
-      <td>Platform</td>
-      <td>Cryptocurrency</td>
+      <td>즉, Fast-Foward 관계란 앞선 커밋을 충돌 없이 따라갈 수 있는 관계</td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="좋은-회사-판단하는-방법"><code class="language-plaintext highlighter-rouge">좋은 회사</code> 판단하는 방법</h3>
+<p><img src="/img/fastfowardO.png" alt="Fast-foward 관계 ⭕ " /><img src="/img/fastfowardX.png" alt="Fast-foward 관계 ❌ " /></p>
 
-<h4 id="si-회사">SI 회사</h4>
+<h2 id="merge-kind">Merge kind</h2>
+
+<h3 id="보통의-병합ff">보통의 병합(–ff)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge {branch name}</code>
+현 브랜치와 병합할 브랜치가 Fast-Forward 관계 O: 병할할 브랜치(커밋)을 따라감. without Merge 커밋
+현 브랜치와 병합할 브랜치가 Fast-Forward 관계 X : 병합할 브랜치와 병합됨. with Merge 커밋</p>
+
+<h3 id="이기적인-병합no-ff">이기적인 병합(–no-ff)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --no-ff {branch name}</code>
+현재 브랜치와 병합 대상의 관계가 Fast-Forward이던 아니던 무조건 Merge 커밋과 같이 병합</p>
+
+<h3 id="소심한-병합ff-only">소심한 병합(–ff-only)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --ff-only {branch name}</code>
+현재 브랜치와 병합 대상의 관계가 Fast-Forward인 경우에만 병합 진행
+merge commit 생성 X</p>
+
+<h3 id="양아치-병합squash">양아치 병합(–squash)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">git merge --squash {branch name}</code>
+현재 브랜치에 병합 대상과의 차이나는 commit을 하나로 합쳐서 커밋</p>
+
+<p>참조 :
+<a href="https://wookkl.tistory.com/46">Git: pull strategy(전략,종류)</a>
+<a href="https://minemanemo.tistory.com/46">[GIT] 병합(merge) 종류 별 완벽 설명</a></p>]]></content><author><name>Gardenia</name></author><category term="Error" /><category term="Error" /><category term="Git" /><summary type="html"><![CDATA[git pull 에러 정리]]></summary></entry><entry><title type="html">[Command]React와 TS 설치하기</title><link href="/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="[Command]React와 TS 설치하기" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98</id><content type="html" xml:base="/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98/"><![CDATA[<h1 id="react-설치">React 설치</h1>
+
+<h2 id="아직-파일-없을-때">아직 파일 없을 때</h2>
+
+<ol>
+  <li>파일 만들 곳으로 이동</li>
+  <li>React 설치
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">npx create-react-app 프로젝트명(파일이름)</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="파일-있을-때">파일 있을 때</h2>
 
 <ul>
-  <li><a href="https://www.facebook.com/groups/codingeverybody/permalink/4294604973913339">악덕 보도방 구분법</a></li>
+  <li><u>주로 사용함</u> - github gui에서 repo만들어 clone 한 경우❗️</li>
 </ul>
 
-<h4 id="서비스-회사">서비스 회사</h4>
+<ol>
+  <li>클론한 파일 안으로 이동</li>
+  <li>React 설치
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">npx create-react-app .</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="typescript-설치">TypeScript 설치</h1>
+
+<h2 id="react-설치-전-함께-설치-할-때">React 설치 전 함께 설치 할 때</h2>
+
+<p><code class="language-plaintext highlighter-rouge">npx create-react-app 프로젝트명(파일이름) --template typescript</code></p>
+
+<h2 id="typescript만-설치-할-때">TypeScript만 설치 할 때</h2>
+
+<p><code class="language-plaintext highlighter-rouge">npm i typescript @types/node @types/react @types/react-dom @types/jest</code></p>
+
+<h2 id="tsconfigjson-설치">tsconfig.json 설치</h2>
+
+<p><code class="language-plaintext highlighter-rouge">tsc --init</code> - <code class="language-plaintext highlighter-rouge">npm i -g typescript</code>로 전역 설치 한 경우</p>
+
+<p><a href="https://velog.io/@wonyuuu/TypeScript-React-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-TypeScript-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0">참고1</a><br />
+<a href="https://velog.io/@welloff_jj/React-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-TypeScript%EB%A1%9C-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-with-CRA-ESLint-Prettier-%EC%A0%81%EC%9A%A9">참고2</a></p>]]></content><author><name>Gardenia</name></author><category term="Command" /><category term="Tips" /><category term="Command" /><summary type="html"><![CDATA[프로젝트 시작할 때 사용하자🔥]]></summary></entry><entry><title type="html">[Command]Fork 한 Repo Update💻</title><link href="/command/Fork%ED%95%9C-Repo-Update/" rel="alternate" type="text/html" title="[Command]Fork 한 Repo Update💻" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/command/Fork%ED%95%9C-Repo-Update</id><content type="html" xml:base="/command/Fork%ED%95%9C-Repo-Update/"><![CDATA[<h1 id="fork-한-repo-update">Fork 한 Repo Update💻</h1>
+
+<ol>
+  <li>내 로컬에 Fork Clone</li>
+</ol>
 
 <ul>
-  <li>채용 공고 확인(원티드,잡플래닛,프로그래머스,로켓펀치)</li>
-  <li>잡플래신 평점/리뷰 확인</li>
-  <li><a href="https://github.com/milooy/remote-or-flexible-work-company-in-korea">자율출퇴근/원격근무 회사 체크</a></li>
-  <li>blind 회사명 검색 -&gt; 게시글/댓글 확인</li>
-  <li>개발자 지인에게 물어보기</li>
-  <li>채용 공고로 파악(주요 업무, 자격 요건이 상세하게 명시되었는지 확인)</li>
-  <li>면접에서 파악하기</li>
+  <li><code class="language-plaintext highlighter-rouge">git clone 포크repo주소</code></li>
 </ul>
 
-<h4 id="링크-2">링크</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=qL9gXibI8P4">본격 비급 - 회사와 개발자! 같이 성장할 수 있을까? 그 비법은 무엇일까</a>]</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://youtu.be/euxI9vljXw8">입사/이직할 스타트업을 고르는 방법 - 취업편</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="이력서">이력서</h2>
+<ol>
+  <li>Clone 한 프로젝트 디렉토리 이동 -&gt; 리모트 저장소 확인</li>
+</ol>
 
 <ul>
-  <li>개발자 채용에서 <code class="language-plaintext highlighter-rouge">이력서의 중요도는 계속 낮아지고 있음</code>
-    <ul>
-      <li>코딩 과제 or 코딩 테스트 먼저 진행 후 합격자만 이력서 제출로 바뀌는 중</li>
-    </ul>
-  </li>
-  <li>비전공자들에게는 이력서가 중요할 수 있으니 잘 써야함
-    <ul>
-      <li>비전공자들이 처음 취업하는 회사는 애초에 코딩 테스트가 없는 회사일 가능성이 높다.</li>
-    </ul>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code></li>
 </ul>
 
-<h3 id="올바른-이력서-작성법">올바른 이력서 작성법</h3>
-
-<h4 id="이력서의-목적">이력서의 <code class="language-plaintext highlighter-rouge">목적</code></h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>이력서를 작성하는 이유</td>
-      <td>회사에 취업하기 위해</td>
-    </tr>
-    <tr>
-      <td>회사가 이력서를 받는 이유?</td>
-      <td>면접 볼 지원자를 가려내기 위해</td>
-    </tr>
-    <tr>
-      <td>누가 평가하나?</td>
-      <td>팀장 혹은 시니어</td>
-    </tr>
-    <tr>
-      <td>팀장 혹은 시니어의 특징?</td>
-      <td>팀에서 가장 바쁘고 비싼 인력</td>
-    </tr>
-    <tr>
-      <td>이력서를 평가하는 방식?</td>
-      <td>30초 안에 훑어보고, 자격요건에 맞지 않으면 버려짐</td>
-    </tr>
-    <tr>
-      <td>자격 안되면 지원 불가능?</td>
-      <td>신입 개발자는 잠재력 평가의 경우도 있음</td>
-    </tr>
-    <tr>
-      <td>이력서가 <code class="language-plaintext highlighter-rouge">달성</code>해야 할 목적?</td>
-      <td>30초 안에 훑어봐도 중요 정보가 가독성 좋게 보여져야 함</td>
-    </tr>
-    <tr>
-      <td>▶️</td>
-      <td>이력서를 더 읽어 보게끔 유도, 면접을 보고 싶도록 궁금증 유도</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="이력서-작성-규칙">이력서 <code class="language-plaintext highlighter-rouge">작성 규칙</code></h4>
+<ol>
+  <li>리모트 저장소에 upstream 추가</li>
+</ol>
 
 <ul>
-  <li>사실만 기재(거짓 &amp; 과장 금지)</li>
-  <li>종교, 정치 ❌</li>
-  <li>최대한 간결한 표현 사용 (미사여구, 중복된 표현❌)</li>
-  <li>신입 개발자의 이력서 분량은 최대 2장</li>
-  <li>맞춤법 검사기 + 링크 접속 체크</li>
-  <li><a href="https://minieetea.com/2021/04/archives/6193">잘 정리된 이력서 보다 중요한 것</a></li>
+  <li><code class="language-plaintext highlighter-rouge">git remote add 등록이름 원본repo주소 </code></li>
 </ul>
 
-<h4 id="이력서-양식">이력서 <code class="language-plaintext highlighter-rouge">양식</code></h4>
+<ol>
+  <li>추가 확인해보기 - 2번 과 동일</li>
+  <li>원본 저장소 fetch - 가져오기</li>
+</ol>
 
 <ul>
-  <li>너무 화려하거나 너무 창의적인 양식 ❌</li>
-  <li>PDF 이력서
-    <ul>
-      <li>폰트 깨짐 없음</li>
-      <li>구글 Docs 이력서 템플릿</li>
-      <li><a href="https://www.canva.com/ko_kr/">Canva</a>에서 이력서 만들기</li>
-      <li><a href="https://www.typora.io/">Typora</a></li>
-    </ul>
-  </li>
-  <li>웹 이력서
-    <ul>
-      <li>(블로그 / 정적 페이지)이력서
-        <ul>
-          <li><a href="https://jbee.io/about/">한재엽(Jbee)님 이력서</a></li>
-          <li><a href="https://jojoldu.github.io/">이동욱(jojoldu)님 이력서</a></li>
-          <li><a href="https://resume.yowu.dev/">유용우(yowu)님 이력서</a></li>
-        </ul>
-      </li>
-      <li>Notion 이력서
-        <ul>
-          <li><a href="https://www.inflearn.com/course/%EB%85%B8%EC%85%98-notion-%ED%99%9C%EC%9A%A9">인프런 Notion 무료강의</a></li>
-          <li><a href="https://www.notion.so/5ec4542496e14121b62b9b28b98374b9">Notion 이력서 템플릿</a></li>
-          <li><a href="https://wonny.notion.site/Wonny-e64e2e55653c4d8b8b632118b36bdd72">정원희(Wonny)님의 Notion 이력서</a></li>
-        </ul>
-      </li>
-      <li>Github README 이력서
-        <ul>
-          <li>github에서 <code class="language-plaintext highlighter-rouge">이력서</code> 검색</li>
-          <li>장점: 분량의 자유, 편집에 용이, 공개에 용이</li>
-          <li>단점: PDF 버전이 필요함</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>신입 개발자 양식
-    <ul>
-      <li>깔끔한 PDF 이력서 1~2장</li>
-      <li>포트폴리오를 웹 이력서 처럼 만들고, 이력서에 포트폴리오 링크 추가</li>
-    </ul>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">it fetch 등록이름</code></li>
 </ul>
 
-<h4 id="이력서에-담을-내용">이력서에 <code class="language-plaintext highlighter-rouge">담을 내용</code></h4>
+<ol>
+  <li>원본 저장소 merge - 합치기</li>
+</ol>
 
 <ul>
-  <li>프로필
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">이름</code>/생년월일/연락처/<code class="language-plaintext highlighter-rouge">이메일</code>/<code class="language-plaintext highlighter-rouge">Github주소</code>/<code class="language-plaintext highlighter-rouge">블로그 주소</code>/운영중인 서비스</li>
-      <li>좋은 인상을 줄 수 있는 사진이 있으면 추가</li>
-    </ul>
-  </li>
-  <li>간략한 자기소개
-    <ul>
-      <li>3~5줄 사이로 간략하게 작성. 짧아야 읽음(경력자 예외)</li>
-      <li>명언, 좌우명 ❌</li>
-      <li>구구절절 설명 금지, 간결한 문체로 핵심 전달</li>
-      <li>목적은 <em>본인이 어떤 개발자인지 표현하는 것</em></li>
-      <li>노력하는 개발자, 열정적인 개발자. 등의 표현은 식상함</li>
-      <li><span style="color:red">핵심 키워드<span>:
-</span></span>        <ul>
-          <li>빨리 배우고, 어디서든 잘 적용하고, 커뮤니케이션 잘하고, 꾸준히 학습/성장하는, 문제 해결을 즐기는, 문제를 집요하게 파고드는</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>기술 스택
-    <ul>
-      <li>경력 개발자에게 중요한 부분</li>
-      <li>직접 사용해본 기술 + 열심히 학습했던 기술 나열</li>
-      <li>지원하는 회사의 스킬을 보고 참고하기</li>
-      <li>개발 언어 3개 이상 나열은 지양</li>
-      <li>기술 스택에 쓰지 말아야 할 기술?
-        <ul>
-          <li>면접에서 그 기술에 대한 기초적인 질문에도 답변할 수 없는 기술들</li>
-          <li>온라인 강의를 보고 그대로 따라하기만 해 본 기술들</li>
-          <li>Vscode 등 에디터/IDE</li>
-          <li>HTTP,Ajax등 기반 기술들</li>
-        </ul>
-      </li>
-      <li><span style="color:red">숙련도 표시 금지</span></li>
-    </ul>
-  </li>
-  <li>경력
-    <ul>
-      <li>개발 경력이 없어도 그 전 회사 짧게 쓰기(공백기간 체크)</li>
-      <li>경력 역순(최신순) 정렬이 정석</li>
-      <li><a href="https://www.facebook.com/cjunekim/posts/3477505705611305">경력 역량순 정렬</a></li>
-    </ul>
-  </li>
-  <li>프로젝트 경험
-    <ul>
-      <li>프로젝트에 대한 간략한 설명, 자세한 설명은 포트폴리오에 작성</li>
-      <li>간략한 설명 ?
-        <ul>
-          <li>프로젝트 제목 및 개요</li>
-          <li>개발 기간</li>
-          <li>참여 인원 &amp; 자신의 역할 (팀 프로젝트)</li>
-          <li>기술 스택 (주요 기술들만 나열, 버전 명시)</li>
-          <li>주요 개발 내용 / 문제 해결 경험 / 성과 (소소하면 ❌)</li>
-          <li>포트폴리오 링크 + Demo 링크 / Github 저장소 링크 + Demo 링크
-            <ul>
-              <li>프로젝트 경험이 없거나 부족하다면?
-                <ul>
-                  <li>외부교육이나 그룹 스터디 등이라도 어필</li>
-                  <li>개발자로 진지하게 성장하려는 노력과 의지 어필</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>교육/학력</li>
-  <li>개발 관련 교육 경험과 최종 학력 기재
-    <ul>
-      <li>컴공 전공자가 아니면 크게 의미 없음</li>
-      <li>개발 관련 교육은 어떤 교육인가에 따라 어필됨</li>
-      <li><a href="https://jojoldu.github.io/">이동욱(jojoldu)님 이력서-Education</a></li>
-    </ul>
-  </li>
-  <li>자격증(선택)
-    <ul>
-      <li>필수 ❌</li>
-      <li>개발 관련 없는 자격증 ❌
-        <ul>
-          <li>단, 회사 도메인/비즈니스 관련 자격증은 기재 ⭕️</li>
-        </ul>
-      </li>
-      <li>SI 업계에서는 -&gt; 정보처리기사 자격증 있어야 함</li>
-    </ul>
-  </li>
-  <li>
-    <p>외부 활동(선택)</p>
-
-    <ul>
-      <li>개발 관련 세미나/컨퍼런스/커뮤니티 주최, 참여, 발표</li>
-      <li>해커톤 대회 참여, 기술 서적 집필/번역, 개발 강의 제작 등</li>
-      <li><u>오픈소스 기여 경험</u></li>
-      <li>자격증 보다 의미 있는 이력임 - 개발자로서 성장하려는 의지 - 다른 개발자들과 협업할 수 있는 능력 - 개발 실력</li>
-    </ul>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">git merge 등록이름/브랜치이름</code></li>
 </ul>
 
-<p><a href="https://www.youtube.com/watch?v=HPm_JdGOfS4">OKKY 세미나 황후순 - IT 회사 탐방기</a><br />
-<a href="https://jojoldu.tistory.com/274">[OKKY] IT 회사 탐방기 세미나 참석후기</a></p>
+<ol>
+  <li>포크저장소로 push</li>
+</ol>
 
-<h2 id="포트폴리오">포트폴리오</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git push</code></li>
+</ul>
+
+<p><a href="https://velog.io/@k904808/Fork-%ED%95%9C-Repository-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EA%B8%B0">참고</a></p>]]></content><author><name>Gardenia</name></author><category term="Command" /><category term="Tips" /><category term="Command" /><summary type="html"><![CDATA[Fork Repo 관리시 필요할 듯]]></summary></entry><entry><title type="html">[Tips]용어 사전</title><link href="/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[Tips]용어 사전" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0</id><content type="html" xml:base="/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/"><![CDATA[<p><code class="language-plaintext highlighter-rouge">알파벳 순 정리</code></p>
+
+<h2 id="props">Props</h2>
+
+<h2 id="routing">Routing</h2>
+
+<h2 id="rendering">Rendering</h2>
+
+<h2 id="state">State</h2>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[용어 정리하기]]></summary></entry><entry><title type="html">[Tips]MYSQL 문법</title><link href="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[Tips]MYSQL 문법" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/"><![CDATA[<p><code class="language-plaintext highlighter-rouge">아래 문법 설명은 w3schools의 설명을 기초로 작성되었음</code></p>
+
+<h1 id="basic">BASIC</h1>
+
+<h2 id="select">SELECT</h2>
+
+<ul>
+  <li>데이터 선택</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name;
+</code></pre></div></div>
+
+<p>ex.</p>
 
 <blockquote>
-  <p>포트폴리오가 필요한 이유는?<br />
-포트폴리오 제출이 필수는 아니다.<br />
--&gt; 그러나 만들면 취업이 수월하다.<br />
-신입 개발자 이력서 다 “거기서 거기”(서류 전형 통과 이력서)<br />
--&gt; 이력서 = 정량 평가, 포트폴리오 = 정성 평가<br />
-신입 개발자는 스펙보다 개발 실력과 잠재력이 더 중요<br />
--&gt; 개발 실력과 잠재력을 어필하는 포트폴리오 제출<br /></p>
-</blockquote>
-
-<h3 id="포트폴리오에-대한-오해와-진실">포트폴리오에 대한 오해와 진실</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>오해</td>
-      <td>진실</td>
-    </tr>
-    <tr>
-      <td>포트폴리오 == 프로젝트</td>
-      <td>프로젝트들을 모은 것이 포트폴리오</td>
-    </tr>
-    <tr>
-      <td>포트폴리오는 웹페이지 형식으로 만들어야 함</td>
-      <td>개발 분야에 따라 형식이 다름(백엔드는 Github, 프론트엔드는 웹)</td>
-    </tr>
-    <tr>
-      <td>프로젝트 동작 화면을 보여주는게 중요함</td>
-      <td>프로젝트 소개 글과 코드를 잘 보여주는 것이 더 중요</td>
-    </tr>
-    <tr>
-      <td>창의적인 아이디어의 프로젝트를 만들어야 한다.</td>
-      <td>흔한 아이디어도 상관❌</td>
-    </tr>
-    <tr>
-      <td>프로젝트가 많을수록 좋다</td>
-      <td>평가자에 따라 다르지만, 양보다 질이 중요</td>
-    </tr>
-    <tr>
-      <td>포트폴리오는 프로젝트를 다 만든 후에 만듦</td>
-      <td>프로젝트 제작과 병행</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="토이-프로젝트">토이 프로젝트</h3>
-
-<h4 id="토이-프로젝트란-">토이 프로젝트란 🤔</h4>
-
-<ul>
-  <li>개인 프로젝트</li>
-  <li>장남감 처럼 비교적 가볍게 만들고 활용하는 프로젝트</li>
-  <li>자신에게 필요해서 만들거나, 만들고 싶은 것을 자유롭게 만드는 프로젝트</li>
-  <li>포트폴리오에서 <u>가장 영향력이 큰 아이템</u></li>
-</ul>
-
-<p><strong>주제 선택 방법</strong></p>
-
-<ul>
-  <li>하고 싶은 프로젝트 고민 및 기록
-    <ul>
-      <li>포트폴리오에 넣기 위해 만들기 보다, 만들고 싶은 것을 만들어 보자</li>
-    </ul>
-  </li>
-  <li>혼자 만들기에 부담스럽지 않은 규모의 주제 선택
-    <ul>
-      <li>최대한 보수적으로 프로젝트를 기획해야 함</li>
-      <li>나만 쓰더라도 작은 서비스를 <code class="language-plaintext highlighter-rouge">완성</code> 하는게 맞음</li>
-    </ul>
-  </li>
-  <li>본인 혹은 주변 사람들이 겪는 사소한 불편함 해소 서비스 만들기
-    <ul>
-      <li>주변 사람들이 서비스를 사용해보기 때문에 별다른 홍보 없이 사용자 획득</li>
-      <li>피드백 받기도 쉬움</li>
-    </ul>
-  </li>
-  <li>본인이 취업하고 싶은 도메인/회사와 관련된 서비스 만들기
-    <ul>
-      <li>만들면서 학습하고 사용한 핵심 기술들과 문제해결경험이 포트폴리오에서 가장 중요한 평가임</li>
-      <li>프론트엔드/모바일 개발자 -&gt; 취업하고 싶은 회사의 서비스를 따라 만들어보는 프로젝트 추천</li>
-    </ul>
-  </li>
-  <li>클론 코딩 강의 혹은 따라 만드는 강의에서 만든 프로젝트를 개선하고 발전 시킴</li>
-  <li>Github에서 <code class="language-plaintext highlighter-rouge">토이프로젝트</code> 검색</li>
-  <li>번외) 프로젝트 배포 따라해보기</li>
-</ul>
-
-<h4 id="개발자들이-토이-프로젝트를-만드는-이유">개발자들이 토이 프로젝트를 만드는 이유?</h4>
-
-<p><a href="https://woowabros.github.io/experience/2018/11/12/toy-project.html">프로젝트가 장난이야?!</a></p>
-
-<h3 id="팀-프로젝트">팀 프로젝트</h3>
-
-<h4 id="팀-프로젝트란-">팀 프로젝트란 🤔</h4>
-
-<ul>
-  <li>프로젝트 경험과 협업 능력을 모두 어필할 수 있음</li>
-  <li>비전공자는 팀 프로젝트를 하기 힘듬
-    <ul>
-      <li>그룹 스터디 팀원들과 팀 프로젝트 진행
-        <ul>
-          <li>모르는 사람과 하면 실력도 모르고 신뢰도 없어서 힘듬</li>
-        </ul>
-      </li>
-      <li>학원 동기들과 팀 프로젝트 진행</li>
-      <li>동아리/모임에 가입해 팀 프로젝트 진행
-        <ul>
-          <li><a href="https://www.depromeet.com/">디프만</a></li>
-          <li><a href="https://prography.org/">프로그라피</a></li>
-          <li><a href="http://teamnexters.com/">넥스터즈</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="팀-프로젝트를-진행할-때-주의할-점">팀 프로젝트를 진행할 때 <code class="language-plaintext highlighter-rouge">주의할 점</code>!</h4>
-
-<ul>
-  <li>팀 인원이 많으면 많을 수록 프로젝트는 산으로 간다. (2~4명이 적당)</li>
-  <li>최대한 단순하게 기획, 프로토타입 완성 후 기능을 덧붙인다.</li>
-  <li>GitHub에 Organization을 만들어 코드가 올라간 저장소를 공동으로 관리</li>
-</ul>
-
-<h3 id="개발-블로그--github">개발 블로그 &amp; GitHub</h3>
-
-<h4 id="개발자-들이-개발-블로그를-운영하는-이유">개발자 들이 개발 블로그를 운영하는 <code class="language-plaintext highlighter-rouge">이유</code></h4>
-
-<ul>
-  <li>개발자로서 성장에 도움이 된다.
-    <ul>
-      <li>댓글 피드백</li>
-      <li>블로그에 쓰기 위해 공부하고 경험</li>
-      <li>정확하게 설명하기 위해 더 깊게 더 정확하게 공부</li>
-    </ul>
-  </li>
-  <li>개발자 세계에 자신을 알리기 가장 쉬운 방법
-    <ul>
-      <li>개발자 세미나 강연, 출판 제의, 면접 제안 모두 블로그 글로 눈에 띌 수 있다.</li>
-    </ul>
-  </li>
-  <li><a href="https://taegon.kim/archives/7107">개발자가 블로그를 운영해야 할 이유</a></li>
-  <li><a href="https://jbee.io/essay/writing-of-developers/">개발자의 글쓰기, 기술 블로그에 대하여</a></li>
-  <li>자신의 생각과 감정, 경험을 공유 할 수 있다.</li>
-</ul>
-
-<h4 id="개발블로그">개발블로그</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>티스토리</td>
-      <td>브런치</td>
-      <td>미디엄</td>
-      <td>노션</td>
-      <td>벨로그</td>
-      <td>GitHub Blog</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>코드 삽입</td>
-      <td>Good 👍</td>
-      <td>Bad 👎</td>
-      <td>OK 👌</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-    </tr>
-    <tr>
-      <td>자유도</td>
-      <td>Good 👍</td>
-      <td>Bad 👎</td>
-      <td>OK 👌</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-    </tr>
-    <tr>
-      <td>구글 노출</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-      <td>OK 👌</td>
-      <td>Good 👍</td>
-      <td>Good 👍</td>
-    </tr>
-    <tr>
-      <td>광고 삽입</td>
-      <td>Good 👍</td>
-      <td>Bad 👎</td>
-      <td>OK 👌</td>
-      <td>Bad 👎</td>
-      <td>Bad 👎</td>
-      <td>Good 👍</td>
-    </tr>
-    <tr>
-      <td>장점</td>
-      <td>지속적 기능 개선</td>
-      <td>깔끔한 디자인과 한글 폰트</td>
-      <td>깔끔한 디자인</td>
-      <td>작성 쉬움. 메모앱 활용</td>
-      <td>개발 블로깅 최적화, 자체 유저들에게 노출</td>
-      <td>높은 자유도</td>
-    </tr>
-    <tr>
-      <td>단점</td>
-      <td>테마, 불편한 에디터</td>
-      <td>본문 복사 금지</td>
-      <td>한글 폰트,목록/검색 ❌</td>
-      <td>메모앱 &gt; 블로그</td>
-      <td>같은 디자인</td>
-      <td>다소 높은 진입 장벽</td>
-    </tr>
-    <tr>
-      <td>총 평</td>
-      <td>무난한 선택</td>
-      <td>개발 블로그 한계</td>
-      <td>한국에서 사용하기 불편</td>
-      <td>생산성 도구로 적합</td>
-      <td>첫 선택으로 가장 추천</td>
-      <td>개성 살리기, 개발 실력 향상👍</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="github-에-해야-할-것들">Github 에 해야 할 것들</h4>
-
-<p><strong>취업</strong></p>
-
-<ul>
-  <li>TIL 저장소 만들고 정리 및 기록</li>
-  <li>기술 서적, 학원 강의, 인강을 수강하며 작성한 코드 올리기</li>
-  <li>
-    <p>프로젝트를 GitHub 저장소에 올리고, README.md 파일 추가</p>
-  </li>
-  <li><a href="https://junilhwang.github.io/TIL/Review/2020-year/end/">주니어 개발자의 2020년 회고(황준일님)</a></li>
-</ul>
-
-<p><strong>취업 외</strong></p>
-
-<ul>
-  <li>본받을 점이 많은 개발자들 Follow
--&gt; 개발 블로그 주인 혹은 개발자 컨퍼런스 발표자의 깃헙 Follow
--&gt; 그 들의 활동을 보며 정보와 인사이트를 얻음</li>
-  <li>
-    <p>유명한 오픈소스를 Fork해서 코드 보고 배우기
--&gt; <code class="language-plaintext highlighter-rouge">정석</code>이라고 할 수 있는 개발 학습법</p>
-  </li>
-  <li><a href="https://www.rinae.dev/posts/how-to-contribute-oss">차근차근 오픈소스에 기여해 보기(동기 부여편)</a></li>
-  <li><a href="https://blog.cometkim.kr/posts/mattermost-contribution/how-i-grow-up-with-mattermost-community/">나는 어떻게 오픈소스 커뮤니티를 통해 성장했나</a></li>
-  <li><a href="https://opensource.guide/ko/how-to-contribute/">오픈소스에 기여하는 방법</a></li>
-</ul>
-
-<h2 id="코딩-테스트">코딩 테스트</h2>
-
-<h3 id="비전공자가-코딩테스트를-준비하는-이유">비전공자가 코딩테스트를 준비하는 이유</h3>
-
-<ul>
-  <li>“코딩 테스트를 보는 회사에는 어차피 서류 합격도 못할 것”
-    <ul>
-      <li>비전공자도 서류 전형에 통과할 수 있음</li>
-      <li>서류전형보다 코딩 테스트를 먼저 보는 회사들이 늘고 있음</li>
-      <li>이력서는 불변이지만, 코딩테스트는 가변이다.</li>
-    </ul>
-  </li>
-  <li>“코딩 테스트 준비할 시간이 없음”
-    <ul>
-      <li>코딩테스트를 준비할 여유는 (백수가 아닌 이상)영원히 없다.</li>
-      <li>취업 후에는 회사 업무를 제대로 하기 위한 공부가 더 급함</li>
-      <li>시간 부족하지 않은 사람은 없지만, 누군가는 코딩 테스트를 준비한다.</li>
-      <li><u>남들 놀 때 준비하고, 남들 잘 때 준비하는 수 밖에 없다.</u></li>
-    </ul>
-  </li>
-  <li>“지금부터 준비하더라도, 더 오래 준비한 전공자들에게 밀릴 것”
-    <ul>
-      <li>개발자는 왜 준비하지? 전공자들에게 밀릴텐데..</li>
-      <li>비전공자가 개발자의 길로 뛰어든 순간부터 불리한 게임 스타트</li>
-    </ul>
-  </li>
-  <li>“언어도 제대로 못하는데 무슨 코딩 테스트?”
-    <ul>
-      <li>개발자 되고 나서도 어려울 것</li>
-      <li>회사 일 하며 익혀야 할 언어와 프레임워크</li>
-      <li>신입 개발자 취업시 코딩 테스트를 잘 보는 것이 중요함</li>
-    </ul>
-  </li>
-  <li>“코딩 테스트 안 봐도 개발자로 취업은 하더라”
-    <ul>
-      <li>그렇게 취업 후 빨리 이직을 고려하게 될 수 있음</li>
-      <li><u>대충 취업하면, 대충 취급당한다.</u></li>
-    </ul>
-  </li>
-  <li>“조금 해봤는데, 너무 어렵다”
-    <ul>
-      <li>코딩 테스트 문제와 알고리즘 대회 문제 구분 <a href="http://codeforces.com/">코드 포스</a></li>
-      <li>절대 평가로 코딩 테스트 합격 여부를 결정하는 회사도 있음</li>
-    </ul>
-  </li>
-  <li>“해야 하는데 어떻게 준비해야 할지 모르겠다”</li>
-</ul>
-
-<h3 id="중고-신입-이직-전략">중고 신입 이직 전략</h3>
-
-<ul>
-  <li>1년 정도 첫 회사를 다니며 이직 준비를 해 높은 회사로 이직한다.</li>
-</ul>
-
-<h3 id="코딩테스트-준비-방법">코딩테스트 준비 방법</h3>
-
-<h4 id="단기간1달-이내">단기간(1달 이내)</h4>
-
-<ul>
-  <li>원하는 회사에서 채용할 때 사용하는 코딩 테스트 플랫폼의 문제를 많이 푼다.
-    <ul>
-      <li>Codility</li>
-      <li>프로그래머스</li>
-      <li>Hackerrank</li>
-      <li>LeetCode</li>
-    </ul>
-  </li>
-  <li>문제 풀이를 시도한 후에, 올바른 문제 풀이 방법을 검색해 보고, 다시 풀어보기</li>
-  <li>코드 작성환경과 테스트 케이스 추가 방법 미리 익히기</li>
-  <li>문제가 영어인 플랫폼인 경우, 자주 나오는 영어 표현들 미리 익히기</li>
-  <li>알고리즘 도감(책, 어플) 도움 받기</li>
-  <li>Big O 표기법, 시간복잡도/공간복잡도 개념 공부</li>
-</ul>
-
-<h4 id="장기간">장기간</h4>
-
-<ul>
-  <li>자료구조/알고리즘 부터 제대로 학습
-    <ul>
-      <li>학습 순서
-        <ul>
-          <li>본인이 사용하는 개발 언어로 작성된 자료구조 책 학습</li>
-          <li><a href="https://www.youtube.com/user/damazzang/videos">엔지니어대한민국</a> 유투브 채널 영상 학습(안보고 작성할 정도로 학습)</li>
-          <li><a href="https://www.inflearn.com/course/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%95%EC%A2%8C">영리한 프로그래밍을 위한 알고리즘 강좌</a></li>
-          <li>LeetCode 문제 풀이</li>
-          <li><a href="http://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=ENG&amp;mallGb=ENG&amp;barcode=9780984782857&amp;orderClick=LAG&amp;Kc=">Cracking the Coding Interview</a></li>
-        </ul>
-      </li>
-      <li>스터디를 만들거나 참여해서 꾸준히 준비하기</li>
-      <li>아직 준비가 되지 않았더라도 일단 지원해서 실제 코딩 테스트 경험하기</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="기술-면접">기술 면접</h2>
-
-<h3 id="기술-면접은-어떤-면접인가">기술 면접은 어떤 면접인가?</h3>
-
-<blockquote>
-  <p>신입 개발자 채용 면접은 어떻게 진행 되는가?</p>
+  <p>SELECT CustomerName, City FROM Customers;</p>
 </blockquote>
 
 <ul>
-  <li>서류전형 -&gt; (코딩 테스트 or 사전 과제 전형) -&gt; 1차 면접 -&gt; 2차 면접 -&gt; (3차 면접) -&gt; 합격</li>
-  <li>1차 면접
-    <ul>
-      <li>기술 면접</li>
-      <li>면접관 : 실무진 (개발 팀장,시니어 개발자)</li>
-    </ul>
-  </li>
-  <li>2차 면접
-    <ul>
-      <li>기술 면접 or 문화적합성 면접</li>
-      <li>면접관 : CTO, 임원급 직원, 인사담당자 등</li>
-    </ul>
-  </li>
-  <li>
-    <p>블라인드 채용</p>
-
-    <ul>
-      <li>코딩 테스트 or 사전 과제 -&gt; 서류 전형 -&gt; 1차 면접 -&gt; 2차 면접 -&gt; (3차 면접) -&gt; 합격</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">기술 이해도</code> 평가</li>
-  <li>이력서와 포트폴리오에 기재된 기술 스택 or 회사에서 사용하는 기술 스택 or CS 기초
-    <ul>
-      <li>A 기술의 핵심 개념은 무엇이고 설명할 수 있는지</li>
-      <li>A 기술의 핵심 개념과 연결되는 기초적인 CS 지식 이해 했는지</li>
-      <li>왜 A 를 사용 했는지</li>
-      <li>A 기술의 한계는 무엇이고 한계 상황에서 어떻게 대처 할 것인가</li>
-      <li>기초적인 CS 지식, 주 개발 언어와 관련된 기초 지식 질문</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">성장 가능성</code> 평가
-    <ul>
-      <li>신입은 <em>앞으로 얼마나 빠르게 팀과 업무에 적응 할 수 있을지</em> 를 본다.</li>
-      <li>성장 가능성을 어필하려면 Github, 개발 블로그, 이력서, 포트폴리오 이모든 것이 증거가 된다.</li>
-      <li>개발자가 되려는 이유에 대한 답변 준비</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">의사소통 능력</code> 평가
-    <ul>
-      <li>개발자는 협업하는 직업</li>
-      <li>면접에서 의사소통 능력을 반드시 평가</li>
-      <li>의사소통 != 뛰어난 언변
-        <ul>
-          <li>Q. A? A. A~ , 다른사람과 협업시 발생한 문제 해결능력</li>
-        </ul>
-      </li>
-      <li>실력이 약간 부족해도 기존 팀원과 잘 맞는 지원자 채용함</li>
-    </ul>
-  </li>
+  <li>모든 데이터를 선택할때 <code class="language-plaintext highlighter-rouge">*</code>를 쓴다.</li>
 </ul>
 
-<h3 id="기술-면접-준비-방법">기술 면접 준비 방법</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * FROM table_name;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers;</p>
+</blockquote>
+
+<h3 id="select-distinct문">SELECT DISTINCT문</h3>
 
 <ul>
-  <li>학습 범위과 우선 순위 정하기
-    <ul>
-      <li>모든 내용 준비하겠다는 욕심 버리기</li>
-      <li>중요한 기술에 대해 제대로 답변하는 것이 목표</li>
-      <li>학습 범위 &amp; 우선순위
-        <ul>
-          <li>나의 이력서/포트폴리오에도 있고 지원한 팀에도 쓰는 기술들</li>
-          <li>지원한 팀에서 쓰지 않지만 내가 쓴 기술들</li>
-          <li>주로 사용하는 프로그래밍 언어</li>
-          <li>프레임 워크</li>
-          <li>컴공 기초</li>
-        </ul>
-      </li>
-    </ul>
+  <li>SELECT 절 바로 뒤에 DISTINCT 문을 넣고 그 뒤에 가져오길 원하는 칼럼을 나열하면 중복값이 제거된 데이터를 가져올 수 있음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT DISTINCT column1, column2, ...
+FROM table_name;
+</code></pre></div></div>
+
+<h2 id="where">WHERE</h2>
+
+<ul>
+  <li>필터링</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country=’Mexico’;</p>
+</blockquote>
+
+<h2 id="and-or-및-not">AND, OR 및 NOT</h2>
+
+<ul>
+  <li>
+    <p>WHERE 절과 결합 가능</p>
   </li>
-  <li>면접에서 자주 나오는 질문들을 한글/영문 으로 검색해서 정리 (예상 질문 리스트 만들기)
-    <ul>
-      <li>신입 개발자 면접에서 나오는 질문들은 어느정도 정해져 있음</li>
-      <li>JS 면접 질문, Javascript interview question 같이 검색</li>
-      <li>메모 공간에 정리해 리스트 만들기</li>
-    </ul>
+  <li>
+    <p>AND 구문 : 다 포함 된 것 조회</p>
   </li>
-  <li>학습 내용을 본인의 문장으로 정리하고, 말로 설명 할 수 있을 때 까지 학습하기
-    <ul>
-      <li>양이 많아지면 복붙하거나 대충할 수 있다.</li>
-      <li>자신의 입으로 말할 수 있어야 한다.</li>
-      <li>잘 정리되지 않으면 면접에서 버벅거리게 된다.</li>
-    </ul>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country=’Germany’ AND City=’Berlin’;</p>
+</blockquote>
+
+<ul>
+  <li>OR 구문 : 하나라도 포함 되면 조회</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE City=’Berlin’ OR City=’München’;</p>
+</blockquote>
+
+<ul>
+  <li>NOT 구문 : 특정 값을 제외 한 조회</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE NOT Country=’Germany’;</p>
+</blockquote>
+
+<h3 id="섞어쓰기">섞어쓰기</h3>
+
+<ul>
+  <li>국가가 “독일”이 아니고 “미국”이 아닌 “고객”의 모든 필드</li>
+</ul>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE NOT Country=’Germany’ AND NOT Country=’USA’;</p>
+</blockquote>
+
+<h2 id="order-by">ORDER BY</h2>
+
+<ul>
+  <li>오름차순, 내림차순으로 결과를 정렬함</li>
+</ul>
+
+<p>오름차순</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... (ASC)
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country;</p>
+</blockquote>
+
+<p>내림차순</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ...DESC;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country DESC;</p>
+</blockquote>
+
+<p>ex. 여러 열 1 -&gt; “국가”를 기준으로 오름차순으로 정렬되고 “CustomerName” 열을 기준으로 내림차순으로 정렬</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;</p>
+</blockquote>
+
+<h2 id="insert-into">INSERT INTO</h2>
+
+<ul>
+  <li>테이블에 새 레코드 삽입</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+</code></pre></div></div>
+
+<p>테이블의 모든 열에 값을 추가하는 경우</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+</code></pre></div></div>
+
+<p>ex. “CustomerName”, “City” 및 “Country” 열에만 데이터를 삽입</p>
+
+<blockquote>
+  <p>INSERT INTO Customers (CustomerName, City, Country)
+VALUES (‘Cardinal’, ‘Stavanger’, ‘Norway’);</p>
+</blockquote>
+
+<h2 id="null">NULL</h2>
+
+<ul>
+  <li>값이 없는 필드
+NULL 값은 0 값 또는 공백이 포함된 필드와 다르다. NULL 값이 있는 필드는 레코드 생성 중에 <code class="language-plaintext highlighter-rouge">비어 있는</code> 필드</li>
+</ul>
+
+<p>IS NULL -&gt; 비어 있는 것 조회</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+</code></pre></div></div>
+
+<p>ex. 주소가 비어있는 고객 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;</p>
+</blockquote>
+
+<p>IS NOT NULL -&gt; 비어 있지 않은 것 조회</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+</code></pre></div></div>
+
+<p>ex. 주소가 비어있지 않은 고객 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NOT NULL;`</p>
+</blockquote>
+
+<h2 id="update">UPDATE</h2>
+
+<ul>
+  <li>기존의 레코드 수정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>WHERE절 을 생략하면 테이블의 <code class="language-plaintext highlighter-rouge">모든 레코드가 업데이트</code></li>
+</ul>
+
+<p>ex. CustomerID가 1인 고객의 담당자와 도시를 업데이트!</p>
+
+<blockquote>
+  <p>UPDATE Customers
+SET ContactName = ‘Alfred Schmidt’, City= ‘Frankfurt’
+WHERE CustomerID = 1;</p>
+</blockquote>
+
+<p>ex. 나라가 멕시코인 고객들의 담당자를 Juan으로 변경</p>
+
+<blockquote>
+  <p>UPDATE Customers
+SET ContactName=’Juan’
+WHERE Country=’Mexico’;</p>
+</blockquote>
+
+<h2 id="delete">DELETE</h2>
+
+<ul>
+  <li>기존 레코드 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE FROM table_name WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>WHERE절 을 생략하면 테이블의 <code class="language-plaintext highlighter-rouge">모든 레코드가 삭제</code></li>
+</ul>
+
+<p>ex. 고객명이 ‘Alfreds Futterkiste’인 칼럼 삭제</p>
+
+<blockquote>
+  <p>DELETE FROM Customers WHERE CustomerName=’Alfreds Futterkiste’;</p>
+</blockquote>
+
+<p>ex. 모든 기록 삭제</p>
+
+<blockquote>
+  <p>DELETE FROM table_name;</p>
+</blockquote>
+
+<h2 id="limit">LIMIT</h2>
+
+<p>(sql/MS액세스, MySQL, Oracle 방법이 다름)</p>
+
+<ul>
+  <li><a href="https://www.w3schools.com/sql/sql_top.asp">SELECT TOP</a></li>
+  <li>제한된 수의 레코드를 선택</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+</code></pre></div></div>
+
+<p>ex. 처음 세개의 레코드 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+LIMIT 3;</p>
+</blockquote>
+
+<h2 id="min--max">MIN() &amp; MAX()</h2>
+
+<ul>
+  <li>선택열의 가장 작은(큰) 값 반환</li>
+</ul>
+
+<p>MIN()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 가장 저렴한 가격 찾기</p>
+
+<blockquote>
+  <p>SELECT MIN(Price) AS SmallestPrice
+FROM Products;</p>
+</blockquote>
+
+<p>MAX()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 가장 비싼 가격 찾기</p>
+
+<blockquote>
+  <p>SELECT MAX(Price) AS LargestPrice
+FROM Products;
+** AS : SELECT 별칭 주기</p>
+</blockquote>
+
+<h2 id="count-avg-sum">COUNT(), AVG(), SUM()</h2>
+
+<ul>
+  <li>
+    <p>NULL 값 무시</p>
   </li>
-  <li>최소 면접 3일 전부터 모의 면접 진행
+  <li>
+    <p>COUNT()</p>
     <ul>
-      <li>도와줄 사람이 있으면 -&gt; 예상 질문 리스트를 주고 면접관 처럼 질문해달라고 부탁</li>
-      <li>도와줄 사람이 없으면 -&gt; 혼자 입으로 소리 내서 답변하기</li>
-      <li>제대로 답변 ❌ -&gt; 제대로 이해하지 못한 것. 다시 공부하기</li>
-    </ul>
-  </li>
-  <li>면접 끝나면 면접 내용을 반드시 복기해서 기록해두기
-    <ul>
-      <li>이력서나 포트폴리오에 변화가 없다면, 다른 회사에서도 비슷한 질문을 받을 것</li>
-      <li>기억해두려면 복기해 메모해두기</li>
+      <li>지정된 기준과 일치하는 행의 수를 반환</li>
     </ul>
   </li>
 </ul>
 
-<h3 id="링크-3">링크</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 제품수 반환하기</p>
+
+<blockquote>
+  <p>SELECT COUNT(ProductID)
+FROM Products;</p>
+</blockquote>
+
+<ul>
+  <li>AVG()
+    <ul>
+      <li>숫자 열의 평균 반환</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 제품의 평균 가격</p>
+
+<blockquote>
+  <p>SELECT AVG(Price)
+FROM Products;</p>
+</blockquote>
+
+<ul>
+  <li>SUM()
+    <ul>
+      <li>숫자 열의 총 합</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. Quantity 합계 조회</p>
+
+<blockquote>
+  <p>SELECT SUM(Quantity)
+FROM OrderDetails;</p>
+</blockquote>
+
+<h2 id="like">LIKE</h2>
+
+<ul>
+  <li>WHERE열의 특정 패턴을 검색</li>
+  <li>%(0,1 또는 여러 문자를 나타냄) 와 _(하나의 단일 문자 나타냄) 함께 자주 사용</li>
+  <li>AND 나 OR 을 결합해서 쓸 수 있음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+</code></pre></div></div>
+
+<p>ex. 고객명이 a로 시작하는 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName LIKE ‘a%’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하고 3글자 이상인 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName LIKE ‘a__%’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하고 마지막 글자가 o로 끝나는 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE ContactName LIKE ‘a%o’;</p>
+</blockquote>
+
+<p>ex. 첫글자가 a로 시작하지 않는 CustomerName을 가진 고객 모두 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE CustomerName NOT LIKE ‘a%’;</p>
+</blockquote>
+
+<h2 id="in">IN</h2>
+
+<ul>
+  <li>여러 값을 지정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+</code></pre></div></div>
+
+<p>ex. 나라가 독일, 프랑스, 영국인 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country IN (‘Germany’, ‘France’, ‘UK’);</p>
+</blockquote>
+
+<p>ex. Suppliers와 동일한 국가의 모든 고객 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Customers
+WHERE Country IN (SELECT Country FROM Suppliers);</p>
+</blockquote>
+
+<h2 id="between">BETWEEN</h2>
+
+<ul>
+  <li>주어진 범위 내에서 값을 선택
+    <ul>
+      <li>값은 숫자, 텍스트 또는 날짜일 수 있음</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+</code></pre></div></div>
+
+<p>ex. 가격이 10에서 20사이인 제품 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;</p>
+</blockquote>
+
+<p>ex. OrderDate가 1996년 7월 1일과 1996년 7월 31일 사이의 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT * FROM Orders
+WHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;</p>
+</blockquote>
+
+<h2 id="aliases별칭">Aliases(별칭)</h2>
+
+<p>열 구문</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name AS alias_name
+FROM table_name;
+</code></pre></div></div>
+
+<p>테이블 구문</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name AS alias_name;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;</p>
+</blockquote>
+
+<h2 id="join">JOIN</h2>
+
+<ul>
+  <li>두 개 이상의 테이블에서 행을 결합하는 데 사용</li>
+</ul>
+
+<p><img src="/img/joins.png" alt="join 그림" /></p>
+
+<h3 id="inner-join">INNER JOIN</h3>
+
+<ul>
+  <li>두 테이블에서 일치하는 값을 가진 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 고객 정보가 있는 모든 주문 조회</p>
+
+<blockquote>
+  <p>SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p>
+</blockquote>
+
+<h3 id="left-join">LEFT JOIN</h3>
+
+<ul>
+  <li>왼쪽 테이블의 모든 레코드를 반환하고 오른쪽 테이블의 일치하는 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 모든 고객과 고객이 가질 수 있는 모든 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;</p>
+</blockquote>
+
+<h3 id="right-join">RIGHT JOIN</h3>
+
+<ul>
+  <li>오른쪽 테이블의 모든 레코드를 반환하고 왼쪽 테이블의 일치하는 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+</code></pre></div></div>
+
+<p>ex. 모든 직원과 직원이 내린 모든 주문을 조회</p>
+
+<blockquote>
+  <p>SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;</p>
+</blockquote>
+
+<h3 id="full-join">FULL JOIN</h3>
+
+<ul>
+  <li>왼쪽 또는 오른쪽 테이블에 일치하는 항목이 있는 경우 모든 레코드를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 모든 고객과 모든 주문 선택</p>
+
+<blockquote>
+  <p>SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;</p>
+</blockquote>
+
+<h3 id="self-join">SELF JOIN</h3>
+
+<ul>
+  <li>테이블은 자신과 조인</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+</code></pre></div></div>
+
+<ul>
+  <li>T1 그리고 T2 동일한 테이블에 대한 다른 테이블 별칭</li>
+</ul>
+
+<p>ex. 같은 도시에 있는 고객과 일치</p>
+
+<blockquote>
+  <p>SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID &lt;&gt; B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;</p>
+</blockquote>
+
+<h2 id="union">UNION</h2>
+
+<ul>
+  <li>두 개 이상의 결과 집합을 결합하는 데 사용되는 <code class="language-plaintext highlighter-rouge">SELECT</code>문
+조건</li>
+</ul>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">SELECT</code>안의 모든 명령문 <code class="language-plaintext highlighter-rouge">UNION</code>에는 동일한 수의 열이 있어야함</li>
+  <li>열에도 유사한 데이터 유형이 있어야함</li>
+  <li>모든 <code class="language-plaintext highlighter-rouge">SELECT</code>문의 열도 같은 순서여야함</li>
+</ol>
+
+<h3 id="union-1">UNION</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+</code></pre></div></div>
+
+<p>ex. “Customers” 및 “Suppliers” 테이블 모두에서 도시(고유한 값만)를 조회</p>
+
+<blockquote>
+  <p>SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;</p>
+</blockquote>
+
+<h3 id="union-all">UNION ALL</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+</code></pre></div></div>
+
+<p>ex. “Customers” 및 “Suppliers” 테이블 모두에서 독일 도시(중복 값도 포함)를 조회</p>
+
+<blockquote>
+  <p>SELECT City, Country FROM Customers
+WHERE Country=’Germany’
+UNION ALL
+SELECT City, Country FROM Suppliers
+WHERE Country=’Germany’
+ORDER BY City;</p>
+</blockquote>
+
+<h2 id="group-by">GROUP BY</h2>
+
+<ul>
+  <li>하나 이상의 열로 결과 집합을 그룹화하기 위해 집계 함수(<code class="language-plaintext highlighter-rouge">COUNT()</code>, <code class="language-plaintext highlighter-rouge">MAX()</code>, <code class="language-plaintext highlighter-rouge">MIN()</code>, <code class="language-plaintext highlighter-rouge">SUM()</code>, <code class="language-plaintext highlighter-rouge">AVG()</code>) 와 함께 자주 사용</li>
+  <li>특정 컬럼 이름을 지정(column-names)해주면 그 컬럼의 UNIQUE한 값에 따라서 데이터를 그룹 짓고, 중복된 열은 제거 됨</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+</code></pre></div></div>
+
+<p>ex. 각 국가의 고객 수를 조회</p>
+
+<blockquote>
+  <p>SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;</p>
+</blockquote>
+
+<h2 id="having">HAVING</h2>
+
+<ul>
+  <li>GROUP BY한 결과에 조건을 붙이고 싶을때 사용</li>
+  <li>GROUP BY의 WHERE 절</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+</code></pre></div></div>
+
+<p>ex. 각 국가의 고객 수를 조회 ( 고객이 5명 이상인 국가만 포함하여)</p>
+
+<blockquote>
+  <p>SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) &gt; 5;</p>
+</blockquote>
+
+<h2 id="exists">EXISTS</h2>
+
+<ul>
+  <li>하위 쿼리에 레코드가 있는지 테스트하는 데 사용</li>
+  <li>하위 쿼리가 하나 이상의 레코드를 반환하는 경우 연산자는 TRUE를 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE EXISTS
+(SELECT column_name FROM table_name WHERE condition);
+</code></pre></div></div>
+
+<p>ex. TRUE를 반환하고 제품 가격이 20 미만인 공급자를</p>
+
+<blockquote>
+  <p>SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price &lt; 20);</p>
+</blockquote>
+
+<h2 id="any">ANY</h2>
+
+<ul>
+  <li>결과로 boolean 값을 반환합니다.</li>
+  <li>하위 쿼리 값 중 하나라도 조건을 충족하는 경우 TRUE를 반환</li>
+  <li>범위의 값 중 하나에 대해 작업이 참인 경우 조건이 참임을 의미</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ANY
+  (SELECT column_name
+  FROM table_name
+  WHERE condition);
+</code></pre></div></div>
+
+<p>ex. OrderDetails 테이블에서 Quantity가 10인 레코드를 찾으면 ProductName을 조회
+(Quantity 열의 일부 값이 10이므로 TRUE가 반환됨)</p>
+
+<blockquote>
+  <p>SELECT ProductName
+FROM Products
+WHERE ProductID = ANY
+(SELECT ProductID
+FROM OrderDetails
+WHERE Quantity = 10);</p>
+</blockquote>
+
+<h2 id="all">ALL</h2>
+
+<ul>
+  <li>결과로 boolean 값을 반환합니다.</li>
+  <li>하위 쿼리 값 중 하나라도 조건을 충족하는 경우 TRUE를 반환</li>
+  <li><code class="language-plaintext highlighter-rouge">SELECT</code>, <code class="language-plaintext highlighter-rouge">WHERE</code> 및 <code class="language-plaintext highlighter-rouge">HAVING</code>문과 함께 사용</li>
+</ul>
+
+<p>USE SELECT</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT ALL column_name(s)
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>USE WHERE or HAVING</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column_name(s)
+FROM table_name
+WHERE column_name operator ALL
+  (SELECT column_name
+  FROM table_name
+  WHERE condition);
+</code></pre></div></div>
+
+<p>ex. 모든 제품 이름을 조회</p>
+
+<blockquote>
+  <p>SELECT ALL ProductName
+FROM Products
+WHERE TRUE;</p>
+</blockquote>
+
+<p>ex. OrderDetails 테이블의 모든 레코드에 Quantity가 10인 경우 ProductName을 조회
+Quantity 열에 값이 10일 뿐만 아니라 다양한 값이 있기 때문에 당연히 FALSE를 반환</p>
+
+<blockquote>
+  <p>SELECT ProductName
+FROM Products
+WHERE ProductID = ALL
+(SELECT ProductID
+FROM OrderDetails
+WHERE Quantity = 10);</p>
+</blockquote>
+
+<h2 id="select-into">SELECT INTO</h2>
+
+<ul>
+  <li>한 테이블의 데이터를 새 테이블로 복사</li>
+</ul>
+
+<p>모든 열 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+</code></pre></div></div>
+
+<p>일부 열만 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT column1, column2, column3, ...
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 고객의 백업 복사본을 생성</p>
+
+<blockquote>
+  <p>SELECT * INTO CustomersBackup2017
+FROM Customers;</p>
+</blockquote>
+
+<p>ex. IN절을 사용하여 테이블을 다른 데이터베이스의 새 테이블로 복사</p>
+
+<blockquote>
+  <p>SELECT * INTO CustomersBackup2017 IN ‘Backup.mdb’
+FROM Customers;</p>
+</blockquote>
+
+<p>ex. 몇 개의 열만 새 테이블에 복사</p>
+
+<blockquote>
+  <p>SELECT CustomerName, ContactName INTO CustomersBackup2017
+FROM Customers;</p>
+</blockquote>
+
+<ul>
+  <li>다른 스키마를 사용하여 비어 있는 새 테이블을 만드는 데 사용할 수도 있음
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">WHERE</code>쿼리가 데이터를 반환하지 않도록 하는 절을 추가하기만 하면 됨</li>
+    </ul>
+  </li>
+</ul>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * INTO newtable
+FROM oldtable
+WHERE 1 = 0;</p>
+</blockquote>
+
+<h2 id="insert-into-select">INSERT INTO SELECT</h2>
+
+<ul>
+  <li>select 한 것ㅇ르 insert 하는 구문</li>
+  <li>select하는 테이블과 insert할 테이블의 컬럼은 일치해야 함</li>
+</ul>
+
+<p>한 테이블의 모든 열을 다른 테이블로 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+</code></pre></div></div>
+
+<p>한 테이블의 일부 열만 다른 테이블로 복사</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex.”공급자”를 “고객”으로 복사
+(데이터로 채워지지 않은 열에는 NULL이 포함됨).</p>
+
+<blockquote>
+  <p>INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers;</p>
+</blockquote>
+
+<h2 id="case">CASE</h2>
+
+<ul>
+  <li>if 문과 같은 기능</li>
+  <li>조건을 통과하고 첫 번째 조건은 (if-then-else 명령문 등)을 충족하는 값을 반환</li>
+  <li>조건이 true이면 읽기를 중지하고 결과를 반환</li>
+  <li>조건이 참이 아니면 ELSE절의 값을 반환</li>
+  <li>없는 경우 ELSE 부분이고 조건이 참이 아니면 NULL을 반환</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+</code></pre></div></div>
+
+<p>ex. City별로 고객을 주문합니다. 그러나 City가 NULL이면 국가별 조회</p>
+
+<blockquote>
+  <p>SELECT CustomerName, City, Country
+FROM Customers
+ORDER BY
+(CASE</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WHEN City IS NULL THEN Country
+ELSE City
+</code></pre></div></div>
+
+<p>END);</p>
+
+<h1 id="database">DATABASE</h1>
+
+<h2 id="create-database">CREATE DATABASE</h2>
+
+<ul>
+  <li>새 SQL 데이터베이스를 생성</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE DATABASE databasename;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>CREATE DATABASE testDB;</p>
+</blockquote>
+
+<h2 id="drop-database">DROP DATABASE</h2>
+
+<ul>
+  <li>기존 SQL 데이터베이스를 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP DATABASE databasename;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>DROP DATABASE testDB;</p>
+</blockquote>
+
+<h2 id="backup-database">BACKUP DATABASE</h2>
+
+<ul>
+  <li>SQL Server에서 기존 SQL 데이터베이스의 전체 백업을 만듬</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BACKUP DATABASE databasename
+TO DISK = 'filepath';
+</code></pre></div></div>
+
+<p>ex. 기존 데이터베이스 “testDB”의 전체 백업을 D 디스크에 생성</p>
+
+<blockquote>
+  <p>BACKUP DATABASE testDB
+TO DISK = ‘D:\backups\testDB.bak’;</p>
+</blockquote>
+
+<h3 id="backup-with-differential">BACKUP WITH DIFFERENTIAL</h3>
+
+<ul>
+  <li>전체 백업 이후 변경된 부분만 백업</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BACKUP DATABASE databasename
+TO DISK = 'filepath'
+WITH DIFFERENTIAL;
+</code></pre></div></div>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>BACKUP DATABASE testDB
+TO DISK = ‘D:\backups\testDB.bak’
+WITH DIFFERENTIAL;</p>
+</blockquote>
+
+<h2 id="create-table">CREATE TABLE</h2>
+
+<ul>
+  <li>데이터베이스에 새 테이블을 생성</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+</code></pre></div></div>
+
+<p>ex. PersonID, LastName, FirstName, Address 및 City의 5개 열이 포함된 “Persons”라는 테이블을 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PersonID int,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+'City varchar(255)
+</code></pre></div></div>
+
+<p>);</p>
+
+<h2 id="drop-table">DROP TABLE</h2>
+
+<ul>
+  <li>데이터베이스의 기존 테이블을 삭제</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP TABLE table_name;
+</code></pre></div></div>
+
+<p>ex. 기존 테이블 “Shippers”를 삭제</p>
+
+<blockquote>
+  <p>DROP TABLE Shippers;</p>
+</blockquote>
+
+<h2 id="alter-table">ALTER TABLE</h2>
+
+<ul>
+  <li>기존 테이블의 열을 추가, 삭제 또는 수정</li>
+  <li>기존 테이블에 다양한 제약 조건을 추가 및 삭제</li>
+</ul>
+
+<h3 id="열-추가">열 추가</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+ADD column_name datatype;
+</code></pre></div></div>
+
+<p>ex. “Customers” 테이블에 “Email” 열을 추가</p>
+
+<blockquote>
+  <p>ALTER TABLE Customers
+ADD Email varchar(255);</p>
+</blockquote>
+
+<h3 id="열-삭제">열 삭제</h3>
+
+<ul>
+  <li>일부 데이터베이스 시스템에서는 열 삭제를 허용하지 않음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+DROP COLUMN column_name;
+</code></pre></div></div>
+
+<p>ex. “Customers” 테이블에서 “Email” 열을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Customers
+DROP COLUMN Email;</p>
+</blockquote>
+
+<h3 id="열-변경수정">열 변경/수정</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
+</code></pre></div></div>
+
+<p>ex. “Persons” 테이블에서 “DateOfBirth”라는 열의 데이터 유형을 변경</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER COLUMN DateOfBirth year;</p>
+</blockquote>
+
+<h2 id="constraints제약조건">Constraints(제약조건)</h2>
+
+<ul>
+  <li>명령문을 사용하여 테이블을 생성할 때 또는 명령문으로 테이블을 생성한 후에 제약 조건을 지정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    column3 datatype constraint,
+    ....
+);
+</code></pre></div></div>
+
+<p>제약 조건</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">NOT NULL</code> - 컬럼이 NULL 값을 가질 수 없도록 보장
+<code class="language-plaintext highlighter-rouge">UNIQUE</code> - 열의 모든 값이 서로 다른지 확인
+<code class="language-plaintext highlighter-rouge">PRIMARY KEY</code> - (A)의 조합 <code class="language-plaintext highlighter-rouge">NOT NULL</code>과 <code class="language-plaintext highlighter-rouge">UNIQUE</code>. 테이블의 각 행을 고유하게 식별
+<code class="language-plaintext highlighter-rouge">FOREIGN KEY</code> - 테이블 간의 링크를 파괴하는 작업 방지
+<code class="language-plaintext highlighter-rouge">CHECK</code> - 컬럼의 값이 특정 조건을 만족하는지 확인
+<code class="language-plaintext highlighter-rouge">DEFAULT</code> - 값이 지정되지 않은 경우 열의 기본값을 설정합니다.
+<code class="language-plaintext highlighter-rouge">CREATE INDEX</code> - 데이터베이스에서 데이터를 매우 빠르게 생성하고 검색하는 데 사용</p>
+</blockquote>
+
+<h2 id="not-null">NOT NULL</h2>
+
+<ul>
+  <li>기본적으로 열은 NULL 값을 보유할 수 있다.</li>
+  <li>NOT NULL 제약 조건은 열이 NULL 값을 허용하지 않도록 함</li>
+  <li>필드에 항상 값이 포함
+    <ul>
+      <li>필드에 값을 추가하지 않고는 새 레코드를 삽입하거나 레코드를 업데이트할 수 없다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>ex. “Persons” 테이블이 생성될 때 “ID”, “LastName” 및 “FirstName” 열이 NULL 값을 허용하지 않도록 함</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255) NOT NULL,
+Age int
+);</p>
+</blockquote>
+
+<h2 id="unique-constraint">UNIQUE Constraint</h2>
+
+<ul>
+  <li>열의 모든 값이 서로 다른지 확인</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
+</code></pre></div></div>
+
+<p>ex. 테이블이 이미 생성된 경우 “ID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD UNIQUE (ID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정하고 UNIQUE여러 열에 대한 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);</p>
+</blockquote>
+
+<p>ex. 제약 조건을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP INDEX UC_Person;</p>
+</blockquote>
+
+<h2 id="primary-key">PRIMARY KEY</h2>
+
+<ul>
+  <li>고유하게 식별</li>
+  <li>UNIQUE 값을 포함해야 하며 NULL 값을 포함할 수 없다.</li>
+</ul>
+
+<p>ex. PRIMARY KEY”Persons” 테이블이 생성될 때 “ID” 열에 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+PRIMARY KEY (ID)
+);</p>
+</blockquote>
+
+<p>ex. 테이블이 이미 생성된 경우 “ID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD PRIMARY KEY (ID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 PRIMARY KEY하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP PRIMARY KEY;</p>
+</blockquote>
+
+<h2 id="foreign-key">FOREIGN KEY</h2>
+
+<ul>
+  <li>테이블 간의 링크를 파괴하는 작업을 방지하는 데 사용</li>
+  <li>외래 키가 있는 테이블이 자식 테이블, 기본 키가 있는 테이블이 참조 또는 부모 테이블</li>
+</ul>
+
+<p>ex. FOREIGN KEY”Orders” 테이블이 생성될 때 “PersonID” 열에 생성</p>
+
+<blockquote>
+  <p>CREATE TABLE Orders (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OrderID int NOT NULL,
+OrderNumber int NOT NULL,
+PersonID int,
+PRIMARY KEY (OrderID),
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. “Orders” 테이블이 이미 생성된 경우 “PersonID” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 FOREIGN KEY하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+ADD CONSTRAINT FK_PersonOrder
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Orders
+DROP FOREIGN KEY FK_PersonOrder;</p>
+</blockquote>
+
+<h2 id="check-constraint">CHECK Constraint</h2>
+
+<ul>
+  <li>열에 배치할 수 있는 값 범위를 제한</li>
+  <li>제약 조건 을 정의하면 이 열에 대해 특정 값만 허용</li>
+</ul>
+
+<p>ex. CHECK”Persons” 테이블이 생성될 때 “Age” 열에 대한 제약 조건을 생성
+사람의 나이는 18 세 이상</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+CHECK (Age&gt;=18)
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 제약 조건의 이름을 지정 CHECK하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+City varchar(255),
+CONSTRAINT CHK_Person CHECK (Age&gt;=18 AND City='Sandnes')
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 테이블이 이미 생성된 경우 “Age” 열에 대한 제약 조건</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CHECK (Age&gt;=18);</p>
+</blockquote>
+
+<p>ex. 제약 조건의 이름을 지정 CHECK하고 여러 열에 제약 조건 을 정의</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ADD CONSTRAINT CHK_PersonAge CHECK (Age&gt;=18 AND City=’Sandnes’);</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+DROP CHECK CHK_PersonAge;</p>
+</blockquote>
+
+<h2 id="default-constraint">DEFAULT Constraint</h2>
+
+<ul>
+  <li>열의 기본값을 설정</li>
+  <li>다른 값이 지정되지 않은 경우 기본값이 모든 새 레코드에 추가</li>
+</ul>
+
+<p>ex. “Persons” 테이블이 생성될 때 “City” 열에 대한 값을 설정</p>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+City varchar(255) DEFAULT 'Sandnes'
+</code></pre></div></div>
+
+<p>);</p>
+
+<p>ex. 테이블이 이미 생성된 경우 “City” 열에 대한 제약 조건 을 생성</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER City SET DEFAULT ‘Sandnes’;</p>
+</blockquote>
+
+<p>ex. 제약 조건 을 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE Persons
+ALTER City DROP DEFAULT;</p>
+</blockquote>
+
+<h2 id="create-index">CREATE INDEX</h2>
+
+<ul>
+  <li>테이블에 인덱스를 생성하는 데 사용
+    <ul>
+      <li>인덱스는 다른 방법보다 더 빠르게 데이터베이스에서 데이터를 검색하는 데 사용</li>
+      <li>자주 검색되는 열에만 인덱스사용(업데이트 시간이 오래 걸림)</li>
+    </ul>
+  </li>
+  <li>중복값 허용</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE INDEX index_name
+ON table_name (column1, column2, ...);
+</code></pre></div></div>
+
+<ul>
+  <li>중복값 불허용</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...);
+</code></pre></div></div>
+
+<p>ex. “Persons” 테이블의 “LastName” 열에 “idx_lastname”이라는 인덱스를 생성</p>
+
+<blockquote>
+  <p>CREATE INDEX idx_lastname
+ON Persons (LastName);</p>
+</blockquote>
+
+<p>ex. 열 조합에 대한 인덱스를 생성</p>
+
+<blockquote>
+  <p>CREATE INDEX idx_pname
+ON Persons (LastName, FirstName);</p>
+</blockquote>
+
+<p>ex. 테이블에서 인덱스를 삭제</p>
+
+<blockquote>
+  <p>ALTER TABLE table_name
+DROP INDEX index_name;</p>
+</blockquote>
+
+<h2 id="auto-increment">AUTO INCREMENT</h2>
+
+<ul>
+  <li>새 레코드가 테이블에 삽입될 때 고유 번호가 자동으로 생성</li>
+  <li>기본 키 필드</li>
+</ul>
+
+<blockquote>
+  <p>CREATE TABLE Persons (</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Personid int NOT NULL AUTO_INCREMENT,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int,
+PRIMARY KEY (Personid)
+</code></pre></div></div>
+
+<p>);</p>
+
+<h2 id="dates">Dates</h2>
+
+<ul>
+  <li>DATE - YYYY-MM-DD 형식</li>
+  <li>DATETIME - 형식: YYYY-MM-DD HH:MI:SS</li>
+  <li>TIMESTAMP - 형식: YYYY-MM-DD HH:MI:SS</li>
+  <li>YEAR - YYYY 또는 YY 형식</li>
+</ul>
+
+<p>ex.</p>
+
+<blockquote>
+  <p>SELECT * FROM Orders WHERE OrderDate=’2008-11-11’</p>
+</blockquote>
+
+<h2 id="create-view">CREATE VIEW</h2>
+
+<ul>
+  <li>SQL 문의 결과 집합을 기반으로 하는 가상 테이블</li>
+  <li>실제 테이블과 마찬가지로 행과 열을 포함</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. 브라질의 모든 고객을 표시하는 보기를 생성</p>
+
+<blockquote>
+  <p>CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = ‘Brazil’;</p>
+</blockquote>
+
+<p>위에꺼랑 같은 보기</p>
+
+<blockquote>
+  <p>SELECT * FROM [Brazil Customers];</p>
+</blockquote>
+
+<h3 id="create-or-replace-viewview-업데이트">CREATE OR REPLACE VIEW(VIEW 업데이트)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE OR REPLACE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre></div></div>
+
+<p>ex. Brazil Customers” 보기에 “City” 열을 추가</p>
+
+<blockquote>
+  <p>CREATE OR REPLACE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName, City
+FROM Customers
+WHERE Country = ‘Brazil’;</p>
+</blockquote>
+
+<h3 id="drop-view">DROP VIEW</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP VIEW view_name;
+</code></pre></div></div>
+
+<blockquote>
+  <p>DROP VIEW [Brazil Customers];</p>
+</blockquote>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><summary type="html"><![CDATA[SQL 정리하기]]></summary></entry><entry><title type="html">[TIL]시간복잡도</title><link href="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/" rel="alternate" type="text/html" title="[TIL]시간복잡도" /><published>2022-07-10T00:00:00+09:00</published><updated>2022-07-10T00:00:00+09:00</updated><id>/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84</id><content type="html" xml:base="/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/"><![CDATA[<h1 id="-알아보자-시간-복잡도">🌱 알아보자 시간 복잡도!</h1>
+
+<ul>
+  <li>알고리즘이 얼마나 걸리느냐</li>
+</ul>
+
+<blockquote>
+  <p>시간복잡도 = 알고리즘을 구성한 명령어가 실행된 횟수</p>
+</blockquote>
+
+<p><strong>시간복잡도의 종류</strong></p>
 
 <table>
   <tbody>
     <tr>
-      <td>링크</td>
-      <td>읽고 나서</td>
+      <td>O()</td>
+      <td>빅오</td>
+      <td>최악 시간</td>
+      <td>가장 많이 쓰임 실행시간의 상한</td>
     </tr>
     <tr>
-      <td><a href="https://brunch.co.kr/@goodgdg/142">지원자도 회사를 평가합니다. 이렇게요</a></td>
-      <td> </td>
+      <td>Ω()</td>
+      <td>오메가</td>
+      <td>최상 시간</td>
+      <td>실행시간의 하한</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/JaeYeopHan/Interview_Question_for_Beginner">Technical Interview Guidelines for Beginners</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://gyoogle.dev/blog/">신입 개발자 전공 지식 &amp; 기술 면접 백과사전</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/WeareSoft/tech-interview">tech-interview</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.frontendinterviewhandbook.com/kr/html-questions">프론트엔드 인터뷰 핸드북</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=1xJU8HfBREY&amp;list=PLgXGHBqgT2TvpJ_p9L_yZKPifgdBOzdVH">우아한 Tech</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/jwasham/coding-interview-university/blob/main/translations/README-ko.md">Coding Interview University</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=Fg00LN30Ezg">CPU는 어떻게 작동할까?</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/Knowre-Dev/WebDevCurriculum">Knowre 웹개발 커리큘럼</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="https://www.techinterviewhandbook.org/">Tech interview Handbook</a></td>
-      <td> </td>
+      <td>Θ()</td>
+      <td>세타</td>
+      <td>평균 시간</td>
+      <td>실행시간의 평균</td>
     </tr>
   </tbody>
 </table>
 
-<h1 id="부록">부록</h1>
-
-<h2 id="입사하기-전-알아두면-좋은-것들">입사하기 전 알아두면 좋은 것들</h2>
-
-<h3 id="질문을-잘하는-개발자">질문을 잘하는 개발자</h3>
-
-<p><a href="https://jbee.io/essay/good_questionor/">질문을 잘하는 개발자</a></p>
-
-<h3 id="git-flow-사용-방법">Git-flow 사용 방법</h3>
-
-<p><a href="https://www.youtube.com/watch?v=EzcF6RX8RrQ">생활코딩 - git flow model</a><br />
-<a href="https://techblog.woowahan.com/2553/">우린 Git-flow를 사용하고 있어요</a><br />
-<a href="https://danielkummer.github.io/git-flow-cheatsheet/index.ko_KR.html">git-flow cheatsheet</a></p>
-
-<h3 id="기본적인-리눅스-명령어">기본적인 리눅스 명령어</h3>
+<h2 id="big-o-계산-규칙">Big-O 계산 규칙</h2>
 
 <ul>
-  <li>회사에서 사용하는 대부분의 서버는 리눅스 환경으로 구성됨
+  <li>
+    <ol>
+      <li>Worst Case
+        <ul>
+          <li>항상 최악의 상황을 고려</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Remove Constants
+        <ul>
+          <li>상수를 제거 하라</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Different Terms for Inputs
+        <ul>
+          <li>인자 값이 다를 경우 따로 계산</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Drop Non Dominants
+        <ul>
+          <li>가장 높은 차수만 남김</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="o1---constant-time">O(1) - Constant Time</h3>
+
+<ul>
+  <li>입력 공간에 대해 변하지 않음</li>
+  <li>상수 시간이라고 부름</li>
+  <li>n의 값이 얼마나 크든 상관 ❌</li>
+  <li>단 한 번만 이루어지면 됨</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleO1(arr){
+  console.log(arr[0]);
+}
+</code></pre></div></div>
+
+<h3 id="on---linear-time">O(n) - Linear time</h3>
+
+<ul>
+  <li>선형 시간</li>
+  <li>최악의 경우 n번의 연산을 수행해야 하는 알고리즘에 적용</li>
+  <li>입력 데이터의 크기에 비례해서 처리시간도 늘어나는 알고리즘을 표현할 때 사용</li>
+  <li>코드를 n번 반복</li>
+  <li>e.g. 0부터 n-1까지 숫자 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+    }
+}
+</code></pre></div></div>
+
+<h3 id="on2---quadratic-time">O(n^2) - Quadratic Time</h3>
+
+<ul>
+  <li>2차 시간</li>
+  <li>입력 데이터의 크기의 제곱만큼 처리시간이 걸리는 알고리즘을 표현할 때 사용</li>
+  <li>n * n번 수행</li>
+  <li>e.g. 선택 정렬, 삽입 정렬, 버블 정렬</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleOn2(n) {
+    for (let i = 0; i &lt; n; i++) {
+        console.log(i);
+        for (let j = i; j &lt; n; j++) {
+            console.log(j);
+        }
+    }
+}
+</code></pre></div></div>
+
+<h3 id="olog-n---log">O(log n) - Log</h3>
+
+<ul>
+  <li>이진 탐색 등의 알고리즘을 표현할 때 사용</li>
+  <li>e.g. 2의 2승 부터 n승까지 출력</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function exampleLogn(n) {
+    for (let i = 2; i &lt;= n; i*2) {
+        console.log(i);
+    }
+}
+
+</code></pre></div></div>
+
+<h1 id="참고">참고</h1>
+
+<p><a href="https://itprogramming119.tistory.com/entry/Javascript-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EC%98%88%EC%A0%9C">코딩병원 블로그</a><br />
+<a href="https://overcome-the-limits.tistory.com/18">Plus Ultra 블로그</a><br />
+<a href="https://pizzasheepsdev.tistory.com/3">개발하는 피자 양목장 블로그</a></p>]]></content><author><name>Gardenia</name></author><category term="TIL" /><category term="TIL" /><summary type="html"><![CDATA[시간복잡도 이해하기]]></summary></entry><entry><title type="html">[TIL]호이스팅</title><link href="/til/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85/" rel="alternate" type="text/html" title="[TIL]호이스팅" /><published>2022-07-09T00:00:00+09:00</published><updated>2022-07-09T00:00:00+09:00</updated><id>/til/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85</id><content type="html" xml:base="/til/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85/"><![CDATA[<h1 id="-what-is-hoisting">🌱 WHAT IS HOISTING❓</h1>
+
+<blockquote>
+  <p>코드가 실행하기 전 <code class="language-plaintext highlighter-rouge">변수(함수)선언</code>이 해당 스코프의 최상단으로 끌어 올려진 것 같은 현상</p>
+</blockquote>
+
+<ul>
+  <li>JS는 함수가 실행되기전 해당 함수를 한 번 흝는다.</li>
+  <li>그 때 함수 안에 존재하는 변수/함수를 기억하고 있다가 사용한다.</li>
+  <li>실제로 코드가 올려지는 것은 아니고 JS 내부적으로 올려서 처리하는 것(메모리 변화❌)</li>
+</ul>
+
+<h1 id="-호이스팅이-되는-것">🌱 호이스팅이 되는 것</h1>
+
+<p><code class="language-plaintext highlighter-rouge">var</code>변수 선언과 <code class="language-plaintext highlighter-rouge">함수선언문</code>에서만 발생</p>
+
+<h1 id="-호이스팅-우선-순위">🌱 호이스팅 우선 순위</h1>
+
+<ul>
+  <li><strong>변수선언</strong>이 함수보더 우선순위</li>
+  <li>할당되지 않은 변수보다는 할당된 함수가 더 우선순위를 가짐</li>
+</ul>
+
+<h1 id="주의사항">주의사항</h1>
+
+<ul>
+  <li>코드 가독성과 유지보수를 위해 호이스팅이 일어나지 않게 코드를 짜는 것이 중요❗️❗️❗️
     <ul>
-      <li><a href="https://www.inflearn.com/course/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%9D%BC%EC%9D%B8-%ED%88%B4">리눅스 커맨드라인 툴</a><br /></li>
-      <li><a href="https://www.youtube.com/watch?v=bju_FdCo42w">Linux Sysadmin Basics</a><br /></li>
-      <li><a href="https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/">37 Important Linux Commands You Should Know</a></li>
+      <li>함수 변수를 처음부터 상단에 짠다.</li>
+      <li>let, const를 사용한다.</li>
     </ul>
   </li>
 </ul>
 
-<p><a href="https://blog.shiren.dev/2021-04-20/">욕 안 먹는 개발자되기</a><br />
-<a href="https://www.youtube.com/watch?v=JjK2IFKNkEc">뛰어난 프로그래머가 되고 싶다면 이거 한가지만 하세요!</a></p>
-
-<h2 id="개발자에-도전하며-도움이-된-마음가짐">개발자에 도전하며 도움이 된 마음가짐</h2>
-
-<h3 id="this-is-not-rocket-science">This is not rocket science!</h3>
+<h1 id="me">ME</h1>
 
 <ul>
-  <li>“이거 어려운 일 아닌데!(왜 어렵게 생각해?)”</li>
-  <li>우주에 로켓을 쏘는 것에는 답이 없을 수 있지만, 내가 보는 문제들은 답이 있다!</li>
-  <li>개발자에게 문제 상황은 계속 발생하는데, 마음 가짐에 따라 문제 해결 성공률이 달라진다!</li>
-  <li>자신에게 “별것 아닌 일에 청승 떨지 마라!”라고 다그치는 역할</li>
+  <li>호이스팅을 전에 잘 못 이해했어서 애초에 선언을 위해 해주는 것이 호이스팅이라고 생각했는데 이번에 다시 정리하며 새롭게 익혔다!</li>
 </ul>
 
-<h3 id="먼-산-바라보듯-바라보기">먼 산 바라보듯 바라보기</h3>
+<h1 id="참조">참조</h1>
 
-<ul>
-  <li>잘하는 개발자는 그 들이 개발에 쏟아온 시간과 노력에 대한 보상이다.</li>
-  <li>조급해 하지 말고, 나만의 속도로 성장하자.</li>
-  <li>슈퍼개발자들은 정말 멋지고 큰 산이지만, 더 이상 내 삶에 큰 영향을 끼치지는 않는다!</li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://hanamon.kr/javascript-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EC%9D%B4%EB%9E%80-hoisting/">하나몬님 블로그</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://velog.io/@design0728/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85">EJlog님 블로그</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Gardenia</name></author><category term="TIL" /><category term="TIL" /><category term="Hoisting" /><category term="JavaScript" /><summary type="html"><![CDATA[WHAT IS HOISTING IN JAVASCRIPT❔❓]]></summary></entry><entry><title type="html">[Tips]JS 함수 정리</title><link href="/tips/JS%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[Tips]JS 함수 정리" /><published>2022-07-09T00:00:00+09:00</published><updated>2022-07-09T00:00:00+09:00</updated><id>/tips/JS%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="/tips/JS%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC/"><![CDATA[<p><code class="language-plaintext highlighter-rouge">알파벳 순 정리</code></p>]]></content><author><name>Gardenia</name></author><category term="Tips" /><category term="Tips" /><category term="JavaScript" /><category term="Function" /><summary type="html"><![CDATA[JS 내부 함수 짧은 정리]]></summary></entry><entry><title type="html">[Project]makeyourcards</title><link href="/project/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-makeyourcards/" rel="alternate" type="text/html" title="[Project]makeyourcards" /><published>2022-07-09T00:00:00+09:00</published><updated>2022-07-09T00:00:00+09:00</updated><id>/project/%5B%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%5D-makeyourcards</id><content type="html" xml:base="/project/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-makeyourcards/"><![CDATA[<h1 id="프로젝트-시작">프로젝트 시작</h1>
 
-<h3 id="wingspan이-상관-없는-직업">Wingspan이 상관 없는 직업</h3>
+<p>자다가 문득 토이프로젝트라고 어려울 꺼 할 일 있어?
+최대ㅐㅐㅐㅐ한 간단하게 한 번 해보자!!
+라고 생각하다가</p>
 
-<ul>
-  <li>개발자라는 직업은 선천적인 능력이 중요하지 않다.</li>
-  <li>개발 실력 차이 = 투입한 시간과 노력의 차이⭕️, 선천적인 능력 차이❌</li>
-  <li>비전공자라고 주눅 들지 말고, <u>시간과 노력을 투자하면 된다는 마음가짐과 실천이 중요한 직업</u></li>
-</ul>
+<p>그냥 간단한 카드 같은거 만들어서 카톡으로 보낼 수 있고 카드 사진 저장 할 수 있는거 만들어 볼까 생각함</p>
 
-<h2 id="롤모델">롤모델</h2>
+<p>가장 간단한 기능</p>
 
-<h3 id="이동욱님">이동욱님</h3>
-
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=V9AGvwPmnZU">지방대 개발 비전공자가 배달의민족 리드 개발자가 되기까지</a></li>
-  <li><a href="https://jojoldu.tistory.com/277?category=689637">3번째 직장에 오기까지</a></li>
-  <li><a href="https://jojoldu.tistory.com/464?category=689637">일일커밋 3주년 회고</a></li>
-</ul>
-
-<h3 id="이종립님">이종립님</h3>
-
-<ul>
-  <li><a href="https://jojoldu.tistory.com/247?category=717426">OKKY 미니세미나 &lt;비전공 학원출신 SI개발자, 유명스타트업 들어간.ssul&gt; 참석 후기</a></li>
-  <li><a href="https://johngrib.github.io/">기계인간 John Grib</a></li>
-  <li><a href="https://johngrib.github.io/wiki/my-lifehack/">기계인간 John Grib - My Lifehack</a></li>
-  <li><a href="https://johngrib.github.io/wiki/algorithm/">기계인간 John Grib - 알고리즘</a></li>
-</ul>
-
-<h2 id="개발자가-된-비전공자들의-글">개발자가 된 비전공자들의 글</h2>
-
-<ul>
-  <li><a href="https://roka88.dev/94">문돌이가 개발자가 되기까지</a></li>
-  <li><a href="https://okky.tistory.com/197">문과생 비전공자가 웹 개발자가 되기까지..</a></li>
-  <li><a href="https://velog.io/@devmoonsh/Wecode-review">비전공자가 개발자가 되기까지(feat. Wecode)</a></li>
-  <li><a href="https://tv.naver.com/v/15355246">야 너두 할 수 있어. 비전공자, COBOL 개발자를 거쳐 네이버에서 FE 개발하게 된 이야기</a></li>
-  <li><a href="https://zorba91.tistory.com/m/270?category=876991">문과생의 카카오 개발자 이직기</a></li>
-  <li><a href="https://jojoldu.tistory.com/277?category=689637">3번째 직장에 오기까지</a></li>
-  <li><a href="https://youtu.be/5bIzMeC6Djk">비전공자로 개발자 커리어를 시작하는 사람들에게</a></li>
-</ul>]]></content><author><name>Gardenia</name></author><category term="Job" /><category term="Inflearn" /><category term="Job" /><summary type="html"><![CDATA[인프런 강의 정리, 비전공자를 위한 학습, 취업 준비정리, 웹 프론트엔드 관련만 따로 정리]]></summary></entry><entry><title type="html">[CodeStates]Coplit-6-객체</title><link href="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-6-객체" /><published>2022-06-29T00:00:00+09:00</published><updated>2022-06-29T00:00:00+09:00</updated><id>http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/coplit/6-%EA%B0%9D%EC%B2%B4/"><![CDATA[<h1 id="01_getproperty">01_getProperty</h1>
-
-<ul>
-  <li>객체와 키를 입력받아 키에 해당하는 값을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getProperty(obj, property) {
-  return obj[property]
-}
-
-</code></pre></div></div>
-
-<h1 id="02_addproperty">02_addProperty</h1>
-
-<ul>
-  <li>객체와 키를 입력받아 키에 해당하는 값을 true로 설정</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addProperty(obj, property) {
-  obj[property] = true;
-}
-</code></pre></div></div>
-
-<h1 id="03_addpropertyandvalue">03_addPropertyAndValue</h1>
-
-<ul>
-  <li>객체와 키, 값을 입력받아 키에 값을 할당</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addPropertyAndValue(obj, property, value) {
-  obj[property] = value;
-}
-</code></pre></div></div>
-
-<h1 id="04_addobjectproperty">04_addObjectProperty</h1>
-
-<ul>
-  <li>두 개의 객체와 키를 입력받아 첫번째 객체의 키에 두번째 객체를 할당</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addObjectProperty(obj1, property, obj2) {
-  obj1[property] = obj2;
-}
-
-</code></pre></div></div>
-
-<h1 id="05_removeproperty">05_removeProperty</h1>
-
-<ul>
-  <li>객체와 키를 입력받아 키가 가리키는 속성(property)을 제거</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeProperty(obj, property) {
-  delete obj[property];
-}
-</code></pre></div></div>
-
-<h1 id="06_removenumbervalues">06_removeNumberValues</h1>
-
-<ul>
-  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값을 갖는 속성을 모두 제거</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumberValues(obj) {
-  for(let i in obj){
-    if(typeof obj[i] === 'number' ){
-      delete obj[i]
-    }
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="07_removearrayvalues">07_removeArrayValues</h1>
-
-<ul>
-  <li>객체를 입력받아 배열을 값으로 갖는 속성을 모두 제거</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeArrayValues(obj) {
-  for(let i in obj){
-    if(Array.isArray(obj[i])){
-      delete obj[i];
-    }
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="08_removeoddvalues">08_removeOddValues</h1>
-
-<ul>
-  <li>객체를 입력받아 홀수를 값으로 갖는 속성을 모두 제거</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeOddValues(obj) {
-  for(let i in obj){
-    if(obj[i]%2===1 &amp;&amp; typeof obj[i] === 'number'){
-      delete obj[i]
-    }
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="09_ispersonoldenoughtovote">09_isPersonOldEnoughToVote</h1>
-
-<ul>
-  <li>객체를 입력받아 객체가 가진 <code class="language-plaintext highlighter-rouge">age</code> 속성값이 합법적으로 투표할 수 있는 나이(18세 이상)인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPersonOldEnoughToVote(person) {
-  if(person.age &gt;= 18){
-    return true;
-  } else {
-    return false;
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="10_addfullnameproperty">10_addFullNameProperty</h1>
-
-<ul>
-  <li>객체를 입력받아 <code class="language-plaintext highlighter-rouge">'firstName'</code>, <code class="language-plaintext highlighter-rouge">'lastName'</code> 속성값 사이에 띄어쓰기 하나를 둔 단일 문자열을 <code class="language-plaintext highlighter-rouge">fullName</code> 속성값으로 할</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addFullNameProperty(obj) {
-  obj.fullName = `${obj.firstName} ${obj.lastName}`
-}
-
-</code></pre></div></div>
-
-<h1 id="11_removenumberslargerthan">11_removeNumbersLargerThan</h1>
-
-<ul>
-  <li>수와 객체를 입력받아 입력받은 수보다 큰 수를 갖는 속성을 모두 제거</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeNumbersLargerThan(num, obj) {
-  for(let i in obj){
-    if(obj[i] &gt; num &amp;&amp; typeof obj[i] === 'number'){
-      delete obj[i];
-    }
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="12_countnumberofkeys">12_countNumberOfKeys</h1>
-
-<ul>
-  <li>객체를 입력받아 속성의 개수를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countNumberOfKeys(obj) {
-  return Object.keys(obj).length;
-}
-
-</code></pre></div></div>
-
-<h1 id="13_printobject">13_printObject</h1>
-
-<ul>
-  <li>객체를 입력받아 키, 값 쌍을 표현하는 문자열을 리턴
+<ol>
+  <li>열몇개 기본 사진 있고 내가 만들고 싶은 카드 추가 가능 기능 있음</li>
+  <li>텍스트 입력하면 카드에 입력되고</li>
+  <li>그 카드를 바로 카카오톡으로 보내거나 저장 가능하게</li>
+  <li>카드는 일단 플립처럼 카드 열어보는 거고</li>
+  <li>카톡 전달
     <ul>
-      <li>각 문자열은 한 줄에 <code class="language-plaintext highlighter-rouge">키: 값</code> 형태로 구성되며, 각 문자열 끝에는 줄바꿈 문자가 포함되야 함</li>
+      <li>접었을 때는 to. from ~~ 적히고</li>
+      <li>상대방이 열면 카드가 열림</li>
     </ul>
   </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function printObject(obj) {
-  let result ='';
-
-  for(let i in obj){
-    result = result +i +': '+obj[i] + '\n'
-  }
-  return result;
-}
-
-</code></pre></div></div>
-
-<h1 id="14_getelementofarrayproperty">14_getElementOfArrayProperty</h1>
-
-<ul>
-  <li>객체, 키, 수를 입력받아 주어진 키에 해당하는 값이 배열인 경우, 수가 가리키는 인덱스에 해당하는 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementOfArrayProperty(obj, key, index) {
-  let arrProperty = obj[key];
-  if(Array.isArray(arrProperty) === false){
-    return undefined
-  }
-
-  return arrProperty[index]
-}
-
-</code></pre></div></div>
-
-<h1 id="15_select">15_select</h1>
-
-<ul>
-  <li>배열과 객체를 입력받아 배열의 각 요소들을 객체의 키로 했을 때 그 값을 추출하여 만든 새로운 객체를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function select(arr, obj) {
-  let newObj = {};
-
-  for(let i in obj){
-    for(let j = 0; j &lt; arr.length; j++){
-      if(i === arr[j]){
-        newObj[i] = obj[i];
-      }
-    }
-  }
-return newObj;
-}
-</code></pre></div></div>
-
-<h1 id="16_getlastelementofproperty">16_getLastElementOfProperty</h1>
-
-<ul>
-  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLastElementOfProperty(obj, property) {
-  let result = obj[property];
-  if(!Array.isArray(result) || result.length === 0 ){
-    return undefined;
-  }
-
-  return result[result.length-1]
-}
-
-</code></pre></div></div>
-
-<h1 id="17_getvalueofnthelement">17_getValueOfNthElement</h1>
-
-<ul>
-  <li>배열과 수를 입력받아 수가 가리키는 인덱스에 해당하는 객체의 <code class="language-plaintext highlighter-rouge">'name'</code> 속성값을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getValueOfNthElement(arr, num) {
-  if(arr.length === 0){
-    return 'no name';
-  } else if(arr.length-1 &lt; num){
-    return arr[arr.length-1]['name'];
-  } else {
-    return arr[num]['name']
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="18_getallbutlastelementofproperty">18_getAllButLastElementOfProperty</h1>
-
-<ul>
-  <li>객체와 키를 입력받아 키에 해당하는 값이 배열인 경우, 마지막 요소가 제거된 새로운 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllButLastElementOfProperty(obj, key) {
-  let newObj = obj[key];
-  if(!Array.isArray(newObj) || newObj.length === 0 ){
-    return [];
-  }
-
-  return newObj.slice(0,-1);
-}
-
-</code></pre></div></div>
-
-<h1 id="19_extend">19_extend</h1>
-
-<ul>
-  <li>두 개의 객체를 입력받아 두번째 객체의 속성들을 첫번째 객체에 추가</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function extend(obj1, obj2) {
-  for(let i in obj2){
-    if(!(i in obj1)){
-      obj1[i] = obj2[i]
-    }
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="20_countallcharacters">20_countAllCharacters</h1>
-
-<ul>
-  <li>문자열을 입력받아 문자열을 구성하는 각 문자(letter)를 키로 갖는 객체를 리턴
-    <ul>
-      <li>각 키의 값은 해당 문자가 문자열에서 등장하는 횟수를 의미하는 <code class="language-plaintext highlighter-rouge">number</code> 타입의 값</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countAllCharacters(str) {
-  let obj = {};
-  for (let i = 0; i &lt; str.length; i++) {
-    if (obj[str[i]] === undefined) {
-      obj[str[i]] = 0;
-    }
-    obj[str[i]]++;
-  }
-  return obj;
-}
-
-</code></pre></div></div>
-
-<h1 id="21_mostfrequentcharacter">21_mostFrequentCharacter</h1>
-
-<ul>
-  <li>문자열을 입력받아 가장 많이 반복되는 문자(letter)를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function mostFrequentCharacter(str) {
-  let obj = { mostCount: 0, mostFrequent: '' };
-  for (let i = 0; i &lt; str.length; i++) {
-    if (str[i] === ' ') {
-      continue;
-    }
-
-    if (obj[str[i]] === undefined) {
-      obj[str[i]] = 0;
-    }
-    obj[str[i]] += 1;
-
-    if (obj[str[i]] &gt; obj['mostCount']) {
-      obj['mostCount'] = obj[str[i]];
-      obj['mostFrequent'] = str[i];
-    }
-  }
-  return obj['mostFrequent'];
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 객체 21문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-4-반복문</title><link href="http://localhost:4000/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="alternate" type="text/html" title="[CodeStates]Coplit-4-반복문" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8</id><content type="html" xml:base="http://localhost:4000/coplit/4-%EB%B0%98%EB%B3%B5%EB%AC%B8/"><![CDATA[<h1 id="01_findthebug">01_findTheBug</h1>
-
-<ul>
-  <li>문자열을 입력받아 버그(‘#’)의 인덱스를 리턴
-    <ul>
-      <li>’#’ 기호가 없는 경우 <code class="language-plaintext highlighter-rouge">undefined</code>를 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findTheBug(word) {
-  for(let i =0 ; word.length&gt;i; i++){
-    if(word[i]==='#'){
-      return i;
-    }
-  }
-  return undefined;
-}
-</code></pre></div></div>
-
-<h1 id="02_sumto">02_sumTo</h1>
-
-<ul>
-  <li>수를 입력받아 0부터 해당 수까지의 합을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function sumTo(num) {
-  let result =0;
-  for(let i =0; num&gt;=i; i++){
-    result = result + i;
-  } return result;
-}
-</code></pre></div></div>
-
-<h1 id="03_isodd">03_isOdd</h1>
-
-<ul>
-  <li>수를 입력받아 홀수인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOdd(num) {
-  if(num &lt; 0){
-    num = -num;
-  }
-  while(num &gt;= 0){
-    if(num === 0){
-      return false;
-    } else if(num === 1){
-      return true;
-    }
-     num = num-2;
-  }
-}
-</code></pre></div></div>
-
-<h1 id="04_factorial">04_factorial</h1>
-
-<ul>
-  <li>수를 입력받아 n-factorial(n!) 값을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function factorial(num) {
-  let result = 1;
-  if(num === 0){
-    return 1;
-  }
-
-  for (let i =1; num &gt;= i; i++){
-    result = result * i;
-  }
-  return result;
-}
-
-</code></pre></div></div>
-
-<h1 id="05_repeatstring">05_repeatString</h1>
-
-<ul>
-  <li>문자열과 수를 입력받아 반복된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function repeatString(str, num) {
-  let result= '';
-
-  if(num === 0){
-    result = '';
-  }
-
-  for(let i = 0; num &gt; i; i++){
-    result = result + str;
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="06_makedigits">06_makeDigits</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1부터 <code class="language-plaintext highlighter-rouge">num</code>까지의 정수로 구성된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeDigits(num) {
-  let result = '';
-
-  for(let i = 1; num&gt;= i; i++){
-    result = result + String(i);
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="07_makedigits2">07_makeDigits2</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1부터 <code class="language-plaintext highlighter-rouge">num</code>까지의 정수로 구성된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeDigits2(num) {
-  let result = '1';
-  let i =2;
-
- while(i&lt;=num){
-   result = result+`-${i}`
-   i++
- }
- return result;
-}
-
-</code></pre></div></div>
-
-<h1 id="08_makeodddigits">08_makeOddDigits</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 1을 포함하여 <code class="language-plaintext highlighter-rouge">num</code>개의 홀수로 구성된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeOddDigits(num) {
-  let result = '';
-
-  let count = 0;
-  let i = 1;
-  while (count &lt; num) {
-    result = result + String(i);
-    i = i + 2;
-    count++;
-  }
-
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="09_makemultiplesofdigit">09_makeMultiplesOfDigit</h1>
-
-<ul>
-  <li>수를 입력받아 1부터 해당 수까지의 수 중에서 3의 배수로만 구성된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMultiplesOfDigit(num) {
-  let result= '';
-
-  for(let i = 3; i &lt;= num; i+=3 ){
-    result = result + i;
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="10_makemultiplesofdigit2">10_makeMultiplesOfDigit2</h1>
-
-<ul>
-  <li>두 개의 수를 입력받아 두 수를 포함해 두 수 사이의 수 중 2의 배수의 개수를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMultiplesOfDigit2(num1, num2) {
-  let small =num1;
-  let big = num2;
-  let count = 0;
-
-  if(num1 &gt; num2){
-    small = num2;
-    big = num1;
-  }
-
-  if(small === 0){
-    small = 1
-  }
-
-  for(let i = small; i &lt;= big; i++ ){
-    if(i % 2 === 0){
-      count += 1
-    }
-  }
-  return count;
-}
-</code></pre></div></div>
-
-<h1 id="11_countcharacter">11_countCharacter</h1>
-
-<ul>
-  <li>문자열과 문자를 입력받아 문자열에서 문자(letter)가 등장하는 횟수를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countCharacter(str, letter) {
-  let count = 0;
-
-  for(let i =0; i &lt;= str.length; i++){
-    if(str[i]===letter){
-      count= count+1;
-    }
-  }
-  return count;
-}
-
-</code></pre></div></div>
-
-<h1 id="12_getmaxnumberfromstring">12_getMaxNumberFromString</h1>
-
-<ul>
-  <li>숫자 문자열을 입력받아 문자열을 구성하는 각 숫자 중 가장 큰 수를 나타내는 숫자를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getMaxNumberFromString(str) {
-  let numMax = 0;
-
-  for(let i=0; i &lt;= str.length; i++){
-    if(parseInt(str[i]) &gt; numMax){
-      numMax = parseInt(str[i])
-    }
-  }
-  return String(numMax);
-}
-
-</code></pre></div></div>
-
-<h1 id="13_replaceall">13_replaceAll</h1>
-
-<ul>
-  <li>문자열과 두 개의 문자(<code class="language-plaintext highlighter-rouge">from</code>, <code class="language-plaintext highlighter-rouge">to</code>)를 입력받아, 문자열에 등장하는 특정 문자(<code class="language-plaintext highlighter-rouge">from</code>)가 다른 문자(<code class="language-plaintext highlighter-rouge">to</code>)로 바뀐 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function replaceAll(str, from, to) {
-  let result = '';
-
-  for(let i =0; str.length &gt; i;i++){
-    if(str[i]===from){
-      result = result+to;
-    } else {
-      result = result+ str[i];
-    }
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="14_characterandnumber">14_characterAndNumber</h1>
-
-<ul>
-  <li>문자열을 입력받아 각 문자(letter) 뒤에 해당 문자의 인덱스가 추가된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function characterAndNumber(word) {
-  let result = '';
-  if(word.length===0){
-    return '';
-  }
-
-  for(let i =0; word.length &gt; i; i++){
-    result = result+word[i]+i;
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="15_computepower">15_computePower</h1>
-
-<ul>
-  <li>밑(base)과 지수(exponent)를 입력받아 밑의 거듭제곱을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computePower(base, exponent) {
-  let result = 1;
-  for(let i =0; i &lt; exponent; i++ ){
-    result= result*base;
-  }
-  return result;
-}
-
-</code></pre></div></div>
-
-<h1 id="16_getsumoffactors">16_getSumOfFactors</h1>
-
-<ul>
-  <li>수를 입력받아 약수(factor)의 합을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getSumOfFactors(num) {
-  let result =0;
-
-  for(let i =0; i &lt;= num; i++){
-    if(num%i===0){
-      result = result + i
-    }
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="17_isprime">17_isPrime</h1>
-
-<ul>
-  <li>1 이상의 자연수를 입력받아 소수(prime number)인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isPrime(num) {
-  let sqrt = Math.sqrt(num)
-
-  if(num===1){
-    return false;
-  }
-  if(num===2){
-    return true;
-  }
-  if(num%2===0){
-    return false;
-  }
-
-  for(let i =3; i &lt; sqrt; i++){
-    if(num % i === 0){
-      return false;
-    }
-  }
-  return true;
-}
-</code></pre></div></div>
-
-<h1 id="18_listprimes">18_listPrimes</h1>
-
-<ul>
-  <li>2 이상의 자연수를 입력받아 2부터 해당 수까지의 소수(prime number)들을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function listPrimes(num) {
-  let result = '2';
-  for(let i =3; i &lt;= num;i+=2){
-    let isPrime = true; // 소수 인 경우
-    let sqrt = Math.sqrt(i);
-    for(let j = 3; j &lt;= sqrt; j+=2 ){
-      if(i%j===0){
-        isPrime = false;
-        break;
-      }
-    }
-    if(isPrime){
-      result= `${result}-${i}`
-    }
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="19_makepermutations">19_makePermutations</h1>
-
-<ul>
-  <li>문자열을 입력받아 해당 문자열에 등장하는 각 문자(letter)를 가지고 만들 수 있는 길이 2의 문자열들을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makePermutations(str) {
-  let result ='';
-  for(let i = 0; i &lt; str.length; i++){
-    for(let j = 0; j&lt; str.length; j++){
-      result = result+`${str[i]}${str[j]},`
-    }
-  }
-  return result.slice(0,result.length-1);
-}
-</code></pre></div></div>
-
-<h1 id="20_hasrepeatedcharacter">20_hasRepeatedCharacter</h1>
-
-<ul>
-  <li>문자열을 입력받아 해당 문자열에 중복된 문자(letter)가 존재하는지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function hasRepeatedCharacter(str) {
-  if(str.length === 0 ){
-    return false;
-  }
-  for(let i = 0; i &lt; str.length-1; i++){
-    for(let j = i+1; j &lt; str.length; j++){
-      if(str[i]===str[j]){
-        return true;
-      }
-    }
-  }
-  return false;
-}
-</code></pre></div></div>
-
-<h1 id="21_makemarginalstring">21_makeMarginalString</h1>
-
-<ul>
-  <li>문자열을 입력받아 해당 문자열을 처음부터 한 글자(letter)씩 다시 작성하려고 합니다. 이 때, 한 글자를 추가할 때마다 부분적으로 완성된 문자열을 전부 이어붙인 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeMarginalString(str) {
-   let result ='';
-  for(let i = 0; i &lt; str.length; i++){
-    for(let j = 0; j&lt;= i; j++){
-      result = result+str[j];
-    }
-  }
-  return result;
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 반복문 21문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-5-배열</title><link href="http://localhost:4000/coplit/5-%EB%B0%B0%EC%97%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-5-배열" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/coplit/5-%EB%B0%B0%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/coplit/5-%EB%B0%B0%EC%97%B4/"><![CDATA[<h1 id="01_gettype">01_getType</h1>
-
-<ul>
-  <li>임의의 값을 입력받아 타입을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getType(anything) {
-  if(Array.isArray(anything)){
-    return 'array';
-  }else if(anything === null){
-    return 'null';
-  }else {
-    return typeof anything;
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="02_getfirstelement">02_getFirstElement</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 첫번째 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFirstElement(arr) {
-  if(arr.length ===0){
-    return undefined;
-  }
-
-  return arr[0];
-}
-
-</code></pre></div></div>
-
-<h1 id="03_getlastelement">03_getLastElement</h1>
-
-<ul>
-  <li>배열를 입력받아 배열의 마지막 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLastElement(arr) {
-  if(arr.length === 0){
-    return undefined;
-  }
-
-  return arr[arr.length-1]
-}
-</code></pre></div></div>
-
-<h1 id="04_getnthelement">04_getNthElement</h1>
-
-<ul>
-  <li>배열과 수를 입력받아 수가 인덱스로 가리키는 배열의 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getNthElement(arr, index) {
-  if(arr.length === 0){
-    return undefined;
-  }
-  if(arr.length &lt;= index){
-    return 'out of index range'
-  }
-
-  return arr[index]
-}
-</code></pre></div></div>
-
-<h1 id="05_computesumofallelements">05_computeSumOfAllElements</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 모든 요소의 합을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeSumOfAllElements(arr) {
-  let result =0;
-  for(let i = 0; i &lt; arr.length; i++){
-    result = result + arr[i];
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="06_getallwords">06_getAllWords</h1>
-
-<ul>
-  <li>문자열을 입력받아 문자열을 구성하는 각 단어를 요소로 갖는 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllWords(str) {
-  if(str.length === 0){
-    return [];
-  }
-  return str.split(' ');
-}
-</code></pre></div></div>
-
-<h1 id="07_getallletters">07_getAllLetters</h1>
-
-<ul>
-  <li>문자열을 입력받아 문자열을 구성하는 각 문자를 요소로 갖는 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllLetters(str) {
-  let result =[];
-  if(str.length === 0){
-    return [];
-  }
-  for(let i =0; i &lt; str.length; i++){
-    result.push(str[i])
-  }
-  return result;
-}
-</code></pre></div></div>
-
-<h1 id="08_getlargestelement">08_getLargestElement</h1>
-
-<ul>
-  <li>배열을 입력받아 가장 큰 요소를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLargestElement(arr) {
-  let max = arr[0];
-  for(let i of arr){
-    if(max &lt; i){
-      max = i;
-    }
-  }
-  return max;
-}
-</code></pre></div></div>
-
-<h1 id="09_getlongestword">09_getLongestWord</h1>
-
-<ul>
-  <li>문자열을 입력받아 문자열에서 가장 긴 단어를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLongestWord(str) {
-  let words = str.split(' ');
-
-  let long = words[0];
-
-  for(let i of words){
-    if(i.length &gt; long.length){
-      long = i;
-    }
-  }
-  return long;
-}
-</code></pre></div></div>
-
-<h1 id="10_getevennumbers">10_getEvenNumbers</h1>
-
-<ul>
-  <li>수를 요소로 갖는 배열을 입력받아 짝수만을 요소로 갖는 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getEvenNumbers(arr) {
-  let result =[];
-
-  for(let i of arr){
-    if(i % 2===0){
-      result.push(i)
-    }
-  }
-  return result
-}
-</code></pre></div></div>
-
-<h1 id="11_addtofront">11_addToFront</h1>
-
-<ul>
-  <li>배열과 요소를 입력받아 주어진 요소를 배열의 맨 앞에 추가하고 해당 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToFront(arr, el) {
- arr.unshift(el);
-
- return arr;
-}
-</code></pre></div></div>
-
-<h1 id="12_addtoback">12_addToBack</h1>
-
-<ul>
-  <li>배열과 요소를 입력받아 주어진 요소를 배열의 맨 뒤에 추가하고 해당 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToBack(arr, el) {
-  arr.push(el);
-  return arr;
-}
-</code></pre></div></div>
-
-<h1 id="13_mergearrays">13_mergeArrays</h1>
-
-<ul>
-  <li>두 개의 배열을 입력받아 순서대로 합쳐진 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function mergeArrays(arr1, arr2) {
-  return arr1.concat(arr2)
-}
-</code></pre></div></div>
-
-<h1 id="14_getelementsafter">14_getElementsAfter</h1>
-
-<ul>
-  <li>배열과 인덱스를 입력받아 주어진 인덱스 이후의 요소들을 갖는 새로운 배열을 리</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementsAfter(arr, n) {
-  return arr.slice(n+1)
-}
-
-</code></pre></div></div>
-
-<h1 id="15_getelementsupto">15_getElementsUpTo</h1>
-
-<ul>
-  <li>배열과 인덱스를 입력받아 주어진 인덱스 이전의 요소들을 갖는 새로운 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getElementsUpTo(arr, n) {
-  if(arr.length &lt; n){
-    return [];
-  }
-  return arr.slice(0,n);
-}
-</code></pre></div></div>
-
-<h1 id="16_getallelementsbutfirst">16_getAllElementsButFirst</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 첫번째 요소를 제외한 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButFirst(arr) {
-  return arr.slice(1)
-}
-</code></pre></div></div>
-
-<h1 id="17_getallelementsbutlast">17_getAllElementsButLast</h1>
-
-<ul>
-  <li>배열을 입력받아 마지막 요소를 제외한 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButLast(arr) {
-  return arr.slice(0,arr.length-1)
-}
-
-</code></pre></div></div>
-
-<h1 id="18_removefromfront">18_removeFromFront</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 첫번째 요소가 삭제된 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromFront(arr) {
-  arr.shift();
-  return arr;
-}
-</code></pre></div></div>
-
-<h1 id="19_removefromback">19_removeFromBack</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 마지막 요소를 삭제한 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromBack(arr) {
-  arr.pop();
-  return arr;
-}
-</code></pre></div></div>
-
-<h1 id="20_removefrombackofnew">20_removeFromBackOfNew</h1>
-
-<ul>
-  <li>배열을 입력받아 배열의 마지막 요소가 제외된 새로운 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function removeFromBackOfNew(arr) {
-  return arr.slice(0,arr.length-1)
-}
-</code></pre></div></div>
-
-<h1 id="21_addtobackofnew">21_addToBackOfNew</h1>
-
-<ul>
-  <li>배열과 요소를 입력받아 새로운 요소가 추가된 새로운 배열을 리</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToBackOfNew(arr, el) {
-  let newArr = arr.slice();
-  newArr.push(el);
-  return newArr;
-}
-
-</code></pre></div></div>
-
-<h1 id="22_addtofrontofnew">22_addToFrontOfNew</h1>
-
-<ul>
-  <li>배열과 요소를 입력받아 맨앞에 새로운 요소가 추가된 새로운 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addToFrontOfNew(arr, el) {
-  let newArr = arr.slice();
-  newArr.unshift(el);
-  return newArr;
-}
-
-</code></pre></div></div>
-
-<h1 id="23_getallelementsbutnth">23_getAllElementsButNth</h1>
-
-<ul>
-  <li>배열과 인덱스를 입력받아 해당 인덱스의 요소를 제외한 배열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getAllElementsButNth(arr, n) {
-  let result = [];
-
-  for(let i =0 ; i &lt; arr.length; i++){
-    if(i !== n){
-      result.push(arr[i]);
-    }
-  }
-  return result;
-}
-
-</code></pre></div></div>
-
-<h1 id="24_createphonenumber">24_createPhoneNumber</h1>
-
-<ul>
-  <li>0-9 사이의 정수를 요소로 갖는 배열을 입력받아 전화번호 형식의 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function createPhoneNumber(arr) {
-  let start = '(010)';
-  let len = arr.length;
-  let body = arr.slice(len - 8, len - 4).join('');
-  let end = arr.slice(len - 4, len).join('');
-
-  if (len === 11) {
-    start = `(${arr.slice(0, 3).join('')})`;
-  }
-    return `${start}${body}-${end}`
-}
-</code></pre></div></div>
-
-<h1 id="25_fibonacci">25_fibonacci</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)를 입력받아 <code class="language-plaintext highlighter-rouge">num</code>번째까지 총 <code class="language-plaintext highlighter-rouge">num + 1</code>개의 피보나치 수열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function fibonacci(num) {
-  let arr =[];
-
-  for(let i =0; i &lt;= num; i++){
-    if(i === 0){
-      arr.push(i)
-    }else if(i === 1){
-      arr.push(i)
-    }else {
-      arr.push(arr[i-2]+arr[i-1]);
-    }
-  }
-  return arr;
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 배열 25문제]]></summary></entry><entry><title type="html">[CodeStates]Coplit-3-문자열</title><link href="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="[CodeStates]Coplit-3-문자열" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4</id><content type="html" xml:base="http://localhost:4000/coplit/3-%EB%AC%B8%EC%9E%90%EC%97%B4/"><![CDATA[<h1 id="01_getfullname">01_getFullName</h1>
-
-<ul>
-  <li>이름과 성을 입력받아 띄어쓰기 하나를 사이에 둔 단일 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getFullName(firstName, lastName) {
-  return `${firstName} ${lastName}`
-}
-</code></pre></div></div>
-
-<h1 id="02_checkage">02_checkAge</h1>
-
-<ul>
-  <li>이름과 나이를 입력받아 나이별로 다른 메시지를 리턴
-    <ul>
-      <li>이름이 <code class="language-plaintext highlighter-rouge">Adrian</code>이고, 나이가 <code class="language-plaintext highlighter-rouge">21</code>살 이상이면, <code class="language-plaintext highlighter-rouge">Welcome, Adrian!</code> 을 리턴</li>
-      <li>이름이 <code class="language-plaintext highlighter-rouge">John</code>이고, 만일 <code class="language-plaintext highlighter-rouge">21</code>살보다 적으면, <code class="language-plaintext highlighter-rouge">Go home, John!</code>을 리턴</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function checkAge(name, age) {
-  if(age &gt;= 21 ){
-    return `Welcome, ${name}!`
-  } return `Go home, ${name}!`
-}
-</code></pre></div></div>
-
-<h1 id="03_getlengthofword">03_getLengthOfWord</h1>
-
-<ul>
-  <li>단어를 입력받아 단어의 길이를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getLengthOfWord(word) {
-  if(word.length &gt; 0){
-    return word.length;
-  } return 0;
-}
-</code></pre></div></div>
-
-<h1 id="04_computeaveragelengthofwords">04_computeAverageLengthOfWords</h1>
-
-<ul>
-  <li>두 단어를 입력받아 두 단어의 평균 길이를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords(word1, word2) {
-  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
-    return (word1.length + word2.length) / 2
-  } return 0;
-}
-
-</code></pre></div></div>
-
-<h1 id="05_computeaveragelengthofwords2">05_computeAverageLengthOfWords2</h1>
-
-<ul>
-  <li>두 단어를 입력받아 두 단어의 평균 길이를 내림하여 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeAverageLengthOfWords2(word1, word2) {
-  if(word1.length &gt; 0 &amp;&amp; word2.length &gt; 0){
-    let floor =  (word1.length + word2.length) / 2
-    return Math.floor(floor);
-  } return 0;
-}
-</code></pre></div></div>
-
-<h1 id="06_findshortestofthreewords">06_findShortestOfThreeWords</h1>
-
-<ul>
-  <li>차례대로 문자열 3개를 입력받아, 가장 짧은 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findShortestOfThreeWords(word1, word2, word3) {
-  let result = word1;
-
-  if(word1.length &gt; word2.length){
-    result = word2;
-    if(word2.length &gt; word3.length){
-      result = word3;
-    }
-  } else if (word1.length &gt; word3.length){
-    result = word3;
-  }
-return result;
-}
-</code></pre></div></div>
-
-<h1 id="07_isoddlength">07_isOddLength</h1>
-
-<ul>
-  <li>문자열을 입력받아 그 길이가 홀수인지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function isOddLength(word) {
-  if(word.length % 2 !== 0){
-    return true;
-  } return false;
-}
-</code></pre></div></div>
-
-<h1 id="08_arevalidcredentials">08_areValidCredentials</h1>
-
-<ul>
-  <li>이름과 비밀번호를 입력받아 이름이 3글자보다 크고 비밀번호가 8글자 이상이면 true를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function areValidCredentials(name, password) {
-  if(name.length &gt; 3 &amp;&amp; password.length &gt;= 8){
-    return true;
-  } return false;
-}
-</code></pre></div></div>
-
-<h1 id="09_findminlengthofthreewords">09_findMinLengthOfThreeWords</h1>
-
-<ul>
-  <li>세 개의 단어를 입력받아 그 중 가장 짧은 단어의 길이를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function findMinLengthOfThreeWords(word1, word2, word3) {
-  let short = word1.length;
-  let wordL1 = word1.length;
-  let wordL2 = word2.length;
-  let wordL3 = word3.length;
-
-  if(wordL1 &gt; wordL2){
-    short = wordL2;
-    if(wordL2 &gt; wordL3){
-      short = wordL3;
-    }
-  }else if (wordL1 &gt; wordL3){
-    short = wordL3;
-  }
-  return short;
-}
-
-</code></pre></div></div>
-
-<h1 id="10_takeletters">10_takeLetters</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자로 구성된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function takeLetters(num, str) {
-  if(num &lt;= 0 || str === ''){
-    return '';
-  }
-
-  return str.slice(0,num);
-}
-</code></pre></div></div>
-
-<h1 id="11_dropletters">11_dropLetters</h1>
-
-<ul>
-  <li>수(<code class="language-plaintext highlighter-rouge">num</code>)와 문자열을 입력받아 차례대로 <code class="language-plaintext highlighter-rouge">num</code>개의 문자가 제거된 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function dropLetters(num, str) {
-   if(num &gt;= str.length){
-    return '';
-  }
-
-  return str.slice(num);
-}
-</code></pre></div></div>
-
-<h1 id="12_compareonlyalphabet">12_compareOnlyAlphabet</h1>
-
-<ul>
-  <li>두 개의 문자열을 입력받아 대소문자를 구분하지 않고(case insensitive) 서로 같은지 여부를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareOnlyAlphabet(str1, str2) {
- let upper1 = str1.toUpperCase()
- let upper2 = str2.toUpperCase()
-
- if(upper1 === upper2){
-   return true;
- } return false;
-}
-</code></pre></div></div>
-
-<h1 id="13_comparenumbers">13_compareNumbers</h1>
-
-<ul>
-  <li>두 개의 수를 입력받아 조건별로 다른 메시지를 리</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumbers(num1, num2) {
-  if(num1 &gt; num2){
-    return `${num1}은(는) ${num2}보다 큽니다`
-  }else if(num1 &lt; num2){
-    return `${num1}은(는) ${num2}보다 작습니다`
-  }else {
-    return `두 수는 같습니다`
-  }
-}
-
-</code></pre></div></div>
-
-<h1 id="14_comparenumberstrings">14_compareNumberStrings</h1>
-
-<ul>
-  <li>두 개의 숫자 문자열을 입력받아 더 큰 수를 나타내는 문자열을 구하고, 해당 문자열이 나타내는 수에 5를 더한 수를 나타내는 숫자 문자열을 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function compareNumberStrings(numStr1, numStr2) {
-  let num1 = Number(numStr1);
-  let num2 = Number(numStr2);
-
-  if(num1 &gt; num2){
-    return String(num1+5);
-  } return String(num2+5);
-}
-
-</code></pre></div></div>
-
-<h1 id="15_showtime">15_showTime</h1>
-
-<ul>
-  <li>시간, 분, 초를 입력받아 현재 시각을 나타내는 메세지를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showTime(hour, min, sec) {
-  return `현재 시각은 ${hour}시 ${min}분 ${sec}초 입니다.`
-}
-</code></pre></div></div>
-
-<h1 id="16_computedifference">16_computeDifference</h1>
-
-<ul>
-  <li>두 수를 입력받아 두 수의 차이를 나타내는 메세지를 리턴
-    <ul>
-      <li>절대값은 Math.abs(a-b);</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function computeDifference(num1, num2) {
-  let abs = Math.abs(num1-num2);
-
-  return `${num1}, ${num2}의 차이는 ${abs}입니다.`
-}
-</code></pre></div></div>
-
-<h1 id="17_makelastseenmsg">17_makeLastSeenMsg</h1>
-
-<ul>
-  <li>사용자의 이름과 미접속 시간(분)을 입력받아 조건별로 다른 메세지를 리턴</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function makeLastSeenMsg(name, period) {
-  let day = 60 * 24;
-  let hour = 60;
-
-  if(period&gt;=day){
-    return `${name}: ${Math.floor(period / day)}일 전에 접속함`;
-  }else if(period&gt;=hour){
-    return `${name}: ${Math.floor(period/hour)}시간 전에 접속함`;
-  }else {
-    return `${name}: ${period}분 전에 접속함`;
-  }
-}
-</code></pre></div></div>]]></content><author><name>Gardenia</name></author><category term="Coplit" /><category term="CodeStates" /><category term="Coplit" /><category term="JS" /><summary type="html"><![CDATA[코플릿 복습하기 - 문자열 17문제]]></summary></entry></feed>
+  <li>저장은 그냥 카드모양 길게 보임</li>
+  <li>로그인(일반 이메일 로긴, 카카오톡 로긴, 구글 로긴 세개 만들기) 했을 때 내가 만든 카드가 저장 되어 있어야 함(이거슨 옵션!)</li>
+</ol>
+
+<h1 id="개발-툴">개발 툴</h1>
+
+<ul>
+  <li>FE: TS, REACT</li>
+  <li>BE: express? nextjs? 고민중</li>
+  <li>DevOps: heroku? 무료 도메인으로 해보자!! 돈없다!!</li>
+</ul>]]></content><author><name>Gardenia</name></author><category term="Project" /><category term="Project" /><category term="TypeScript" /><summary type="html"><![CDATA[1인 프로젝트의 시작]]></summary></entry><entry><title type="html">[Next.JS]NEXT.JS 시작하기</title><link href="/next.js/nextjs-%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94/" rel="alternate" type="text/html" title="[Next.JS]NEXT.JS 시작하기" /><published>2022-07-09T00:00:00+09:00</published><updated>2022-07-09T00:00:00+09:00</updated><id>/next.js/nextjs-%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94</id><content type="html" xml:base="/next.js/nextjs-%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94/"><![CDATA[<table>
+  <tbody>
+    <tr>
+      <td><a href="https://nomadcoders.co/nextjs-fundamentals">노마드코더 강의</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kyounghwan01.github.io/blog/React/next/basic/#next-js%E1%84%80%E1%85%A1-%E1%84%8C%E1%85%A6%E1%84%80%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%8C%E1%85%AE%E1%84%8B%E1%85%AD-%E1%84%80%E1%85%B5%E1%84%82%E1%85%B3%E1%86%BC">기억보다 기록을-next</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Gardenia</name></author><category term="Next.JS" /><category term="Next.JS" /><category term="Nomadcoders" /><summary type="html"><![CDATA[노마드코더 NEXT,JS 무료강의]]></summary></entry></feed>

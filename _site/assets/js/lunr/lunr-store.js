@@ -47,6 +47,12 @@ var store = [{
         "url": "/error/css%ED%8C%8C%EC%9D%BC-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EB%AA%BB-%EC%B0%BE%EC%9D%84-%EB%95%8C/",
         "teaser": null
       },{
+        "title": "[Job]면접질문",
+        "excerpt":"면접 질문 정리                  호이스팅에 대해 말해주세요.                             링크                  링크                 실제로 받은 프론트엔드 개발자 면접 질문 모음                 이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교                 프론트엔드 개발자 기술면접 인터뷰 질문 모음(업데이트)                 프론트엔드 면접 질문 리스트 - JS                 프론트엔드 면접 준비 하시는 분…?          ","categories": ["Job"],
+        "tags": ["Job"],
+        "url": "/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/",
+        "teaser": null
+      },{
         "title": "[Diary]2주차",
         "excerpt":"기술 블로그로 만들려고 하지만 일단 블로그이니 하루 회고 형식으로 느낀점을 간단하게 남기려고 한다. 8일 어제 분명히 작동이 되었는데 오늘 다시 실행시키니 에러가 났다. 콘솔창에 because its MIME type (‘text/html’) is not a supported stylesheet MIME type, and strict MIME checking is enabled 로 해서 갑자기 css 파일을 찾지 못했다고 떴다.....","categories": ["Diary"],
         "tags": ["Diary"],
@@ -54,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[Etc]쓰고 싶은 포스팅",
-        "excerpt":"그냥 쓰고 싶은 글 들 깊은 복사 vs 얇은 복사 OOP class 면접 준비로 정리하기 호이스팅 브라우저 렌더링 원리(유저에게 보이는 순서 정리) margin vs padding position 사용 방법 GET vs POST This 용법 브라우저 저장소 차이점 Localstorage, SessionStorage,Cookie Restful API 설명 GET, PUT, POST, PATCH, OPTION, DELETE JS vs TS...","categories": ["ETC"],
+        "excerpt":"그냥 쓰고 싶은 글 들 깊은 복사 vs 얇은 복사 시간복잡도 OOP GUI vs CUI SSR vs CSR class 면접 준비로 정리하기 브라우저 렌더링 원리(유저에게 보이는 순서 정리) margin vs padding position 사용 방법 GET vs POST This 용법 브라우저 저장소 차이점 Localstorage, SessionStorage,Cookie Restful API 설명 GET, PUT, POST,...","categories": ["ETC"],
         "tags": ["ETC"],
         "url": "/etc/%EC%93%B0%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B8%80/",
         "teaser": null
@@ -65,9 +71,63 @@ var store = [{
         "url": "/tips/%EC%A7%A7%EC%9D%80-tips-1/",
         "teaser": null
       },{
-        "title": "[Job]면접질문",
-        "excerpt":"링크                  링크                 실제로 받은 프론트엔드 개발자 면접 질문 모음                 이직하려는 친구에게 보내는 프런트엔드 개발 면접 질문-캡틴판교                 프론트엔드 개발자 기술면접 인터뷰 질문 모음(업데이트)                 프론트엔드 면접 질문 리스트 - JS          ","categories": ["Job"],
-        "tags": ["Job"],
-        "url": "/job/%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8/",
+        "title": "[Project]makeyourcards",
+        "excerpt":"프로젝트 시작 자다가 문득 토이프로젝트라고 어려울 꺼 할 일 있어? 최대ㅐㅐㅐㅐ한 간단하게 한 번 해보자!! 라고 생각하다가 그냥 간단한 카드 같은거 만들어서 카톡으로 보낼 수 있고 카드 사진 저장 할 수 있는거 만들어 볼까 생각함 가장 간단한 기능 열몇개 기본 사진 있고 내가 만들고 싶은 카드 추가 가능 기능 있음...","categories": ["Project"],
+        "tags": ["Project","TypeScript"],
+        "url": "/project/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-makeyourcards/",
+        "teaser": null
+      },{
+        "title": "[Next.JS]NEXT.JS 시작하기",
+        "excerpt":"               노마드코더 강의                 기억보다 기록을-next          ","categories": ["Next.JS"],
+        "tags": ["Next.JS","Nomadcoders"],
+        "url": "/next.js/nextjs-%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94/",
+        "teaser": null
+      },{
+        "title": "[TIL]호이스팅",
+        "excerpt":"🌱 WHAT IS HOISTING❓ 코드가 실행하기 전 변수(함수)선언이 해당 스코프의 최상단으로 끌어 올려진 것 같은 현상 JS는 함수가 실행되기전 해당 함수를 한 번 흝는다. 그 때 함수 안에 존재하는 변수/함수를 기억하고 있다가 사용한다. 실제로 코드가 올려지는 것은 아니고 JS 내부적으로 올려서 처리하는 것(메모리 변화❌) 🌱 호이스팅이 되는 것 var변수 선언과...","categories": ["TIL"],
+        "tags": ["TIL","Hoisting","JavaScript"],
+        "url": "/til/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85/",
+        "teaser": null
+      },{
+        "title": "[Tips]JS 함수 정리",
+        "excerpt":"알파벳 순 정리  ","categories": ["Tips"],
+        "tags": ["Tips","JavaScript","Function"],
+        "url": "/tips/JS%ED%95%A8%EC%88%98-%EC%A0%95%EB%A6%AC/",
+        "teaser": null
+      },{
+        "title": "[Error]Git pull 에러",
+        "excerpt":"git pull 다른 repogitory 또는 로컬 브랜치를 가져와서 합치는 것 git fetch와 git merge FETCH_HEAD의 약자이다. What is FETCH_HEAD? 원격 저장소로부터 가져온 브랜치의 HEAD를 의미 원격 저장소로 부터 가져온 모든 브랜치의 HEAD를 .git/FETCH_HEAD에 기록함 ERROR git pull 하는 법을 구성하지 않았을 때 경고 문구가 나옴 warning: Pulling without specifying how...","categories": ["Error"],
+        "tags": ["Error","Git"],
+        "url": "/error/git-pull-%EC%97%90%EB%9F%AC/",
+        "teaser": null
+      },{
+        "title": "[TIL]시간복잡도",
+        "excerpt":"🌱 알아보자 시간 복잡도! 알고리즘이 얼마나 걸리느냐 시간복잡도 = 알고리즘을 구성한 명령어가 실행된 횟수 시간복잡도의 종류 O() 빅오 최악 시간 가장 많이 쓰임 실행시간의 상한 Ω() 오메가 최상 시간 실행시간의 하한 Θ() 세타 평균 시간 실행시간의 평균 Big-O 계산 규칙 Worst Case 항상 최악의 상황을 고려 Remove Constants 상수를 제거...","categories": ["TIL"],
+        "tags": ["TIL"],
+        "url": "/til/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84/",
+        "teaser": null
+      },{
+        "title": "[Tips]MYSQL 문법",
+        "excerpt":"아래 문법 설명은 w3schools의 설명을 기초로 작성되었음 BASIC SELECT 데이터 선택 SELECT column1, column2, ... FROM table_name; ex. SELECT CustomerName, City FROM Customers; 모든 데이터를 선택할때 *를 쓴다. SELECT * FROM table_name; ex. SELECT * FROM Customers; SELECT DISTINCT문 SELECT 절 바로 뒤에 DISTINCT 문을 넣고 그 뒤에 가져오길 원하는...","categories": ["Tips"],
+        "tags": ["Tips"],
+        "url": "/tips/mysql-%EB%AC%B8%EB%B2%95%EC%A0%95%EB%A6%AC/",
+        "teaser": null
+      },{
+        "title": "[Command]Fork 한 Repo Update💻",
+        "excerpt":"Fork 한 Repo Update💻 내 로컬에 Fork Clone git clone 포크repo주소 Clone 한 프로젝트 디렉토리 이동 -&gt; 리모트 저장소 확인 git remote -v 리모트 저장소에 upstream 추가 git remote add 등록이름 원본repo주소 추가 확인해보기 - 2번 과 동일 원본 저장소 fetch - 가져오기 it fetch 등록이름 원본 저장소 merge -...","categories": ["Command"],
+        "tags": ["Tips","Command"],
+        "url": "/command/Fork%ED%95%9C-Repo-Update/",
+        "teaser": null
+      },{
+        "title": "[Command]React와 TS 설치하기",
+        "excerpt":"React 설치 아직 파일 없을 때 파일 만들 곳으로 이동 React 설치 npx create-react-app 프로젝트명(파일이름) 파일 있을 때 주로 사용함 - github gui에서 repo만들어 clone 한 경우❗️ 클론한 파일 안으로 이동 React 설치 npx create-react-app . TypeScript 설치 React 설치 전 함께 설치 할 때 npx create-react-app 프로젝트명(파일이름) --template typescript...","categories": ["Command"],
+        "tags": ["Tips","Command"],
+        "url": "/command/React%EC%99%80-TS-%EC%84%A4%EC%B9%98/",
+        "teaser": null
+      },{
+        "title": "[Tips]용어 사전",
+        "excerpt":"알파벳 순 정리   Props   Routing   Rendering   State  ","categories": ["Tips"],
+        "tags": ["Tips"],
+        "url": "/tips/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/",
         "teaser": null
       }]
