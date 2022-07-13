@@ -16,6 +16,8 @@ last_modified_at: 2022-07-11
 
 # margin & padding
 
+![margin과 padding](/assets/image/marginpadding.png)
+
 # 참조
 
 |[차근차근 블로그](https://enai.tistory.com/49)|
