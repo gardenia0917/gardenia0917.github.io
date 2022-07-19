@@ -1,5 +1,5 @@
 ---
-title: "Jobs"
+title: "Job"
 layout: archive
 permalink: categories/job
 author_profile: true
