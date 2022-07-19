@@ -3,7 +3,7 @@ title: "[Leetcode]9. Palindrome Number"
 excerpt: "9. Palindrome Number 풀이 [leetcode]"
 
 categories:
-  - CodingTest
+  - Leetcode
 tags:
   - [CodingTest, Leetcode]
 published: true
