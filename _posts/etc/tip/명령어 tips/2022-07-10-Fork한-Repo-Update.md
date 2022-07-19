@@ -31,7 +31,7 @@ last_modified_at: 2022-07-10
 4. 추가 확인해보기 - 2번 과 동일
 5. 원본 저장소 fetch - 가져오기
 
-- `it fetch 등록이름`
+- `git fetch 등록이름`
 
 6. 원본 저장소 merge - 합치기
 
