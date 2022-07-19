@@ -36,7 +36,13 @@ var isPalindrome = function(x) {
 ### 뒤집어서 나열하는 방법 ❓
 
 - reverse() 를 이용하여 역순으로 변경 가능
-  {% include codepen.html hash="MWVpzEv" title="reverse()" %}
+
+```
+const str = '역삼역, 우영우';
+
+const reversed = str.split('').reverse().join('');
+console.log(reversed);
+```
 
 ### 에러 발생함!!
 
