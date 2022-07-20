@@ -54,7 +54,7 @@ let y = x.split('').reverse().join('');
 reverse() 함수를 더 찾아보니 문자열을 뒤집는(?) 함수 인 것 같다.
 그래서 먼저 변수를 선언해서 `toString()`으로 문자화를 시켜주었더니 통과했다!
 
-## 최종 답암
+## 최종 답
 
 ```
 var isPalindrome = function(x) {
